@@ -1,0 +1,9 @@
+#wrap{background: url(../images/main_visual3.jpg)no-repeat; background-size: cover}
+#col{width: 700px; margin: 250px auto; padding: 60px 0 70px; text-align: center; font-family: 'Nanum'; background: #fff; box-shadow: 0 0 10px rgb(0,0,0,.1)}
+#col h3{font-size: 50px; margin-bottom: 50px}
+#login_form p{margin-bottom: 20px}
+#id_pw_input input{display: block;width: 240px;line-height: 24px;padding: 8px 10px;border: 1px solid #ccc;background: #fff;color: #333;font-size: 14px;cursor: pointer; margin: 10px auto}
+#login_button input{display: inline-block;width: 262px;line-height: 24px;padding: 8px 0;border: none;background: #0089cf;color: #fff;font-size: 14px;cursor: pointer; margin-top: 10px}
+#join_button{margin-top: 20px; font-weight: bold; font-size: 14px; transition: .3s}
+#join_button a{transition: .3s}
+#join_button a:hover{margin-top: 20px; font-weight: bold; font-size: 14px; color: #0089cf}

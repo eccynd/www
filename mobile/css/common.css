@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none; }
+body {
+ color:#333;
+ font-size:16px;
+ font-family:돋움, Dotum; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+    border-radius:1px}
+textarea { resize:none; }
+label { cursor:pointer; }
+.hidden, #skipNav{display: block; position: absolute; left: -1000%;
+top: 0; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* 전체 공통 */
+#wrap{ width:100%; position: relative; overflow:hidden}
+.box{width:100%; height:100%; background:#000; opacity:0.7;
+     position:absolute; left:0; top:0; z-index:110; display:none}
+
+/* 헤더공통 */
+.top_bar{position: fixed; width: 100%; height: 50px; z-index: 100}
+.top_barOn{position: fixed; width: 100%; height: 50px; z-index: 100; box-shadow: 0 0 5px rgb(0,0,0,.2); background: rgb(255,255,255,.9); transition-timing-function: ease-out; animation:bar-slide-down .35s}
+        @keyframes bar-slide-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            } 
+            100% {
+                background: rgb(255,255,255,.9);
+                opacity: 1;
+                transform: translateY(0);
+            } 
+        }
+.top_bar .logo a{float: left; width: 80px; height: 20px; background: url(../common/images/logo_white.png)no-repeat; margin: 16px 0 0 11px; text-indent: -999px}
+.top_bar .logo .logoOn{float: left; width: 80px; height: 20px; background: url(../common/images/logo.png)no-repeat; margin: 16px 0 0 11px; text-indent: -999px}
+.top_bar .menu_btn{display: block; float: right; width: 30px; height: 20px; background: url(../common/images/menu_white.png)no-repeat center; margin: 14px 12px 0 0; text-indent: -999px; overflow: hidden}
+.top_bar .menu_btnOn{display: block; float: right; width: 30px; height: 20px; background: url(../common/images/menu.png)no-repeat center; margin: 14px 12px 0 0; text-indent: -999px}
+
+/* nav */
+#gnb{ clear:both; width:60%; position:fixed; right:-100%; top:0; background:#fff; opacity:0; z-index:120}
+
+#gnb .mclose{display: block; width: 30px; height: 20px; position:absolute; right: 0; top:13px; overflow: hidden}
+#gnb .depth1{font-family: 'Nanum'; font-size: 15px; border-top: 1px solid #eee}  
+#gnb li{text-align:left; font-family: 'Nanum'; font-weight:bold; font-size: 14px}
+#gnb li a{display: block; width: 90%; margin-left: 7px; padding: 18px 5px; color: #333} 
+#gnb li ul{background: #eee; display: none}
+#gnb li ul li a{color: #666}
+#gnb li span{float: right; margin: 5px 5px 0 0; width: 8px; height: 8px; display: block; border-radius: 4px; background: #0089cf}
+
+#gnb .first{margin-top: 45px; border-top: 1px solid #eee}
+
+
+/* top move */
+.topMove{display: block; width: 35px; height: 35px; border: 1px solid #ccc; background: #272a31; position: fixed; bottom: 40px; right: 15px; transition: all .5s}
+.topMove i{font-size: 25px; color: #fff; margin: 3.5px  0 0 9.8px}
+
+
+/* 푸터공통 */
+#footerArea{clear: both; overflow: hidden; width: 100%; height: 240px; background: #272a31; color: #999}
+
+.footer_nav{overflow: hidden; width: 92%; height: 45px; margin: 0 auto; border-bottom: 1px solid #414348}
+.footer_nav ul{overflow: hidden; width: 295px; margin:0 auto}
+.footer_nav ul li{float: left; font-family: 'Nanum'; font-size: 12px; margin: 20px 2.3% 0}
+.footer_nav ul li a{display: block; color: #999}
+
+.footer_bottom{overflow: hidden}
+.footer_bottom .footer_logo{display: block; text-align: center; margin: 20px auto}
+.footer_bottom ul li{font-family: 'Nanum'; font-size: 11px; text-align: center; margin-bottom: 12px; line-height: 1.7em}
+.footer_bottom p{font-family: 'Nanum'; font-size: 11px; text-align: center}

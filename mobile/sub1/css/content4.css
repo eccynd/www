@@ -1,0 +1,68 @@
+.visual{position:relative; overflow:hidden; background-color: #000}
+.gallery img{width: 100%}
+
+.visual .gallery_text{width: 100%; position: absolute; bottom: 45%; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.visual .text_top{font-family: "Nanum"; font-size: 42px; font-weight: 100; margin-bottom: 10px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 16px; font-weight: 400; line-height: 1.5em}
+
+.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; bottom: 50px; left: 50%; margin-left: -25px}
+.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+
+#content .lineMap{width: 92%; margin: 0 auto; padding: 15px 0 15px; border-bottom: 1px solid #ccc; font-family: 'Nanum'; font-size: 13px}
+#content .lineMap span{margin-right: 2px}
+#content .lineMap img{width: 16px}
+
+/* 오시는길 본문 */
+
+#content .content_top .top_left{width: 92%; margin: 30px 0 0 10px}
+#content .content_top .top_left .title{font-family: "Nanum"; font-size: 27px; font-weight: 100; line-height: 1.7em; margin-bottom: 10px}
+#content .content_top .top_left .texts{font-family: "Nanum"; font-size: 14px; font-weight: 400; color: #666; line-height: 1.8em}
+#content .content_top .map{position: relative}
+#content .content_top .map_korea{width: 70%; margin-left: 15%}
+#content .content_top .map_point1{position: absolute; left:42%; bottom: 70%; color: #666; font-family: "Nanum"; font-weight: 600}
+#content .content_top .map_point2{position: absolute; left:42%; bottom: 70%; color: #666; font-family: "Nanum"; font-weight: 600; animation:map-point 1.8s; animation-iteration-count: infinite;}
+        @keyframes map-point {
+            0% {
+                  opacity: 1;
+                  transform: scale(1);
+            }
+            90% {
+                  opacity: 0;
+                transform: scale(2);
+            }
+            100% {
+              opacity: 0;
+              transform: scale(2);
+            }
+        }
+
+#content .content_top .map_text{position: absolute; left: 54%; bottom: 50%; margin-bottom: 24%; color: #666; font-family: "Nanum"; font-size: 14px; font-weight: 600}
+
+#content .content_mid img{width: 100%}
+#content .content_mid dl{font-family: 'Nanum'; width: 90%; margin: 30px auto}
+#content .content_mid dl dt{font-size: 16px; font-weight: bold; padding-top: 11px}
+#content .content_mid dl dd{font-size: 14px; font-weight: 400; border-bottom: 1px solid #ccc; padding: 5px 0 12px}
+#content .content_mid dl .first{border-top: 1px solid #333}
+#content .content_mid dl .last{margin-bottom: 40px}
+
+
+#map_home{width: 92%; height: 260px; border: 1px solid #ccc; margin: 40px auto 70px}
+
+#content .content_bottom{overflow: hidden; margin-bottom: 30px}
+#content .content_bottom li{margin-left: 35px}
+#content .content_bottom li{margin-bottom: 10px}
+#content .bottom_left{border-right: 1px solid #ccc; background: url(../images/content4/line.png)no-repeat; margin-left: 20px}
+#content .bottom_right{background: url(../images/content4/line2.png)no-repeat; margin: 30px 0 0 20px}
+#content .content_bottom .subway{font-family: "Nanum"; font-size: 15px; color: #333; font-weight: 600}
+#content .content_bottom .walk{font-family: "Nanum"; font-size: 15px; color: #666}

@@ -1,0 +1,106 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <link rel="stylesheet" href="css/content2.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 헤더공통영역 -->
+      
+    <? include "../common/sub_head.html" ?>
+        
+        <? $_GET['num']=2;
+      include "common/sub_nav.html"; ?>
+        
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>기업소개</span></a><span>&gt;</span><a href="#"><strong>CEO 인사말</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>CEO 인사말</h2>
+                <div class="top">
+                    <img src="images/content2/sub1_2_top.jpg" alt="">
+                    <div class="top_text">
+                        <p class="title">
+                            안녕하세요.
+                            <br>대우조선 대표이사
+                            <br>이성근입니다.
+                        </p>
+                        <p class="texts">
+                            <br>대우조선해양은 1973년 옥포만에 첫 삽을 뜬 이후 40여년만에 세계
+                            <br>최고의 조선해양기업으로 성장하였습니다.
+                            <br>작은 어촌에서 매년 수 조원을 수출하는 ‘옥포만의 기적’을
+                            <br>일궈냈습니다. 오늘 이 순간도 지금 이 자리에 만족하지 않고 그 어느
+                            <br>누구도 추격할 수 없는 기술적 격차와 리더십을 갖춰 시장을 선도하며
+                            <br>지속발전 기업이 될 것을 약속합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="mid">
+                    <p>
+                        <span class="title">
+                            World's Best Shipboard Marine Products
+                        </span>
+                        <span class="texts">
+                            <br>World's Best Shipboard Marine Products
+                            <br>세계 조선업 정상에는 대한민국이, 그리고 대우조선해양이 있습니다.
+                            <br>선박과 해양 플랜트는 세계 곳곳에서 자원과 물품을 운송하고 에너지를 발굴합니다. 
+                            <br>천연가스 재액화 기술, 극지 기술, 독자 잠수함 건조 기술 등 앞선
+                            <br>기술력으로 LNG선 강자, 야말 신화, 특수선 명가의 전통을 이어가고 있습니다.
+                        </span>
+                    </p>
+                    <img src="images/content2/sub1_2_mid.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <img src="images/content2/sub1_2_bottom.jpg" alt="">
+                    <p>
+                        <span class="title">
+                            더 나은 미래를 향한 항해
+                        </span>
+                        <span class="texts">
+                            <br>바다가 있는 한 조선해양산업은, 대우조선해양은 영원할 것입니다.
+                            <br>대우조선해양이 있어 바다에서 이뤄지는 인류 역사는 더욱 발전할
+                            <br>것입니다. 신뢰와 열정이라는 핵심가치를 바탕으로 대우조선해양이
+                            <br>펼치는 과거, 현재, 미래 모습을 웹사이트에서 확인해보시길 바랍니다.
+
+                        </span>
+                    </p>
+                    <p class="sign">대표이사 <span class="sign_name">이성근</span></p>
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+        <script src="js/sub_slide_down2.js"></script>
+        
+    </div>
+</body>
+</html>

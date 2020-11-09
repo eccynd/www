@@ -1,0 +1,38 @@
+/* 신기술 본문 */
+
+#content{overflow: hidden}
+
+.content_top{overflow: hidden; margin-bottom: 130px}
+.content_top .top_text{float: left; width: 620px; margin: 270px 0 0 64px; ; transition: all 1.2s; opacity:0}
+.content_top .top_textOn{float: left; width: 620px; margin: 120px 0 0 64px; opacity:1}
+.content_top h3{font-family: 'Nanum'; font-size: 42px; font-weight: 100; margin-bottom: 40px}
+.content_top p{font-family: 'Dotum'; font-size: 17px; color: #666; line-height: 1.8em}
+.content_top img{margin-top: 150px; transition: all 1.2s; transition-delay: .2s; opacity: 0}
+.content_top .top_imgOn{margin-top: 0; opacity: 1}
+
+.content_mid h4{font-family: 'Nanum'; font-size: 20px; font-weight: 600; color: #333; text-align: center; margin-bottom: 10px}
+.content_mid p{font-family: 'Nanum'; font-size: 17px; font-weight: 100; color: #666; text-align: center; line-height: 1.7em}
+
+.content_mid .list1{position: relative}
+.content_mid .list1 .texts{position: absolute; top: 80px; left: 400px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list2{position: relative; float: right; margin-top: -80px}
+.content_mid .list2 .texts{position: absolute; top: 500px; right: 20px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list3{position: relative; float: left; clear: both}
+.content_mid .list3 .texts{position: absolute; top: 330px; left: 45px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list4{position: relative; float: right; clear: both; margin-top: 200px}
+.content_mid .list4 .texts{position: absolute; top: 320px; left: -350px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list5{position: relative; float: left; clear: both; margin-top: 400px}
+.content_mid .list5 .texts{position: absolute; top: 80px; right: -400px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list6{position: relative; float: right; clear: both}
+.content_mid .list6 .texts{position: absolute; top: 80px; left: -430px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .list7{position: relative; float: left; clear: both; margin-bottom: 450px}
+.content_mid .list7 .texts{position: absolute; top: 280px; right: -330px; border: 2px solid #ccc; padding: 95px 40px}
+
+.content_mid .texts{transition: all .3s}
+.content_mid li:hover .texts{border: 8px solid rgb(0,137,207,.7)}

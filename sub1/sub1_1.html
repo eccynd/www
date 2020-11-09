@@ -1,0 +1,132 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub1common.css">
+    <link rel="stylesheet" href="css/content1.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <!-- 헤더공통영역 -->
+       
+    <? include "../common/sub_head.html" ?>
+    
+     <? $_GET['num']=1;
+      include "common/sub_nav.html"; ?>
+
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>기업소개</span></a><span>&gt;</span><a href="#"><strong>기업개요</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>기업개요</h2>
+                <div class="content_top">
+                    <ul>
+                        <li class="top">
+                            <div class="top_text">
+                                <h3>세계 최고의 해양기업으로 성장</h3>
+                                <p class="sub_title">Ceaseless Growth</p>
+                                <p>뿌리깊은 조선역사를 지닌 유럽, 세계 경제의 거대한 축을 이루는 미주 
+                                <br>등 세계 조선시장에서, 대우조선해양이 건조한 선박들이 ‘최고 품질의 
+                                <br>배’로 각광 받고 있습니다.
+                                <br>대우조선해양에서 대형 해양플랜트를 건조해 본 오일메이저들은 그 
+                                <br>기술수준과 납기준수, 고객의 요구를 최대한 만족시키기 위해 
+                                <br>노력하는대우조선해양 사람들의 성실한 땀방울에 크게 만족하며 
+                                <br>단골고객이 되고 있습니다.</p>
+                            </div>
+                            <img class="top_img" src="images/content1/sub1_1_top.jpg" alt="">
+                        </li>
+                        <li class="mid">
+                           <div class="mid_text">
+                                <h3>IT기술을 기반으로한 선박건조기술</h3>
+                                <p class="sub_title">Advanced technology</p>
+                                <p>1981년에 준공한 대우조선해양은, 각종 선박과 해양플랜트, 시추선, 부유식
+                                <br>잠수함, 구축함 등을 건조하는 세계 초일류 조선해양전문기업입니다.
+                                <br>
+                                <br>490만㎡의 넓은 부지 위에 세계 최대 1백만톤급 도크와 900톤 골리앗
+                                <br>크레인 등의 최적 설비로 기술개발을 거듭해, 고기술 선박 건조에
+                                <br>탁월한 능력을 보유했습니다.
+                                <br>IT기술을 기반으로 체계화 된 선박건조기술과 고난도 해양플랫폼 건조능력,
+                                <br>대형 플랜트 프로젝트 관리능력, 전투잠수함과 구축함을 건조하는
+                                <br>높은 기술력을 고루 갖춰, 최상의 품질을 만들어 냅니다.</p>
+                            </div>
+                            <img class="mid_img" src="images/content1/sub1_1_mid.jpg" alt="">
+                        </li>
+                        <li class="bottom">
+                           <div class="bottom_text">
+                                <h3>끊임없이 변화와 혁신</h3>
+                                <p class="sub_title">Change and innovation</p>
+                                <p>2000년 10월말 독립기업으로 다시 태어난 대우조선해양은 '신뢰와 
+                                <br>열정'을 기업문화의 핵심가치로 지정했습니다.
+                                <br>'신뢰'는 인간존중과 배려를 통하여 동료와 조직간의 협력과 믿음을 쌓고,
+                                <br>'열정'은, 더 높은 가치를 향해 끊임없이 변화와 혁신을 추구하며 개인의
+                                <br>능력을 마음껏 발휘하여 자아성취를 이루자는 것을 의미합니다.</p>
+                            </div>
+                            <img class="bottom_img" src="images/content1/sub1_1_bottom.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="content_bottom">
+                    <img src="images/content1/sub1_1_table.jpg" alt="">
+                    <table>
+                        <tr>
+                           <td>회사명</td>
+                           <td>대우조선해양주식회사 Daewoo Shipbuilding &#38; Marine Engineering Co., Ltd.</td>
+                        </tr>
+                        <tr>
+                           <td>창립일</td>
+                           <td>1973년 10월 11일</td>
+                        </tr>
+                        <tr>
+                           <td>대표이사</td>
+                           <td>이성근 Sung Geun Lee</td>
+                        </tr>
+                        <tr>
+                           <td>본사 및 조선소</td>
+                           <td>서울특별시 중구 다동 남대문로 125 대우조선해양 Tel. 02-2129-0114</td>
+                        </tr>
+                        <tr>
+                           <td>야드면적/인력</td>
+                           <td>490만㎡ / 인력 35,000여명(협력사 포함)</td>
+                        </tr>
+                        <tr>
+                           <td>주요생산품</td>
+                           <td>상선, 특수선, 육해상플랜트</td>
+                       </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+        <script src="js/sub_slide_down1.js"></script>
+        
+    </div>
+</body>
+</html>

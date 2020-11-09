@@ -1,0 +1,201 @@
+.visual{position:relative;width:2000px; height:1050px; overflow:hidden; left: 50%; margin-left: -1000px; background-color: #000}
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1050px; background: #000}
+.dock{width:10px; position:absolute; right: 270px; top:445px}
+
+.dock span.mbutton{margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:10px; height:10px;
+   background: #fff; border-radius:5px; margin-bottom: 13px;
+  transition: all .5s}
+
+.dock .ps{ margin-right:15px; cursor:pointer; 
+    display:block; float:left; width:8px; height:11px;
+    background:url(../images/stop.png)}
+
+.visual .gallery_text ul li{display: none}
+.visual .gallery_text{position: absolute; bottom: 500px; left: 650px; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            } 
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.visual .text_list1{animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.visual .text_list2{margin-left: 110px; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            } 
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.visual .text_list3{margin-left: 20px; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            } 
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+.visual .text_top{font-family: "Nanum"; font-size: 95px; font-weight: 100; margin-bottom: 8px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 25px; font-weight: 400}
+
+.visual .scroll{display: block; width: 70px; height: 70px; border: 1px solid #fff; position: absolute; left: 48%; bottom: 140px;  transition: all .5s}
+.visual .scroll:hover{transform:translateY(8px); box-shadow:70px 70px 100px 100px rgba(250,250,250,.3) inset}
+.visual i{font-size: 30px; color: #fff; margin: 21px 0 0 22px}
+
+#showimage label{color: #fff}
+#showimage a{color: #fff}
+
+#content{position: relative; overflow: hidden; width: 1200px; top: 0; left: 50%; margin-left: -600px}
+#content .title h3{font-family: "Nanum"; font-size: 45px; font-weight: 400; line-height: 1em; margin: 10px 0 40px 0; color: #333}
+#content .title span{font-family: "Nanum"; font-size: 25px; color: #999}
+
+#content .firstWord p{font-family: "Nanum"; font-size: 37px; text-align: center; margin: 240px auto; line-height: 1.5em}
+#content .firstWord p span{color: #1979df; font-weight: 600}
+
+#content .business .first_title{font-family: "Nanum"; font-size: 45px; padding-bottom: 35px; margin: 250px 0 45px 0; border-bottom: solid 1px #ccc; width: 280px; transition: all 1s; opacity:0}
+#content .business .first_titleOn{font-family: "Nanum"; font-size: 45px; padding-bottom: 35px; margin: 120px 0 45px 0; border-bottom: solid 1px #ccc; width: 280px; opacity:1}
+#content .business .first_title h3{font-weight: 400; line-height: 1em}
+#content .business .first_title span{font-family: "Nanum"; font-size: 25px; color: #999}
+
+#content .business{overflow: hidden; height: 2430px; position: relative}
+
+#content .business h4{font-family: "Nanum"; font-size: 50px; margin-bottom: 45px; font-weight: 600}
+#content .business p{font-family: "Dotum"; font-size: 15px; color: #666; line-height: 27px}
+#content .business p span{font-family: "Nanum"; font-size: 20px; font-weight: 600; color: #333; margin-bottom: 15px}
+#content .business_list1{overflow: hidden; margin-bottom: 120px}
+#content .business_list1::after{content: ''; display: block; width: 650px; height: 1300px; background: url(../images/main_busniess_back.jpg); position: absolute; right: 0; top:280px; z-index: -1 }
+#content .business_list1 .btn{display: block; font-size: 17px; width: 100px; height: 36px; font-family: "arial"; font-weight: 600; border: solid 1px #333; padding: 17px 0 0 22px; margin-top: 40px; text-align: left; transition: all .35s; transition-timing-function: ease-out}
+#content .business_list1 .btn i{margin-left: 10px}
+#content .business_list1 .btn:hover{color: #fff ; box-shadow:122px 0 0 0 rgba(39,42,49,1) inset}
+#content .business_list1 .list1_img{width: 670px; position: absolute; top: 130px; right: 80px; opacity: 0}
+#content .business_list1 .list1_imgOn{width: 670px; position: absolute; top: 0; right: 80px; transition: all 1.2s; opacity: 1; box-shadow: 1px 1px 10px rgba(0,0,0,.1)}
+
+#content .business_list2{overflow: hidden; margin: 350px 80px 0 730px; color: #fff}
+#content .business_list2 h4{margin-top: 170px; transition: all 1s; opacity: 0}
+#content .business_list2 .list2On{margin-top: 60px; opacity: 1}
+#content .business_list2 p{color: #fff}
+#content .business_list2 p span{color: #fff}
+#content .business_list2 .btn{display: block; font-size: 17px; width: 100px; height: 36px; font-family: "arial"; color: #fff; font-weight: 600; border: solid 1px #fff; padding: 17px 0 0 22px; margin-top: 40px; text-align: left; transition: all .35s; transition-timing-function: ease-out}
+#content .business_list2 .btn i{margin-left: 10px}
+#content .business_list2 .btn:hover{color: #5a6169; box-shadow:122px 0 0 0 rgba(250,250,250,1) inset}
+#content .business_list2 .list2_img{width: 570px; float: left; position: absolute; top: 870px; left: 50px; opacity: 0; box-shadow: 1px 1px 10px rgba(0,0,0,.1)}
+#content .business_list2 .list2_imgOn{width: 570px; float: left; position: absolute; top: 760px; left: 50px; transition: all 1.2s; opacity: 1}
+
+#content .business_list3{margin: 480px 0 0 30px; color: #fff; transition: all 1.2s; opacity:0}
+#content .business_list3On{margin: 380px 0 0 30px; color: #fff; opacity:1}
+#content .business_list3 h4{margin: 310px 0 0 40px}
+#content .business_list3 p{margin: 40px 0 34px 40px; color: #fff}
+#content .business_list3 p span{color: #fff}
+#content .business_list3 .btn{margin: 0 0 34px 40px; font-size: 17px; display: block; width: 100px; height: 36px; font-family: "arial"; color: #fff; font-weight: 600; border: solid 1px #fff; padding: 17px 0 0 22px; margin-top: 40px; text-align: left; transition: all .35s; transition-timing-function: ease-out}
+#content .business_list3 .btn i{margin-left: 10px}
+#content .business_list3 .btn:hover{color: #000;box-shadow:132px 0 0 0 rgba(250,250,250,1) inset}
+#content .business_list3 .list3_img{position: absolute; left: 0; top:1600px; z-index: -2; opacity: 0}
+#content .business_list3 .list3_imgOn{position: absolute; left: 0; top:1500px; z-index: -2; transition: all .7s; opacity: 1}
+
+#content .technology{overflow: hidden}
+#content .technology .title{margin: 130px 0 80px 0; transition: all .7s; opacity: 1}
+#content .technology .technology_titleOn{margin: 0 0 70px 0; opacity: 1}
+#content .technology .slide_gallery_box{overflow: hidden; position: relative; width: 1200px; height: 460px}
+#content .technology .slide_gallery{position: relative; left: 0; top: 0; width: 3600px}
+#content .technology .slide_gallery ul li{float:left; list-style:none;margin:0 3px 20px}
+#content .technology a{display: block; overflow: hidden; width: 294px; height: 435px; margin-top: 150px; opacity: 0}
+#content .technology a:hover dt{color: #0089cf}
+#content .technology .technology_imageOn{display: block; overflow: hidden; width: 294px; height: 435px; margin-top: 0; position: relative; left: 0; transition: all .5s; opacity: 1}
+#content .technology a:hover{box-shadow: 0 0 30px #ccc; position: relative; left: -11px}
+#content .technology li dl{position: relative; bottom: 160px; left: 20px}
+#content .technology li dl dt{font-family: "Nanum"; font-weight: 600; font-size: 20px}
+#content .technology li dl dd{font-family: "Dotum"; font-size: 15px; color: #666; line-height: 27px; margin-top: 30px}
+
+#content .technology .technology_btn{margin: 190px 0 250px 530px; transition: all .7s; opacity: 0; transition-delay: .1s}
+#content .technology .technology_btnOn{margin: 40px 0 250px 530px; opacity: 1}
+#content .technology_btn .button{cursor:pointer; width:60px; height: 60px; float: left; border: solid 1px #ccc; margin: 0 auto; transition: all .5s}
+#content .technology_btn .m1{background: url(../images/main_tech_left.png) 5px}
+#content .technology_btn .m1:hover{background: url(../images/main_tech_left.png) -5px}
+#content .technology_btn .m2{background: url(../images/main_tech_right.png) -5px}
+#content .technology_btn .m2:hover{background: url(../images/main_tech_right.png) 5px}
+
+
+#content .prcenter{overflow: hidden; padding: 80px 0 100px 0; margin-bottom: 70px; position: relative; background: #f2f4f4}
+
+#content .prcenter_title{position: relative}
+#content .prcenter .title{margin-left: 60px}
+#content .title span{font-family: "arial"}
+#content .prcenter_all{overflow: hidden}
+#content .prcenter_list1{width: 410px; height: 600px; float: left; margin-left: 55px; background: url(/images/main_slice2_80.jpg); transition: all .4s}
+#content .prcenter_list1:hover{box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4)}
+#content .prcenter .prcenter_all .prcenter_list1 h4{font-family: "Nanum"; margin-top: 70px; font-size: 35px; text-align: center; color: #fff}
+#content .prcenter_list1 ul{margin: 47px 37px 0 47px}
+#content .prcenter_list1 ul li{margin-bottom: 65px}
+#content .prcenter_list1 a{color: #fff; transition: .3s}
+#content .prcenter_list1 a:hover{color: #0089cf}
+#content .prcenter_list1 .col1{margin-top: 10px}
+#content .prcenter_list1 .col2{margin: 4px 0 10px; color: #000; font-size: 12px; background: rgb(260,260,260,.8); padding: 0 3px; width: 60px; border-radius: 4px/4px}
+#content .prcenter_list1 ul h5{font-family: "Nanum"; font-size: 20px; font-weight: 400}
+#content .prcenter_list1 ul p{font-family: "Dotum"; font-size: 15px; line-height: 27px; margin-bottom: 8px}
+
+#content .prcenter_mid{width: 252px; float: left; padding: 0 9px; overflow: hidden}
+#content .prcenter_mid a{color: #fff; display: block;}
+#content .prcenter_mid h4{font-family: "Nanum"; font-size: 25px; margin: 30px 0 20px 30px; font-weight: 400; transition: all .3s}
+#content .prcenter_mid a:hover h4{color: #0089cf}
+#content .prcenter_mid p{margin-left: 30px; line-height: 1.5em}
+#content .prcenter_mid .prcenter_list2{width: 252px; height: 295px; background: url(/images/main_slice2_82.jpg) center no-repeat; margin-bottom: 10px; overflow: hidden; transition: all .4s}
+#content .prcenter_mid .prcenter_list2:hover{box-shadow: 0 0 0 1000px rgb(0,0,0,.8)inset}
+#content .prcenter_mid .prcenter_list3{width: 252px; height: 295px; background: url(/images/main_slice2_88.jpg) center no-repeat; overflow: hidden; transition: all .5s}
+#content .prcenter_mid .prcenter_list3:hover{box-shadow: 0 0 0 1000px rgb(0,0,0,.5)inset}
+
+#content .prcenter_list4{width: 410px; height: 600px; float: left; background: url(/images/main_slice2_84.jpg) center no-repeat; transition: all .5s}
+#content .prcenter_list4 div{text-align: center; margin-top: 425px; color: #fff}
+#content .prcenter_list4 h4{margin-bottom: 12px; font-family: "Nanum"; font-size: 30px; font-weight: 400; transition: all .3s}
+#content .prcenter_list4:hover h4{color: #0089cf}
+#content .prcenter_list4 p{line-height: 1.5em; margin-bottom: 15px}
+
+#content .service{overflow: hidden}
+#content .service .title{text-align: center; margin: 40px auto 50px}
+#content .service_top{width: 1000px; margin: 0 auto}
+#content .service_top ul .time{position: absolute; left: 35px; top: 30px}
+#content .service_top ul .time b{display: block; font-size: 50px; font-family:'Nanum'; color: #ccc; font-weight: 400; margin: 0 0 6px 4px}
+#content .service_top ul li:hover .time b{color: #0089cf}
+#content .service_top ul .time span{font-size: 17px; font-family:'Nanum'; color: #ccc; font-weight: bold}
+#content .service_top ul li:hover .time span{color: #0089cf}
+#content .service_top ul li{position: relative; font-family: "Dotum"; font-size: 17px; line-height: 27px; border-bottom: 1px solid #ccc; padding: 40px 0 35px 140px}
+#content .service_top ul li span{font-family: "Nanum"; font-size: 19px; font-weight: 600; color: #333}
+#content .service_top ul li p{margin-top: 10px}
+#content .service_top ul i{position: absolute; bottom: 35px; right: 80px; font-size: 30px; color: #ccc}
+#content .service_top ul li a{display: block; font-family: 'Nanum'; color: #333; font-size: 20px; font-weight: bold; transition: all .5s}
+#content .service_top ul li:hover a{color: #0089cf; margin-left: 20px}
+#content .service_top .more{display: block; font-family: 'Nanum'; font-size:16px; padding: 15px 0; width: 100px; border: 1px solid #333; text-align: center; margin: 50px auto 100px; transition: all .3s; transition-timing-function: ease-out}
+#content .service_top .more:hover{box-shadow: 100px 0 0 0 rgb(39,42,49,1)inset; color: #fff; border: 1px solid #fff}
+
+#content .service_bottom{overflow: hidden; margin-bottom: 110px; text-align: center}
+#content .service_bottom a{color: #fff}
+#content .service_bottom .service_list1{overflow:hidden; float: left; width:600px; height: 300px; position: relative}
+#content .service_bottom .service_list1 img{width: 600px; height: 300px; object-fit:cover; transition: transform .8s; transition-timing-function: ease-out}
+#content .service_bottom .service_list1:hover img{width: 100%; height: 100%; transform: scale(1.08)}
+#content .service_bottom .service_list2{overflow:hidden; float: right; width:600px; height: 300px; position: relative}
+#content .service_bottom .service_list2 img{width: 600px; height: 300px; object-fit:cover; transition: transform .8s; transition-timing-function: ease}
+#content .service_bottom .service_list2:hover img{width: 100%; height: 100%; transform: scale(1.08)}
+#content .service_bottom .list1_text h4,#content .service_bottom .list2_text h4{font-family: "Arial"; font-size: 22px}
+#content .service_bottom .list1_text p,#content .service_bottom .list2_text p{font-family: "Nanum"; font-weight: 500; font-size: 36px}
+#content .service_bottom .list1_text{position: absolute; bottom: 105px; left: 250px}
+#content .service_bottom .list2_text{position: absolute; bottom: 105px; left: 270px}

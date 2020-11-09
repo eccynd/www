@@ -1,0 +1,316 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+    //echo " $userid  $username  $usernick  $userlevel";
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <META name='keywords' content='대우조선, DBSM, 조선소, 조선업, 선박, 해양'> 
+    <META name='description' content='세계 초일류
+    조선해양 전문기업 대우조선해양입니다.'> 
+    <title>대우조선해양</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="maincss/main.css">
+
+    <script src="mainjs/mainpopup.js"></script>
+    <script src="common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    <!--[if IE9]>  
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+
+
+<body>
+    <? include "common/main_head.html" ?>
+       
+        <div class="visual">            
+            <div class="gallery">
+                     <ul>
+                          <li class="link1"><img src="images/main_visual1.jpg" alt='' /></li>
+                          <li class="link2"><img src="images/main_visual2.jpg" alt='' /></li>
+                          <li class="link3"><img src="images/main_visual3.jpg" alt='' /></li>
+                    </ul>
+             </div>
+           
+             <div class="dock">
+              	<span class="mbutton  btn1" ></span>
+              	<span class="mbutton  btn2" ></span>
+             	<span class="mbutton  btn3" ></span>
+              	<span class="ps" ></span>
+            </div>
+            
+            <div class="gallery_text">
+               <ul>
+                   <li class="text_list1">
+                        <p class="text_top">Ultimate Evoltion</p>
+                        <p class="text_bottom">하드웨어와 소프트웨어의 혁신</p>
+                   </li>
+                   <li class="text_list2">
+                        <p class="text_top">Continuous</p>
+                        <p class="text_bottom">지속적인 발전과 성장</p>
+                   </li>
+                   <li class="text_list3">
+                        <p class="text_top">Trust &amp; Passion</p>
+                        <p class="text_bottom">신뢰와 열정이라는 가치</p>
+                   </li>
+               </ul>
+            </div>
+            
+            <div class="slideMenu a">
+                <a class="scroll" href="#content"><i class="fas fa-chevron-down"></i></a>
+            </div>
+            
+        </div>
+        
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+            <div class="firstWord">
+                <p>대우조선해양은 <span>미래의 희망</span>을 나누고
+                    <br>세상을 <span>더욱 아름답게</span> 만드는 기업이 되고자 합니다.
+            </div>
+            <div class="business">
+                <div class="first_title"><span>사업분야</span>
+                    <h3>BUSINESS</h3>
+                </div>
+                <ul>
+                <li class="business_list1">
+                    <h4>상선/특수선</h4>
+                    <p>
+                        <span>세계최고의 기술력을 자랑하는 가스선</span>
+                        <br>첨단 선박 기술의 프론티어인 대우조선해양은,
+                        <br>멤브레인 타입의 'SOLidus'를 개발하여
+                        <br>LNG 기화율을 획기적으로 낮추는 등
+                        <br>기술 선도 기업으로서의 면모를 과시하고있습니다.
+                    </p>
+                    <a class="btn" href="sub2/sub2_1.html">More<i class="fas fa-angle-right"></i></a>
+                    <img class="list1_img" src="images/main_busniess_list1.jpg" alt="상선/특수선 이미지">
+                </li>
+                <li class="business_list2">
+                    <h4>해양/플랜트</h4>
+                    <p>
+                        <span>실제 생산 중인 세계 최초의 FLNG</span>
+                        <br>LNG 수송선, 해양정제, LNG 생산에 필요한
+                        <br>경험과 기술을 접목하여 대우조선해양은
+                        <br>시계 최초의 FLNG를 성공적으로
+                        <br>Petronas사에 인도하였습니다.
+                    </p>
+                    <a class="btn" href="sub2/sub2_2.html">More<i class="fas fa-angle-right"></i></a>
+                    <img class="list2_img" src="images/main_busniess_list2.jpg" alt="해양/플랜트 이미지">
+                </li>
+                <li class="business_list3">
+                    <h4>건조실적</h4>
+                    <p>
+                        <span>세계로 뻗어 나가는 대우조선해양</span>
+                        <br>광범위한 프로젝트 수행 능력과 경험을 바탕으로
+                        <br>대우조선해양의 신규사업은 고도의 장비 및 다기능 프로젝트를 수행합니다.
+                    </p>
+                    <a class="btn back" href="sub2/sub2_3.html">More<i class="fas fa-angle-right"></i></a>
+                    <img class="list3_img" src="images/main_busniess_list3.jpg" alt="건조실적 이미지">
+                </li>
+                </ul>
+            </div>
+            <div class="technology">
+                <div class="title"><span>기술/연구</span>
+                    <h3>TECHNOLOGY<br>/RESEARCH</h3>
+                </div>
+                <div class="slide_gallery_box">
+                    <div class="slide_gallery">
+                        <ul>
+                            <li>
+                              <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology1.jpg" alt="극지형아트릴쉽">
+                                <dl class="technology_text">
+                                    <dt>극지형 아틱드릴십</dt>
+                                    <dd>외부 온도 -40도, 설계온도 -50도인
+                                    <br>최초의 아틱드릴쉽을 개발</dd>
+                                </dl>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology2.jpg" alt="FPSO">
+                                <dl class="technology_text">
+                                    <dt>부유식 원유 저장 하역설비</dt>
+                                    <dd>안전하게 원유운반선으로 이송하는
+                                    <br>하역설비를 한꺼번에 갖춘 설비입니다.</dd>
+                                </dl>
+                                </a>
+                            </li>
+                            <li>
+                               <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology3.jpg" alt="LNG-RV">
+                                <dl class="technology_text">
+                                    <dt>액화천연가스 재기화 선박</dt>
+                                    <dd>해상에 정박한채 액화천연가스를
+                                    <br>공급 할 수 있는 선박입니다.</dd>
+                                </dl>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology4.jpg" alt="극지형아트릴쉽">
+                                <dl class="technology_text">
+                                    <dt>원자력 추진선</dt>
+                                    <dd>화석 연료를 대체하여 원자력을
+                                    <br>동력으로 활용하는 선박입니다.</dd>
+                                </dl>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology5.jpg" alt="극지형아트릴쉽">
+                                <dl class="technology_text">
+                                    <dt>발전플랜트기술</dt>
+                                    <dd>BMPP는 Layout 및 설치
+                                    <br>지형적 제약에서 자유롭습니다.</dd>
+                                </dl>
+                                </a>
+                            </li>
+                            <li>
+                              <a href="sub3/sub3_2.html">
+                               <img src="images/main_technology6.jpg" alt="극지형아트릴쉽">
+                                <dl class="technology_text">
+                                    <dt>해상풍력발전기 설비선</dt>
+                                    <dd>해상 풍력단지 개발분야에서
+                                    <br>큰 활약을 할 것으로 기대됩니다.</dd>
+                                </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="technology_btn">
+                    <span class="m1 button"></span>
+                    <span class="m2 button"></span>
+                </div>
+            </div>
+            <div class="prcenter">
+                <div class="title"><span>홍보센터</span>
+                    <h3>PR CENTER</h3>
+                </div>
+                <div class="prcenter_all">
+                    <div class="prcenter_list1">
+                       <h4>DSME Today</h4>
+                       <? include "./lib/func1.php"; ?>
+                        <ul>
+                            <li>
+                            <a href="event/list.php">
+                                <h5>보도자료</h5>
+                            </a>
+                                <!-- 최근 게시물 삽입 -->
+                                <? latest_article("event", 2, 22); ?>
+                                <a href="event/list.php"><img src="images/main_slice2_58.png" alt="자세히보기"></a>
+                            </li>
+                            <li>
+                            <a href="free/list.php">
+                                <h5>기타</h5>
+                            </a>
+                                <!-- 최근 게시물 삽입 -->
+                                <? latest_article("free", 2, 22); ?>
+                                <a href="free/list.php"><img src="images/main_slice2_58.png" alt="자세히보기"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prcenter_mid">
+                       <a href="sub4/sub4_2.html">
+                            <div class="prcenter_list2">
+                                <h4>웹진</h4>
+                                <p>DSME Family Magazine</p>
+                               
+                            </div>
+                        </a>
+                        <a href="sub4/sub4_2.html">
+                            <div class="prcenter_list3">
+                                <h4>브로슈어</h4>
+                                <p>대우조선해양의 역사와
+                                <br>다양한 정보를 소개합니다.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="prcenter_list4" href="sub4/sub4_3.html">
+                        <div>
+                            <h4>방문신청</h4>
+                                    <p>세계최고 품질의 선박을 건조하는 대우조선해양
+                                    <br>견학은 온라인을 통해 신청하실 수 있습니다.</p>
+                                <img src="images/main_slice2_58.png" alt="자세히보기">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="service">
+                <div class="title"><span>고객지원</span><h3>SERVICE</h3></div>
+                <div class="service_top">
+                   <h4 class="hidden">아이디어 공모전</h4>
+                   <? include "./lib/func2.php"; ?>
+                    <ul>
+                       
+                       <? latest_article2("greet", 3, 30); ?>
+                                       
+                    </ul>
+                    <a class="more"  href="greet/list.php">더보기</a>
+                </div>
+                <div class="service_bottom">
+                    <div class="service_list1">
+                        <a href="greet/list.php">
+                            <img src="images/main_service_left.jpg" alt="채용안내">
+                            <div class="list1_text">
+                                <h4>채용안내</h4>
+                                <p>RECRUIT</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="service_list2">
+                        <a href="sub1/sub1_4.html">
+                            <img src="images/main_service_right.jpg" alt="오시는길">
+                            <div class="list2_text">
+                                <h4>오시는길</h4>
+                                <p>MAP</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include "common/main_foot.html" ?>    
+
+   <!-- 이위치에 추가되는 스크립트를 연결하세요 -->
+       
+        <script src="mainjs/move.js"></script>
+        <script src="mainjs/NBSlide.js"></script>
+        <script src="mainjs/slide_down.js"></script>
+       
+        <!-- 팝업공지영역 -->
+        <div id="showimage" style="z-index:99;position:absolute;width:322px;left:50px;top:200px;">
+            <script>
+                function closeWin() {
+                    var chk = document.getElementById('Notice')
+                    if (chk.checked) {
+                        setCookie("Notice", "done", 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+                    }
+                }
+                if (getCookie("Notice") == "done") {
+                    hidebox();
+                }
+            </script>
+            <div>
+                <img src="popup/pop.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+            </div>
+            <div style="font-size:12px;text-align:center;color:#666;">
+                <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+                <a href="#" onclick="closeWin();hidebox();return false;"> [close] </a>
+            </div>
+        </div>
+</body>
+</html>

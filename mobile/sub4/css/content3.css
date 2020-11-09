@@ -1,0 +1,90 @@
+.visual{position:relative; overflow:hidden; background-color: #000}
+.gallery img{width: 100%}
+
+.visual .gallery_text{width: 100%; position: absolute; bottom: 45%; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.visual .text_top{font-family: "Nanum"; font-size: 42px; font-weight: 100; margin-bottom: 10px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 16px; font-weight: 400; line-height: 1.5em}
+
+.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; left: 42%; bottom: 50px}
+.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+
+#content .lineMap{width: 92%; margin: 0 auto; padding: 15px 0 15px; border-bottom: 1px solid #ccc; font-family: 'Nanum'; font-size: 13px}
+#content .lineMap span{margin-right: 2px}
+#content .lineMap img{width: 16px}
+
+/* DSME Youtube 본문 */
+
+#content .content_top{width: 92%; margin: 0 auto}
+#content iframe{width: 100%; height: 195px; background: black; margin: 30px auto 10px}
+
+#content .content_mid{width: 92%; margin: 0 auto}
+#content .content_mid .mid_top{margin: 20px auto 0}
+#content .content_mid .texts{font-family: 'Nanum'; font-size: 16px; line-height: 1.9em; font-weight: 600}
+#content .content_mid .texts span{color: #0066b3; font-weight: 600}
+
+#content .content_mid .mid_bottom{clear: both; font-family: 'Nanum'; font-size: 17px; line-height: 1.8em; font-weight: 600; border-top: 1px solid #ccc}
+
+#content .bottom{width: 100%; margin: 30px auto 0}
+#content .bottom img{width: 100%}
+
+.box{
+    width: 100%;
+    background: rgba(0,0,0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 101
+}
+#content .mid_bottom img{
+    width: 100%;
+    margin-top: 30px
+}
+#content .mid_bottom .openBtn .video_title{
+    font-family: 'Nanum';
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    line-height: 1.5em
+}
+#content .mid_bottom .openBtn .video_subtitle{
+    font-family: 'Nanum';
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.8em;
+    margin-top: 10px
+}
+#content .mid_bottom .big{ 
+    width: 92%;
+    position: fixed;
+    top:30%;
+    display: none;
+    z-index: 102;
+}
+#content .mid_bottom .big .closeBtn{
+    display: block;
+    text-align: center;
+    background: url(../images/content3/sub4_3_X.png)no-repeat;
+    color: #fff;
+    font-family: 'Nanum';
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+    text-indent: -999px;
+    overflow: hidden
+}

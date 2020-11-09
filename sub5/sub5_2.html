@@ -1,0 +1,141 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub5common.css">
+    <link rel="stylesheet" href="css/content2.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+    <!-- 헤더공통영역 -->
+      
+    <? include "../common/sub_head.html" ?>
+        
+    <? $_GET['num']=2;
+      include "common/sub_nav.html"; ?>
+       
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>고객지원</span></a><span>&gt;</span><a href="#"><strong>채용안내</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>채용안내</h2>
+                <div class="content_top">
+                   <ul>
+                       <li><span>1</span>
+                          <i class="fas fa-pencil-alt"></i>
+                           <h3>서류전형</h3>
+                           <p>직무에 맞는 대상자를
+                           <br>선정합니다.</p>
+                       </li>
+                       <li><span>2</span>
+                          <i class="far fa-clipboard"></i>
+                           <h3>인성검사</h3>
+                           <p>개인 성향 및 조직 적합성을
+                           <br>파악합니다.</p>
+                       </li>
+                       <li><span>3</span>
+                          <i class="fas fa-user-tie"></i>
+                           <h3>면접전형</h3>
+                           <p>직무수행능력 및
+                           <br>성장 가능성을 평가합니다.</p>
+                       </li>
+                       <li><span>4</span>
+                          <i class="far fa-heart"></i>
+                           <h3>건강검진</h3>
+                           <p>건강 상태를 확인하여
+                           <br>업무 수행에 지장이 없는지
+                           <br>확인합니다.</p>
+                       </li>
+                       <li><span>5</span>
+                          <i class="fas fa-medal"></i>
+                           <h3>최종합격</h3>
+                           <p>최종 합격자에게
+                           <br>개별적으로 안내됩니다.</p>
+                       </li>
+                   </ul>
+                </div>
+                <div class="content_mid">
+                   <p class="mid_top">현재 <span>0건</span>의 채용공고가 있습니다</p>
+                    <ul>
+                        <li>
+                           <div class="time">
+                               <b>04</b>
+                               <span>2018.12</span>
+                           </div>
+                            <a href="#">
+                                <span>대우조선해양 환경안전팀/재무팀 대졸 신입사원 모집</span>
+                                <p>접수기한:2018.12.14~2019.01.07</p>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                           <div class="time">
+                               <b>03</b>
+                               <span>2018.11</span>
+                           </div>
+                            <a href="#">
+                            <span>대우조선해양 기계정비팀 초대졸 신입사원 모집</span>
+                            <p>접수기한:2018.11.17~2019.01.30</p>
+                            <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                           <div class="time">
+                               <b>02</b>
+                               <span>2018.03</span>
+                           </div>
+                            <a href="#">
+                            <span>대우조선해양 대졸 신입사원 모집(기계정비팀)</span>
+                            <p>접수기한:2018.03.12~2019.05.27</p>
+                            <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                           <div class="time">
+                               <b>01</b>
+                               <span>2018.03</span>
+                           </div>
+                            <a href="#">
+                            <span>대우조선해양 상반기 산업안전분야 신입사원 채용</span>
+                            <p>접수기한:2018.03.22~2019.05.01</p>
+                            <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="number" href="#">1</a>
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+    </div>
+</body>
+</html>

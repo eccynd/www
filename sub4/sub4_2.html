@@ -1,0 +1,124 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub4common.css">
+    <link rel="stylesheet" href="css/content2.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+    <!-- 헤더공통영역 -->
+      
+    <? include "../common/sub_head.html" ?>
+        
+    <? $_GET['num']=2;
+      include "common/sub_nav.html"; ?>
+       
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>홍보센터</span></a><span>&gt;</span><a href="#"><strong>브로슈어/웹진</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>브로슈어/웹진</h2>
+                <div class="content_top">
+                    <img src="images/content2/sub4_2_top.jpg" alt="">
+                    <h3>세계 최초,
+                        <br>세계 최대의 역사
+                    </h3>
+                       <div class="top_right">
+                            <p>
+                                세계 초일류 조선해양 전문기업 대우조선해양이 이룩한 세계 최초,
+                                <br>세계 최대의 역사와 다양한 정보를 소개합니다.
+                            </p>
+                            <a href="#">다운로드</a>
+                        </div>
+                </div>
+                <div class="content_mid">
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid1.jpg" alt="">
+                            <p>2019년 하반기 No.248</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid2.jpg" alt="">
+                            <p>2019년 상반기 No.247</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid3.jpg" alt="">
+                            <p>2019년 하반기 No.246</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid4.jpg" alt="">
+                            <p>2019년 상반기 No.245</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid5.jpg" alt="">
+                            <p>2019년 하반기 No.244</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid6.jpg" alt="">
+                            <p>2019년 상반기 No.243</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid7.jpg" alt="">
+                            <p>2019년 하반기 No.242</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/content2/sub4_2_mid8.jpg" alt="">
+                            <p>2019년 상반기 No.241</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="number" href="#">1</a>
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+        
+     
+    </div>
+</body>
+</html>

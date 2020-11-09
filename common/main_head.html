@@ -1,0 +1,86 @@
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div id="wrap">
+       <div class="menu_box"></div>
+        <header id="headerArea">
+            <div class="header_inner">
+               <div class="header_position">
+                <h1 class="logo"><a href="index.html">대우조선해양</a></h1>
+                <div class="header_right">
+                    <nav id="gnb">
+                        <h2 class="hidden">글로벌네비게이션영역</h2>
+                        
+                        <ul class="dropdownmenu">
+                        <li class="m1 menu">
+                            <h3><a class="depth1" href="sub1/sub1_1.html">기업소개</a></h3>
+                            <ul>
+                                <li><a href="sub1/sub1_1.html">기업개요</a></li>
+                                <li><a href="sub1/sub1_2.html">CEO 인사말</a></li>
+                                <li><a href="sub1/sub1_3.html">연혁</a></li>
+                                <li><a href="sub1/sub1_4.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="m2 menu">
+                            <h3><a class="depth1" href="sub2/sub2_1.html">사업분야</a></h3>
+                            <ul>
+                                <li><a href="sub2/sub2_1.html">상선/특수선</a></li>
+                                <li><a href="sub2/sub2_2.html">해양플랜트</a></li>
+                                <li><a href="sub2/sub2_3.html">건조실적</a></li>
+                            </ul>
+                        </li>
+                        <li class="m3 menu">
+                            <h3><a class="depth1" href="sub3/sub3_1.html">기술/연구</a></h3>
+                            <ul>
+                                <li><a href="sub3/sub3_1.html">연구소 소개</a></li>
+                                <li><a href="sub3/sub3_2.html">신기술</a></li>
+                            </ul>
+                        </li>
+                        <li class="m4 menu">
+                            <h3><a class="depth1" href="event/list.php">홍보센터</a></h3>
+                            <ul>
+                                <li><a href="event/list.php">DSME Today</a></li>
+                                <li><a href="sub4/sub4_2.html">브로슈어/웹진</a></li>
+                                <li><a href="sub4/sub4_3.html">DSME Youtube</a></li>
+                            </ul>
+                        </li>
+                        <li class="m5 menu">
+                            <h3><a class="depth1" href="free/list.php">고객지원</a></h3>
+                            <ul>
+                                <li><a href="free/list.php">고객센터</a></li>
+                                <li><a href="greet/list.php">채용안내</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+                    <div class="right_menu">
+                        <ul>
+                            <?
+                                if(!$userid)    //세션변수가 생성되어 있지 않으면
+                                {
+                            ?>
+                            <li>
+                                <a href="login/login_form.php">로그인</a>
+                            </li>
+                            <li class="last">
+                                <a href="member/join.html">회원가입</a>
+                            </li>
+                            <?
+                                }
+                                else   //세션변수가 생성되어 있으면(로그인이 성공되었으면)
+                                {
+                            ?>
+                                    <li><?=$usernick?></li>
+                                    <li><a href="./login/member_form_modify.php">정보수정</a></li>
+                                    <li><a href="./login/logout.php">로그아웃</a></li>
+                            <?
+                                }
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>

@@ -1,0 +1,15 @@
+body{font-size:12px; font-family: "Nanum"; background: url(../images/main_visual3.jpg); background-size: cover}
+#content{width: 720px; margin: 200px auto; padding: 60px 0 40px; background: #fff; box-shadow: 0 0 10px rgb(0,0,0,.1)}
+h2{margin-bottom: 20px; text-align: center; font-size: 55px; font-family: "Nanum"; font-weight: 400}
+
+form ul{font-family: 'Nanum'; color: #333}
+form ul li{padding: 15px; border-bottom: 1.5px solid #ddd; margin: 0 auto}
+form ul li{font-size: 14px; font-weight: bold; padding: 30px 15px 10px; width: 500px}
+form ul li:nth-child(1) input,form ul li:nth-child(5) input{width:310px}
+form ul li:nth-child(6) input,form ul li:nth-child(7) input{width:130px}
+#nick1 a{display: block; float: right; padding: 8px 12px; margin-left: 10px; background: #333; color: #fff; text-align: center}
+form ul li select{border: 1px solid #ccc; padding: 7px;border: 1px solid #fff; font-size: 16px; width: 150px}
+form ul li input{outline-style: none; border: 1px solid #fff; padding: 12px 10px; width: 500px; font-size: 15px}
+.button{display: block; text-align: center; margin: 40px auto}
+.button .check{display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none;background: #2179c4;color: #fff;font-size: 14px;cursor: pointer}
+.button .reset{display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}

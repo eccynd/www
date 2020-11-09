@@ -1,0 +1,163 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub3common.css">
+    <link rel="stylesheet" href="css/content1.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+    <!-- 헤더공통영역 -->
+      
+    <? include "../common/sub_head.html" ?>
+        
+    <? $_GET['num']=1;
+      include "common/sub_nav.html"; ?>
+
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>기술/연구</span></a><span>&gt;</span><a href="#"><strong>연구소 소개</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>연구소 소개</h2>
+                <div class="content_top">
+                    <img src="images/content1/sub3_1_top.jpg" alt="">
+                    <div class="top_text">
+                        <h3>조선해양기술을
+                        <br>선도하는
+                        <br>업계 대표 연구소</h3>
+                        <p>대우조선해양의 지속적인 발전과 성장의 기반을 구축해온<br>중앙연구원은 조선/해양/방산 분야의 핵심역량 확보 및 선도적인<br>신제품/기술 개발을 통한 세계 최고의 Global R&amp;D Center 구축이라는<br>비전을 가지고 있습니다. 이를 달성하기 위해 상선 및 해양플랜트 등의<br>주력제품의 핵심기술 개발을 통한 경쟁력 강화, 시장선점 선도기술<br>개발, 융합 기술력 강화, 신제품/기술 개발 R&amp;D역량 강화에 대한 세부<br>목표를 가지고 연구개발에 매진하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="content_mid">
+                    <div class="mid_top">
+                        <h3>산업기술연구소</h3>
+                        <ul>
+                            <li>
+                                <div class="mid_img">
+                                    <img src="images/content1/sub3_1_mid1.jpg" alt="">
+                                </div>
+                                <h4>1</h4>
+                                <p>
+                                    용접기법 개발과 적용성 연구
+                                    <br>프로젝트 용접시공기술 개발 및 지원
+                                    <br>관계사 용접기술 지원
+                                </p>
+                            </li>
+                            <li>
+                                <div class="mid_img">
+                                    <img src="images/content1/sub3_1_mid2.jpg" alt="">
+                                </div>
+                                <h4>2</h4>
+                                <p>
+                                    측정기술 개발 및 측정 자동화 장치 개발
+                                    <br>생산환경 및 작업자 안전/보건 향상 기술 개발
+                                    <br>비금속 재료 및 응용 기술 개발
+                                </p>
+                            </li>
+                            <li>
+                                <div class="mid_img">
+                                    <img src="images/content1/sub3_1_mid3.jpg" alt="">
+                                </div>
+                                <h4>3</h4>
+                                <p>
+                                    Smart Factory 시스템 개발
+                                    <br>조선해양용 로봇 및 자동화시스템 개발
+                                    <br>생산자동화 공정 최적화 연구
+                                    <br>차세대 생산 시스템/장치 개발
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mid_bottom">
+                        <h3>선박해양연구소</h3>
+                        <ul>
+                            <li class="mid_list4">
+                                <div class="mid_img2">
+                                    <img src="images/content1/sub3_1_mid4.jpg" alt="">
+                                </div>
+                                <h4>4</h4>
+                                <p>
+                                    선형 최적화 설계/연구 및 조종성능 해석 평가
+                                    <br>추진기 최적화 설계/연구 및 성능평가
+                                    <br>극지 운항 선박 설계기술 개발
+                                </p>
+                            </li>
+                            <li class="mid_list5">
+                                <div class="mid_img">
+                                    <img src="images/content1/sub3_1_mid5.jpg" alt="">
+                                </div>
+                                <h4>5</h4>
+                                <p>
+                                    내항성능(Seakeeping) 및 유체동하중 연구
+                                    <br>위치 유지 시스템(계류계/DP) 연구
+                                    <br>슬로싱 연구 및 CFD를 이용한 유동 해석 연구
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="mid_list6">
+                                <div class="mid_img">
+                                    <img src="images/content1/sub3_1_mid6.jpg" alt="">
+                                </div>
+                                <h4>6</h4>
+                                <p>
+                                    선박/해양구조물의 강도 및 피로 해석
+                                    <br>위험도 기반 하중 및 구조 안전성 연구
+                                    <br>실험 기반 구조 시험 평가 및 수명 예측기술 연구
+                                </p>
+                            </li>
+                            <li class="mid_list7">
+                                <div class="mid_img2">
+                                    <img src="images/content1/sub3_1_mid7.jpg" alt="">
+                                </div>
+                                <h4>7</h4>
+                                <p>
+                                    Gas storage 관련 요소 기술 연구 개발
+                                    <br>Gas storage 제품 개발
+                                    <br>HSEQ 법규/규정 검토 및 연구
+                                    <br>HSEQ 관련 해석 수행 및 기술 연구
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_bottom">
+                    <img src="images/content1/sub3_1_bottom.png" alt="">
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+        <script src="js/sub_slide_down.js"></script>
+        
+    </div>
+</body>
+</html>

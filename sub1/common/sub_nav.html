@@ -1,0 +1,60 @@
+<script>
+
+window.onload=function(){
+
+        var num = '<?=$_GET['num']?>';
+
+        var nav1= document.getElementById('nav1'); 
+
+        var nav2= document.getElementById('nav2');
+
+        var nav3= document.getElementById('nav3');
+
+        var nav4= document.getElementById('nav4');
+
+    
+
+          if(num==1){
+
+              nav1.className='current';
+
+          }else if(num==2){
+
+              nav2.className='current';
+
+          }else if(num==3){
+
+              nav3.className='current';
+
+          }else if(num==4){
+
+              nav4.className='current';
+
+          }
+
+}
+
+</script> 
+
+
+<!-- 메인비주얼영역 -->
+<div class="visual">
+        <div class="visual_text">
+            <h3>기업소개</h3>
+            <p>신뢰와 열정 Trust &amp; Passion
+            <br>초일류 기업으로 가는 변화의 첫 삽에 신뢰와 열정을 담았습니다</p>
+        </div>
+        <img src="common/images/sub_visual.jpg" alt="">
+
+</div>         
+<!-- 서브네비영역  -->
+<div class="subnav_box">
+    <div class="subNav">
+        <ul>
+            <li><a id="nav1" href="sub1_1.html">기업개요</a></li>
+            <li><a id="nav2" href="sub1_2.html">CEO 인사말</a></li>
+            <li><a id="nav3" href="sub1_3.html">연혁</a></li>
+            <li><a id="nav4" href="sub1_4.html">오시는 길</a></li>
+        </ul>
+    </div>
+</div>

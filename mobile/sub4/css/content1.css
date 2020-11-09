@@ -1,0 +1,45 @@
+.visual{position:relative; overflow:hidden; background-color: #000}
+.gallery img{width: 100%}
+
+.visual .gallery_text{width: 100%; position: absolute; bottom: 45%; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.visual .text_top{font-family: "Nanum"; font-size: 42px; font-weight: 100; margin-bottom: 10px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 16px; font-weight: 400; line-height: 1.5em}
+
+.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; left: 42%; bottom: 50px}
+.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+
+#content .lineMap{width: 92%; margin: 0 auto; padding: 15px 0 15px; border-bottom: 1px solid #ccc; font-family: 'Nanum'; font-size: 13px}
+#content .lineMap span{margin-right: 2px}
+#content .lineMap img{width: 16px}
+
+/* DSME Today 본문 */
+.tabs {position:relative; width: 92%; margin: 80px auto} 
+.tabs .tab {display:block; position:absolute; text-align: center; padding: 10px 0; font-family: 'Nanum'; font-size: 15px; font-weight: 400; color: #999}
+
+.tabs .tab1{left:0; top: -70px; width: 30%}
+.tabs .tab1::before{content: ''; display: block; width: 1px; height: 20px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab2{left: 36%; top: -70px; width: 30%}
+.tabs .tab2::before{content: ''; display: block; width: 1px; height: 20px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab3{right: 0; top: -70px; width: 30%}
+
+.tabs .on{border-bottom: 2px solid #0089cf; color: #333}
+
+.tabs .contlist {display: none;line-height:1.5em} 
+
+#content .tabs ul a{display: block; float: left}
+#content .tabs p{font-family: 'Nanum'; font-size: 17px; font-weight: 600; text-align: left; margin: 20px auto -10px}
+#content .tabs .comment{font-family: 'Nanum'; font-size: 14px; color: #666; font-weight: 400; text-align: justify; margin-bottom: 30px}
+#content .tabs img{width: 100%}

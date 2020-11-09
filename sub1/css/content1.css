@@ -1,0 +1,30 @@
+/* 기업소개 본문 */
+
+.visual img{position: absolute; bottom: -550px; width: 2000px; z-index: -1}
+
+#content .content_top h3{font-family: "Nanum"; font-size: 30px; font-weight: 100}
+#content .content_top .sub_title{font-family: "Nanum"; font-size: 55px; font-weight: 100; color: #333}
+#content .content_top p{font-family: "Dotum"; font-size: 17px; line-height: 1.8em; color: #666}
+
+#content .content_top .top{overflow: hidden}
+#content .content_top .top_text{width: 618px; float: left; margin: 260px 0 0 85px; transition: all 1.2s; opacity: 0}
+#content .content_top .top_textOn{width: 618px; float: left; margin: 110px 0 0 85px; opacity:1}
+#content .content_top .top_img{margin-top: 150px; width: 497px; float: right; transition: all 1.2s; transition-delay: .2s; opacity: 0}
+#content .content_top .top_imgOn{margin-top: 0; width: 497px; float: right; opacity:1}
+
+#content .content_top .mid{overflow: hidden}
+#content .content_top .mid_text{width: 587px; float: right; margin: 385px 50px 0 0; transition: all 1.2s; opacity: 0}
+#content .content_top .mid_textOn{width: 587px; float: right; margin: 225px 50px 0 0; opacity:1}
+#content .content_top .mid_img{width: 493px; float: left; margin-top: 255px; transition: all 1.2s; transition-delay: .2s; opacity: 0}
+#content .content_top .mid_imgOn{width: 493px; float: left; margin-top: 105px; opacity:1}
+
+#content .content_top .bottom{overflow: hidden; margin-top: 50px}
+#content .content_top .bottom_text{width: 634px; float: left; margin: 315px 0 0 75px; transition: all 1.2s; opacity: 0}
+#content .content_top .bottom_textOn{width: 634px; float: left; margin: 165px 0 0 75px; opacity:1}
+#content .content_top .bottom_img{width: 491px; float: right; margin-top: 150px; transition: all 1.2s; transition-delay: .2s; opacity: 0}
+#content .content_top .bottom_imgOn{width: 491px; float: right; margin-top: 0; opacity:1}
+
+#content .content_bottom{overflow: hidden; position: relative; width: 1700px; right: 250px}
+#content .content_bottom img{margin-bottom: 650px; margin-top: 140px}
+#content .content_bottom table{font-family: "Nanum"; margin: 0 auto; border-top: 2px solid #000; background: #fff; position: absolute; top: 750px; left: 22%}
+#content .content_bottom td{border-bottom: 1px solid #ddd; padding: 18px 140px 18px 20px}

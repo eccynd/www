@@ -1,0 +1,214 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대우조선해양-회사개요</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub2common.css">
+    <link rel="stylesheet" href="css/content3.css">
+    
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/5bb76f58d6.js" crossorigin="anonymous"></script>
+    
+    <!--[if IE9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+    <!-- 헤더공통영역 -->
+      
+    <? include "../common/sub_head.html" ?>
+        
+    <? $_GET['num']=3;
+      include "common/sub_nav.html"; ?>
+
+        <!-- 본문콘텐츠영역 -->
+        <article id="content">
+            <div class="title_area">
+                <div class="lineMap">
+                    <span><a href="../index.html"><img src="common/images/home_btn.png" alt="Home"></a></span><span>&gt;</span><a href="#"><span>사업분야</span></a><span>&gt;</span><a href="#"><strong>건조실적</strong></a>
+                </div>
+            </div>
+            <div class="content_area">
+                <h2>건조실적</h2>
+                <div class="content_top">
+                   <ul class="count_box">
+                       <li><p>Commercail Ship</p><div class="count1"></div></li>
+                       <li><p>Offshore &amp; Plant</p><div class="count2"></div></li>
+                       <li><p>Naval &amp; Specialty Ship</p><div class="count3"></div></li>
+                       <li><p>Grand Total</p><div class="count4"></div></li>
+                   </ul>
+                </div>
+                <div class="content_mid">
+                   <div class="mid_table">
+                    <table class="mid_left">
+                        <tr class="table_top">
+                           <td>Type of Vessel</td>
+                           <td>No. of Vessel</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Commercial Ship (A)</td>
+                           <td>1,171</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">LNG Carriers</td>
+                           <td>153</td>
+                        </tr>
+                        <tr>
+                           <td>LNGC</td>
+                           <td>142</td>
+                        </tr>
+                        <tr>
+                           <td>LNG-FSRU</td>
+                           <td>11</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Oil Tankers</td>
+                           <td>406</td>
+                        </tr>
+                        <tr>
+                           <td>ULCC / VLCC</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Suezmax TK</td>
+                           <td>77</td>
+                        </tr>
+                        <tr>
+                           <td>Aframax TK</td>
+                           <td>35</td>
+                        </tr>
+                        <tr>
+                           <td>Others</td>
+                           <td>94</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Containerships</td>
+                           <td>304</td>
+                        </tr>
+                        <tr>
+                           <td>Above 15,000TEU</td>
+                           <td>75</td>
+                        </tr>
+                        <tr>
+                           <td>5,000 ~ 15,000TEU</td>
+                           <td>116</td>
+                        </tr>
+                        <tr>
+                           <td>Below 5,000TEU</td>
+                           <td>113</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Bulk Carriers</td>
+                           <td>193</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Ro/Ro, Car Carriers</td>
+                           <td>64</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Ferries</td>
+                           <td>10</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Heavy Lift</td>
+                           <td>4</td>
+                        </tr>
+                    </table>
+                    <table class="mid_right">
+                        <tr class="table_top">
+                           <td>Type of Vessel</td>
+                           <td>No. of Vessel</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Offshore &amp; Plant (B)</td>
+                           <td>105</td>
+                        </tr>
+                        <tr>
+                           <td>FPSO</td>
+                           <td>6</td>
+                        </tr>
+                        <tr>
+                           <td>LNG FPSO</td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>OSV / TIV</td>
+                           <td>6</td>
+                        </tr>
+                        <tr>
+                           <td>FPU</td>
+                           <td>3</td>
+                       </tr>
+                       <tr>
+                           <td>TLP</td>
+                           <td>4</td>
+                        </tr>
+                        <tr>
+                           <td>Fixed Platforms</td>
+                           <td>30</td>
+                        </tr>
+                        <tr>
+                           <td>Semi-Rig</td>
+                           <td>25</td>
+                        </tr>
+                        <tr>
+                           <td>Drilling Barge</td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>Drillship</td>
+                           <td>24</td>
+                        </tr>
+                        <tr>
+                           <td>Jack-Up</td>
+                           <td>3</td>
+                        </tr>
+                        <tr>
+                           <td>Modular Plants</td>
+                           <td>2</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Naval &amp; Specialty Ship (C)</td>
+                           <td>74</td>
+                        </tr>
+                        <tr>
+                           <td>Naval Ships</td>
+                           <td>64</td>
+                        </tr>
+                        <tr>
+                           <td>Special Vessels</td>
+                           <td>10</td>
+                        </tr>
+                        <tr class="table_title">
+                           <td class="table_left">Grand Total (A + B + C)</td>
+                           <td>1350</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 푸터공통영역 -->
+        
+        <? include "../common/sub_foot.html" ?>
+        
+        <!-- 스크립트 추가영역 -->
+        
+        <script src="../common/js/sub_slide_down.js"></script>
+        <script src="js/sub_count.js"></script>
+        
+    </div>
+</body>
+</html>

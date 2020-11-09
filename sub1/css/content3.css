@@ -1,0 +1,33 @@
+/* 연혁 본문 */
+
+#content .content_top .list1{overflow: hidden; width: 1200px; position: relative}
+#content .content_top .list1 img{width: 1090px; margin-left: 55px}
+#content .content_top .list1 p{font-family: "Nanum"; font-weight: 100; color: #fff}
+#content .content_top .list1 .title{font-size: 60px; position: absolute; bottom: 220px; left: 150px; letter-spacing: 8px}
+#content .content_top .list1 .texts{font-size: 22px; text-align: center; line-height: 2.5em; position: absolute; bottom: 30px; right: 140px; border: 1px solid #ccc; padding: 70px 25px; transition: all 1.2s; opacity:0}
+#content .content_top .list1 .textsOn{font-size: 22px; text-align: center; line-height: 2.5em; position: absolute; bottom: 80px; right: 140px; border: 1px solid #ccc; padding: 70px 25px; opacity:1}
+#content .content_top .list1 .texts span{font-size: 20px}
+
+#content .content_top .list2{overflow: hidden; width: 2000px; margin-left: -400px; position: relative}
+#content .content_top .list2 img{width: 2000px; margin-top: 100px; z-index: -1}
+#content .content_top .list2 .mid_text{margin-top: 50px; transition: all 1.2s; opacity: 0}
+#content .content_top .list2 .mid_textOn{margin-top: 0; opacity: 1}
+#content .content_top .list2 p{font-family: "Nanum"; font-weight: 100; color: #fff}
+#content .content_top .list2 .title{font-size: 60px; position: absolute; bottom: 460px; left: 700px; letter-spacing: 8px}
+#content .content_top .list2 .texts{font-size: 18px; text-align: center; line-height: 1.5em; position: absolute; bottom: 75px; left: 350px; border: 1px solid #fff; padding: 170px 300px 270px 300px}
+
+#content .content_mid{overflow: hidden; width: 2000px; height: 2230px; margin-left: -400px; margin-top: 135px; position: relative}
+
+#content .content_mid .year_list{overflow: hidden; width: 1200px; margin-left: 400px; border-bottom: 1px solid #ccc; padding: 70px 0 40px 0}
+#content .content_mid h4{width: 340px; float: left; font-family: "Nanum"; font-size: 35px; font-weight: 400}
+#content .content_mid .year_list:hover h4{color: #0089cf}
+#content .content_mid h4 span{font-family: "Nanum"; font-size: 20px; font-weight: 600}
+
+#content .content_mid .ul1{overflow: hidden; width:500px; position: relative; left: -50px; transition: all 1.2s}
+#content .content_mid .ul2{overflow: hidden; width:500px; position: relative; left: -50px; transition: all 1.2s}
+#content .content_mid .ul3{overflow: hidden; width:500px; position: relative; left: -50px; transition: all 1.2s}
+#content .content_mid .ul4{overflow: hidden; width:500px; position: relative; left: -50px; transition: all 1.2s}
+#content .content_mid .ul5{overflow: hidden; width:500px; position: relative; left: -50px; transition: all 1.2s}
+
+#content .content_mid li{width: 500px; float: right; font-family: "Dotum"; color: #666; margin-bottom: 25px}
+#content .content_mid li span{margin-right: 25px; color: #333}

@@ -1,0 +1,345 @@
+/* DSME Today 본문 */
+#content{overflow: hidden}
+
+#content #col2{
+    overflow: hidden;
+    margin-bottom: 100px
+}
+#content #col2 #title {
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: solid 1px #cccccc;
+}
+
+.tabs {position:relative; width:1200px; margin-bottom: 180px} 
+.tabs .tab {display:block; position:absolute; text-align: center; padding: 30px 0; font-family: 'Nanum'; font-size: 28px; font-weight: 100; color: #999}
+.tabs .tab:hover{color: #333; transition: .3s}
+
+.tabs .tab1{left:200px; top:-160px; width: 230px}
+.tabs .tab1::before{content: ''; display: block; width: 1px; height: 45px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab2{left:450px; top:-160px; width: 300px}
+.tabs .tab2::before{content: ''; display: block; width: 1px; height: 45px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab3{left:770px; top:-160px; width: 230px}
+
+.tabs .on{border-bottom: 3px solid #0089cf; color: #333}
+
+.tabs .contlist { margin-top:50px; display: none;line-height:1.5em} 
+
+#content .tabs .mid_visual{width: 1200px; height: 500px}
+#content .tabs .mid_top .visual_text{width: 400px; height: 500px; background: rgb(0,0,0,.7); position: absolute; left: 0; top: -195px}
+#content .tabs .mid_top .visual_text p{display: block; width: 300px; padding: 60px 0 0 40px}
+#content .tabs .mid_top .visual_title{font-family: 'Nanum'; font-size: 35px; color: #fff; line-height: 1.5em; font-weight: 600}
+#content .tabs .mid_top .visual_title{transition: all .2s}
+#content .tabs .mid_top a:hover .visual_title{color: #0089cf}
+#content .tabs .mid_top .visual_comment{font-family: 'Nanum'; font-size: 18px; color: #fff; line-height: 1.5em; font-weight: 100}
+
+#content #col1{overflow: hidden; margin-bottom: 60px}
+#content #col1 h3 {font-size: 42px; margin: 0 auto 50px; font-family: 'Nanum'; font-weight: 100; text-align: center}
+#content #col1 #list_item{float: left; width: 230px; height: 230px; transition: all .3s; text-align: center; border: 1px solid #eee; margin: 20px 24px 40px; padding: 10px}
+#content #col1 #list_item:hover{background: #eee}
+#content #col1 #list_item a{display: block; font-family: 'Nanum'; font-size: 16px; font-weight: 600; transition: all .3s}
+#content #col1 #list_item a:hover{color: #0089cf}
+#content #col1 #list_name{margin-top: 15px}
+#content #col1 #list_item3{color: #666; font-size: 13px; margin: 10px 0 5px}
+
+#list_search{
+    clear: both;
+    margin: 0 0 30px 10px;
+    height: 30px;
+    padding-top: 10px
+}
+
+#list_search select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    float: left
+}
+
+#list_top span{
+    color: #0089cf
+}
+
+#list_search #list_search1 {
+    float: left;
+    margin-left: 790px;
+}
+
+#list_search #list_search1 select {
+    border: solid 1px #cccccc
+}
+
+#list_search #list_search2 {
+    float: left;
+    margin-left: 3px;
+}
+
+#list_search #list_search2 input {
+    border: solid 1px #cccccc;
+    padding: 11px
+}
+
+#list_search #list_search3 {
+    float: left;
+    margin-left: 5px;
+}
+#list_search #list_search3 input{
+    border: 1px solid #333;
+    padding: 9.5px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    transition: .2s
+}
+#list_search #list_search3 input:hover{
+    background: #0089cf;
+    border: 1px solid #0089cf
+}
+
+#page_button {
+    margin-top: 15px;
+}
+
+#page_num {
+    float: left;
+    width: 80%;
+    margin: 10px 0 50px 100px;
+    text-align: center;
+}
+
+#page_num a{
+    margin: 0 5px
+}
+
+#page_num b{
+    font-size:16px; padding: 3px 6px 3px 10px; width: 35px; color: #0089cf; border: 1px solid #0089cf; margin: 60px auto; font-weight: 100
+}
+
+#button {
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+}
+#button a{
+    display: block;
+    background: #333;
+    color: #fff
+}
+#button a:nth-child(1){
+    float: left;
+    border: 1px solid #333;
+    padding: 9.5px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    transition: .2s
+}
+#button a:nth-child(2){
+    float: right;
+    border: 1px solid #333;
+    padding: 9.5px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    transition: .2s
+}
+#button a:nth-child(1):hover,#button a:nth-child(2):hover{
+    background: #0089cf;
+    border: 1px solid #0089cf
+}
+
+/* write_form css */
+
+#write_form_title {
+    margin-top: 20px;
+    width: 99%;
+    height: 25px;
+    text-align: center;
+    padding-top: 15px;
+    border-top: solid 2px #000;
+    font-weight: bold
+}
+
+#write_form {
+    margin-top: 10px;
+}
+
+#write_form #write_row1 {
+    width: 99%;
+    height: 30px;
+    margin: 2px 0 2px 0;
+}
+
+#write_form #write_row2 {
+    width: 99%;
+    height: 40px;
+    margin: 2px 0 2px 0;
+}
+
+#write_form #write_row3 {
+    width: 99%;
+    height: 251px;
+    margin: 2px 0 2px 0;
+}
+
+.write_line {
+    width: 99%;
+    border-bottom: solid 1px #eee;
+}
+
+#write_form .col1 {
+    float: left;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold
+}
+
+#write_form #write_row2 .col1{
+    margin-top: 4px
+}
+
+#write_form #write_row3 .col1 {
+    height: 126px;
+    padding-top: 120px;
+}
+
+#write_form .col2 {
+    float: left;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+#write_form #write_row1 .col2 {
+    float: left;
+    margin-top: 5px;
+}
+
+#write_form #write_row1 .col3 {
+    float: left;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+
+#write_row2 .col2 input {
+    width: 1000px;
+    height: 25px;
+    border: solid 1px #ddd;
+    margin-top: 4px
+}
+
+#write_row3 .col2 textarea {
+    width: 1000px;
+    margin-top: 1px;
+    border: solid 1px #ddd;
+}
+
+#write_button{
+    float: right;
+    margin: 10px 20px 0 0
+}
+#write_button input{
+    display: block;
+    float: left;
+    border: 1px solid #333;
+    padding: 9.5px;
+    margin-right: 7px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .2s;
+}
+#write_button a{
+    display: block;
+    float: left;
+    border: 1px solid #333;
+    padding: 9.5px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    transition: .2s
+}
+#write_button input:hover,#write_button a:hover{
+    background: #0089cf;
+    border: 1px solid #0089cf
+}
+
+.img_box{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 18px 5px 12px;
+    margin-left: 25px;
+    float: left
+}
+.img_button input{
+    display: block;
+    margin-left: 25px;
+    padding: 15px 38px
+}
+.delete_ok{
+    color: #0089cf;
+    font-size: 13px;
+    margin: -37px 0 10px 830px;
+    padding-bottom: 8px
+}
+
+/* view.php css */
+
+#view_comment {
+    margin: 10px 0 0 10px;
+}
+
+#view_title {
+    height: 18px;
+    padding: 15px 8px 15px 8px;
+    border-top: solid 2px #000;
+    border-bottom: solid 1px #eee;
+    margin-bottom: 5px;
+    font-weight: bold
+}
+
+#view_title1 {
+    float: left;
+    width: 70%;
+}
+
+#view_title2 {
+    float: left;
+    width: 28%;
+    text-align: right;
+}
+
+#view_content {
+    width: 96%;
+    min-height: 200px;
+    padding: 70px 0;
+    overflow: hidden;
+    line-height: 150%;
+    border-bottom: solid 1px #eee;
+}
+
+#view_button {
+    width: 98%;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#view_button a{
+    float: right;
+    border: 1px solid #333;
+    padding: 9.5px;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: .2s;
+}
+
+#view_button a:hover{
+    background: #0089cf;
+    border: 1px solid #0089cf
+}

@@ -1,0 +1,82 @@
+/* 방문신청 본문 */
+
+#content iframe{width: 1200px; height: 700px; background: black}
+
+#content .content_mid .mid_top{margin: 120px 0}
+#content .content_mid .texts{float: left; margin-left: 20px; font-family: 'Nanum'; font-size: 22px; line-height: 1.9em; font-weight: 100}
+#content .content_mid .texts span{color: #0066b3; font-weight: 400}
+
+#content .content_mid .mid_bottom{clear: both; font-family: 'Nanum'; font-size: 16px; line-height: 1.8em; font-weight: 100; border-top: 1px solid #ccc; padding-top: 95px; margin-bottom: 200px}
+
+#content .bottom img{margin-left: -400px}
+
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    left: 0;
+    top: ;
+    display: none;
+    z-index: 101
+}
+#content .mid_bottom .openBtn{
+    display: block;
+    background: #fff;
+    margin: 0 40px 100px 0;
+    overflow: hidden;
+}
+#content .mid_bottom .openBtn:hover{
+    background: #eee
+}
+#content .mid_bottom .openBtn .video_title{
+    font-family: 'Nanum';
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+    width: 850px;
+    margin-left: 280px;
+    transition: all .3s
+}
+#content .mid_bottom .openBtn:hover .video_title{
+    color: #0089cf;
+}
+#content .mid_bottom .openBtn .video_subtitle{
+    font-family: 'Nanum';
+    font-size: 14.5px;
+    font-weight: 100;
+    margin-left: 10px;
+    width: 850px;
+    margin: 15px 0 0 280px;
+    color: #666;
+    line-height: 1.8em
+}
+#content .mid_bottom .openBtn img{
+    float: left
+}
+#content .mid_bottom .big{ 
+    width: 1200px;
+    height: 700px;
+    position: fixed;
+    left: 18%;
+    top:11%;
+    display: none;
+    z-index: 102;
+    box-shadow: 0 0 100px rgb(0,0,0,.5)
+}
+#content .mid_bottom .big .closeBtn{
+    display: block;
+    text-align: center;
+    background: url(../images/content3/sub4_3_X.png);
+    color: #fff;
+    font-family: 'Nanum';
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    text-indent: -999px;
+    overflow: hidden
+}

@@ -1,0 +1,36 @@
+.visual{position:relative; overflow:hidden; background-color: #000}
+.gallery img{width: 100%}
+
+.visual .gallery_text{width: 100%; position: absolute; bottom: 45%; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.visual .text_top{font-family: "Nanum"; font-size: 42px; font-weight: 100; margin-bottom: 10px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 16px; font-weight: 400; line-height: 1.5em}
+
+.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; bottom: 50px; left: 50%; margin-left: -25px}
+.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+
+#content .lineMap{width: 92%; margin: 0 auto; padding: 15px 0 15px; border-bottom: 1px solid #ccc; font-family: 'Nanum'; font-size: 13px}
+#content .lineMap span{margin-right: 2px}
+#content .lineMap img{width: 16px}
+
+/* 상선 특수선 본문 */
+#content .content_top{position: relative; margin: 30px auto 30px}
+#content .content_top img{width: 100%}
+#content .content_top p{position: absolute; top: 50%; left: 50%; margin-left: -125px; font-family: "Nanum"; font-size: 17px; font-weight: 100; color: #fff; text-align: center; line-height: 1.5em; border: 1px solid #fff; padding: 15px 20px; box-shadow: 0 0 0 1000px rgb(6,26,37,.4)inset;  transition: all 1.2s; opacity: 0}
+#content .content_top .content_topOn{position: absolute; top: 28%; left: 50%; margin-left: -125px; font-family: "Nanum"; font-size: 17px; font-weight: 100; color: #fff; text-align: center; line-height: 1.5em; border: 1px solid #fff; padding: 15px 20px; box-shadow: 0 0 0 1000px rgb(0,0,0,.4)inset; opacity: 1}
+
+#content .content_mid{margin-bottom: 50px}
+#content .content_mid li{width: 92%; margin: 0 auto}
+#content .content_mid img{width: 100%}
+#content .content_mid ul li h3{font-family: "Nanum"; font-size: 17px; font-weight: 600; margin: 20px auto 10px; color: #333}
+#content .content_mid ul li p{font-family: "Nanum"; font-size: 14px; font-weight: 400; line-height: 1.5em; color: #666; margin-bottom: 30px}

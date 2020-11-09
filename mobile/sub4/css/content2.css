@@ -1,0 +1,38 @@
+.visual{position:relative; overflow:hidden; background-color: #000}
+.gallery img{width: 100%}
+
+.visual .gallery_text{width: 100%; position: absolute; bottom: 45%; color: #fff; text-align: center; animation:text-up 1s}
+        @keyframes text-up {
+            0% {
+                opacity: 0.1;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+.visual .text_top{font-family: "Nanum"; font-size: 42px; font-weight: 100; margin-bottom: 10px}
+.visual .text_bottom{font-family: "Nanum"; font-size: 16px; font-weight: 400; line-height: 1.5em}
+
+.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; left: 42%; bottom: 50px}
+.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+
+#content .lineMap{width: 92%; margin: 0 auto; padding: 15px 0 15px; border-bottom: 1px solid #ccc; font-family: 'Nanum'; font-size: 13px}
+#content .lineMap span{margin-right: 2px}
+#content .lineMap img{width: 16px}
+
+/* 브로슈어 웹진 본문 */
+#content{width: 92%; margin: 0 auto}
+#content .content_top{border-bottom: 1px solid #ccc; overflow: hidden; padding-bottom: 30px}
+#content .content_top img{width: 100%; margin: 30px 0}
+#content .content_top h3{font-family: 'Nanum'; font-size: 27px; font-weight: 100; line-height: 1.8em}
+#content .content_top p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; line-height: 1.8em; color: #666}
+#content .content_top a{display: block; width: 130px; height: 35px; border: 1px solid #333; text-align: center; font-family: 'Nanum'; font-size: 15px; font-weight: 400; padding-top: 12px; margin-top: 25px; transition: all .35s; transition-timing-function: ease}
+
+#content .content_mid ul{margin-bottom: 20px}
+#content .content_mid ul a{display: block; float: left; margin:  20px 1%; width: 140px}
+#content .content_mid p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; text-align: center; margin: 20px 0 0 -20px}
+
+#content .content_mid .number{clear: both; display: block; font-family: 'Nanum'; font-size:16px; padding: 7px 0; width: 35px; color: #0089cf; border: 1px solid #0089cf; text-align: center; margin: 20px auto 40px}

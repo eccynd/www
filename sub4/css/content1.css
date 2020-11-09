@@ -1,0 +1,34 @@
+/* DSME Today 본문 */
+
+#content .content_area h2{margin-bottom: 270px}
+
+.tabs {position:relative; width:1200px; margin-bottom: 180px} 
+.tabs .tab {display:block; position:absolute; text-align: center; padding: 30px 0; font-family: 'Nanum'; font-size: 28px; font-weight: 100; color: #999}
+.tabs .tab:hover{color: #333; transition: .3s}
+
+.tabs .tab1{left:200px; top:-160px; width: 230px}
+.tabs .tab1::before{content: ''; display: block; width: 1px; height: 45px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab2{left:450px; top:-160px; width: 300px}
+.tabs .tab2::before{content: ''; display: block; width: 1px; height: 45px;
+background: #ccc; position: absolute; right: -10px}
+.tabs .tab3{left:770px; top:-160px; width: 230px}
+
+.tabs .on{border-bottom: 3px solid #0089cf; color: #333}
+
+.tabs .contlist { margin-top:50px; display: none;line-height:1.5em} 
+
+#content .tabs .mid_visual{width: 1200px; height: 500px; margin-bottom: 50px}
+#content .tabs .mid_top .visual_text{width: 400px; height: 500px; background: rgb(0,0,0,.7); position: absolute; left: 0; top: -195px}
+#content .tabs .mid_top .visual_text a{display: block; width: 300px; padding: 60px 0 0 40px}
+#content .tabs .mid_top .visual_title{font-family: 'Nanum'; font-size: 35px; color: #fff; line-height: 1.5em; font-weight: 600}
+#content .tabs .mid_top .visual_title{transition: all .2s}
+#content .tabs .mid_top a:hover .visual_title{color: #0089cf}
+#content .tabs .mid_top .visual_comment{font-family: 'Nanum'; font-size: 18px; color: #fff; line-height: 1.5em; font-weight: 100}
+
+#content .tabs ul{overflow: hidden}
+#content .tabs ul a{display: block; float: left; padding: 60px 35px; width: 230px}
+#content .tabs ul a:hover{background: #eee}
+#content .tabs p{font-family: 'Nanum'; font-size: 16px; font-weight: 600; text-align: left; margin-top: 20px}
+#content .tabs ul li a:hover .mid_title{color: #0089cf; transition: all .3s}
+#content .tabs .comment{font-family: 'Nanum'; font-size: 15px; color: #666; font-weight: 100; text-align: justify}
