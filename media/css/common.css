@@ -1,7 +1,7 @@
 /* Reset CSS  */
 * { margin:0; padding:0; border:0; outline:0; vertical-align:top;
 -webkit-text-size-adjust:none;  }
-body {font-family:'Nanum Myeongjo'; font-size:18px; line-height: 1.8em; color:#333;}
+body {font-family:'Libre Baskerville'; font-size:18px; line-height: 1.8em; color:#333;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
 ul, ol, dl { list-style:none; }
 img, video {border:0; vertical-align:top; }
@@ -12,7 +12,7 @@ table { border-collapse:collapse; border-spacing:0; }
 input, select { vertical-align:middle; }
 label { cursor:pointer; }
 .blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
-i,em,address { font-style:normal; font-weight:normal; }
+i,em,address { font-style:normal}
 p,li,dd{ line-height:1.5em}
 .hidden{display: block; position: absolute; left: -1000%; top: 0; width: 1px; height: 1px; overflow: hidden; color: #fff}
 
@@ -50,11 +50,11 @@ p,li,dd{ line-height:1.5em}
 /* nav */
 #gnb .gnb_bar{position: relative; left: 12%; top: 170px}
 #gnb .gnb_bar .depth1{margin-bottom: 100px; text-align: left}
-#gnb .gnb_bar .depth1 a{font-family: 'Baskervill'; font-size: 90px; font-weight: 900; color: transparent; -webkit-text-stroke: 1px #fff; transition: .3s}
-#gnb .gnb_bar .depth1 a:hover{font-family: 'Baskervill'; font-size: 90px; font-weight: 900; color: #fff; -webkit-text-stroke: 1px transparent}
+#gnb .gnb_bar .depth1 a{font-family: 'Libre Baskerville'; font-size: 90px;  color: transparent; -webkit-text-stroke: 1px #fff; transition: .3s}
+#gnb .gnb_bar .depth1 a:hover{font-family: 'Libre Baskerville'; font-size: 90px;  color: #fff; -webkit-text-stroke: 1px transparent}
 #gnb .gnb_bar .first a{color: #fdc004; -webkit-text-stroke: 1px transparent}
 #gnb .gnb_bar .first a:hover{color: #fff}
-#gnb .gnb_bar .gnb_text{width: 30%; height: 300px; position: absolute; bottom: 20px; right: 50%; margin-right: -25%; font-family: 'Baskerbill'; font-size: 20px; color: #fff; border-top: 4px solid #fdc004; padding: 100px 0 0}
+#gnb .gnb_bar .gnb_text{width: 30%; height: 300px; position: absolute; bottom: 20px; right: 50%; margin-right: -25%; font-family: 'Libre Baskerville'; font-size: 20px; color: #fff; border-top: 4px solid #fdc004; padding: 100px 0 0}
 
 .menu_btn{
     float: right;
@@ -101,7 +101,7 @@ p,li,dd{ line-height:1.5em}
 /* 상단 탑메뉴 공통 */
 .topMove{display: block; width: 30px; height: 90px; position: fixed; bottom: 80px; right: 40px; transition: all .5s}
 .topMove i{font-size: 22px; color: #fdc004; float: left; margin: 5px 0 -4px 9px}
-.topMove span{font-family: 'Nanum'; font-size: 16px; color: #fdc004; font-weight: bold; margin: 0 0 -17px 11px; float: left; clear: both}
+.topMove span{font-family: 'Nanum'; font-size: 16px; color: #fdc004;  margin: 0 0 -17px 11px; float: left; clear: both}
 .topMove:hover{transform:translateY(-8px)}
 
 
@@ -124,30 +124,30 @@ p,li,dd{ line-height:1.5em}
     body {font-size:16px}
     #wrap #gnb .gnb_bar{position: relative; left: 1%; top: 170px}
     #wrap #gnb .gnb_bar .depth1{margin-bottom: 100px; text-align: center}
-    #wrap #gnb .gnb_bar .gnb_text{display: none; width: 30%; height: 300px; position: absolute; bottom: 20px; right: 50%; margin-right: -25%; font-family: 'Baskerbill'; font-size: 20px; color: #fff; border-top: 4px solid #fdc004; padding: 100px 0 0}
+    #wrap #gnb .gnb_bar .gnb_text{display: none; width: 30%; height: 300px; position: absolute; bottom: 20px; right: 50%; margin-right: -25%; font-family: 'Libre Baskerville'; font-size: 20px; color: #fff; border-top: 4px solid #fdc004; padding: 100px 0 0}
     
-    #wrap .videoBox .gallery_text .title{font-family: 'Baskerville'; font-size: 190px; font-weight: 500; color: #fff; letter-spacing: -3px; }
-    #wrap .videoBox .gallery_text .text_top{font-family: 'Baskerville'; font-size: 190px; font-weight: 500; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: 0s}
+    #wrap .videoBox .gallery_text .title{font-family: 'Libre Baskerville',serif; font-size: 190px; color: #fff; letter-spacing: -3px; }
+    #wrap .videoBox .gallery_text .text_top{font-family: 'Libre Baskerville',serif; font-size: 190px; font-family: bold; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: 0s}
     #wrap .videoBox .gallery_text .text_top:hover{color: #fff; -webkit-text-stroke: 1px transparent; text-shadow: 0 0 10px rgb(0,0,0,.1); transition: 0s}
-    #wrap .videoBox .gallery_text .text_bottom{font-family: 'Nanum Myeongjo'; font-size: 22px; color: #fff; margin-top: 200px}
+    #wrap .videoBox .gallery_text .text_bottom{font-family: 'Libre Baskerville'; font-size: 22px; color: #fff; margin-top: 200px}
     
     #wrap .about{overflow: hidden; height: 593px; position: relative; background: url(../images/aobut.jpg)75% center  no-repeat; background-size: cover}
     #wrap .about .about_text{float: left; margin-left:9%}
-    #wrap .about .about_text h3{font-family: 'Baskerville'; font-size: 60px; font-style: italic; font-weight: 300; margin: 130px 0 60px}
+    #wrap .about .about_text h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 60px; font-style: italic; margin: 130px 0 60px}
     
 	#wrap .introduce{height: 830px; background: url(../images/introduce_background.jpg)center center no-repeat; background-size: cover; background-attachment: fixed; position: relative}
     #wrap .introduce .photo{width: 100%; position: inherit; left: 0; top: 0; margin: 80px 0 70px; overflow: inherit}
     #wrap .introduce .photo img{width: 41%; box-shadow:  0 0 10px rgb(0,0,0,.3)}
     #wrap .introduce .photo .first{position: inherit; bottom: 0; margin: 0 4% 0 7%; float: left}
     #wrap .introduce_text{float: none; width: 86%; margin: 0 7%; text-align: justify}
-    #wrap .introduce h3{font-family: 'Baskerville'; font-size: 70px; color: #fdc004; font-weight: 500}
+    #wrap .introduce h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 70px; color: #fdc004}
     
-    #wrap .character h3{width: 65%; margin: 215px 10% 250px; position: absolute; font-family: 'Helvetica'; font-weight: bold; font-size: 100px; color: #fdc004}
+    #wrap .character h3{width: 65%; margin: 215px 10% 250px; position: absolute; font-family: 'Libre Baskerville';  font-size: 100px; color: #fdc004}
     #wrap .character img{width: 86%; margin: 260px 7% 330px}
     #wrap .character_text{width: 65%; position: absolute; bottom: 39%; margin: 0 10% -24%}
-    #wrap .character .numb{display: block; font-family: 'Helvetica'; font-weight: 100; font-size: 134px; color: #fdc004; text-shadow: 0 0 10px rgb(0,0,0,.2)}
+    #wrap .character .numb{display: block; font-family: 'Libre Baskerville'; font-size: 134px; color: #fdc004; text-shadow: 0 0 10px rgb(0,0,0,.2)}
     #wrap .character h4{font-size: 40px; color: #fff; margin-top: 60px}
-    #wrap .character h4 span{font-family: 'Baskerville'}
+    #wrap .character h4 span{font-family: 'Libre Baskerville'}
     #wrap .character p{float: none; color: #fff; margin-top: 40px}
     #wrap .character .btn{position: absolute; bottom: 50%; right: 50%; margin: 0 -38% 0 0; text-shadow: 0 0 10px rgb(0,0,0,.1)}
     #wrap .character .btn_left{display:block; float:left; color: #fff; font-size: 60px; margin-right: 20px; transition: .3s}
@@ -162,7 +162,7 @@ p,li,dd{ line-height:1.5em}
     #wrap .trailer li:nth-child(6){display:none}
     
     #wrap .gallery{overflow: hidden}
-    #wrap .gallery h3{font-family: 'Baskerville'; font-weight: 100; font-size: 54px; margin: 145px auto 80px; text-align: center}
+    #wrap .gallery h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 54px; margin: 145px auto 80px; text-align: center}
     #wrap .gallery_list{overflow: hidden; margin: 0 7% 200px}
     #wrap .gallery_list .first p{position: absolute; bottom: 40%; left: 50%; margin-left: -110px; color: #fff; font-size: 50px}
     #wrap .gallery_list .list1 p{position: absolute; bottom: 40%; left: 50%; margin-left: -60px; color: #fff; font-size: 28px}
@@ -201,13 +201,13 @@ p,li,dd{ line-height:1.5em}
     }
     #wrap #gnb .gnb_bar{position: relative; left: 1%; top: 190px}
     #wrap #gnb .gnb_bar .depth1{margin-bottom: 60px; text-align: center}
-    #wrap #gnb .gnb_bar .depth1 a{font-family: 'Baskervill'; font-size: 48px; font-weight: 400; color: #fff; -webkit-text-stroke: 0 transparent}
+    #wrap #gnb .gnb_bar .depth1 a{font-family: 'Libre Baskerville'; font-size: 48px; color: #fff; -webkit-text-stroke: 0 transparent}
     #wrap #gnb .gnb_bar .first a{color: #fdc004; -webkit-text-stroke: 0 transparent}
     
     #wrap .videoBox .gallery_text{position: absolute; width: 100%; margin: 0 auto; bottom: 100px; text-align: center; transition: 0s}
-    #wrap .videoBox .gallery_text .title{font-family: 'Baskerville'; font-size: 120px; font-weight: 500; color: #fff; letter-spacing: -3px}
-    #wrap .videoBox .gallery_text .text_top{font-family: 'Baskerville'; font-size: 140px; font-weight: 500; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: 0s}
-    #wrap .videoBox .gallery_text .text_bottom{font-family: 'Nanum Myeongjo'; font-size: 16px; color: #fff; margin-top: 220px}
+    #wrap .videoBox .gallery_text .title{font-family: 'Libre Baskerville'; font-size: 120px; color: #fff; letter-spacing: -3px}
+    #wrap .videoBox .gallery_text .text_top{font-family: 'Libre Baskerville'; font-size: 140px; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: 0s}
+    #wrap .videoBox .gallery_text .text_bottom{font-family: 'Libre Baskerville'; font-size: 16px; color: #fff; margin-top: 220px}
     
     #wrap .about{overflow: hidden; height:520px; position: relative; background: url(../images/aobut.jpg)center left no-repeat; background-size: cover}
     #wrap .about .about_text{float: left; width: 100%; margin: 0 auto; text-align: center}
@@ -219,23 +219,23 @@ p,li,dd{ line-height:1.5em}
     #wrap .introduce .photo img{width: 92%; box-shadow:  0 0 10px rgb(0,0,0,    .3); margin: 0 4%}
     #wrap .introduce .photo .first{position: inherit; bottom: 14px; margin: 0 4%; float: none}
     #wrap .introduce_text{float: none; font-size: 16px; width: 92%; margin: 0 4%; text-align: justify}
-    #wrap .introduce h3{font-family: 'Baskerville'; font-size: 40px; color: #fdc004; font-weight: 500}
+    #wrap .introduce h3{font-family: 'Libre Baskerville'; font-size: 40px; color: #fdc004}
     #wrap .introduce p{color: #fff; margin: 30px 0 70px; text-align: justify}
 
     #wrap .mid_logo img{width: 40%; margin: 15% 30%}
     
-    #wrap .character h3{width: 65%; margin: 100px 6% 250px; position: absolute; font-family: 'Helvetica'; font-weight: bold; font-size: 54px; color: #fdc004}
+    #wrap .character h3{width: 65%; margin: 100px 6% 250px; position: absolute; font-family: 'Libre Baskerville'; font-size: 54px; color: #fdc004}
     #wrap .character img{width: 92%; margin: 130px 4% 330px}
     #wrap .character_text{width: 88%; position: absolute; bottom: 50%; margin: 0 6% -150px}
-    #wrap .character .numb{display: block; font-family: 'Helvetica'; font-weight: 100; font-size: 80px; color: #fdc004; text-shadow: 0 0 10px rgb(0,0,0,.2)}
+    #wrap .character .numb{display: block; font-family: 'Libre Baskerville'; font-size: 80px; color: #fdc004; text-shadow: 0 0 10px rgb(0,0,0,.2)}
     #wrap .character h4{font-size: 30px; color: #fff; margin-top: 30px}
-    #wrap .character h4 span{font-family: 'Baskerville'}
+    #wrap .character h4 span{font-family: 'Libre Baskerville'}
     #wrap .character p{float: none; color: #fff; margin-top: 12px; font-size: 16px}
     #wrap .character .btn{position: absolute; bottom: 14%; text-shadow: 0 0 10px rgb(0,0,0,.1)}
     #wrap .character .btn_left{display:block; float:left; color: #fff; font-size: 52px; margin-right: 10px}
     #wrap .character .btn_right{display:block; float:right; color: #fff; font-size: 52px}
     
-    #wrap .trailer h3{font-family: 'Baskerville'; font-weight: 100; color: #fdc004; font-size: 46px; margin: 90px auto 50px; text-align: center}
+    #wrap .trailer h3{font-family: 'Libre Baskerville'; font-weight: 100; color: #fdc004; font-size: 46px; margin: 90px auto 50px; text-align: center}
     #wrap .trailer ul{width: 100%; margin: 0 auto 20%}
     #wrap .trailer li{float: none; width: 92%; margin: 0 4% 40px; position: relative}
     #wrap .trailer li:nth-child(3){display:none}
@@ -243,7 +243,7 @@ p,li,dd{ line-height:1.5em}
     #wrap .trailer li img{width: 100%}
     
     #wrap .gallery{overflow: hidden}
-    #wrap .gallery h3{font-family: 'Baskerville'; font-weight: 100; font-size: 46px; margin: 70px auto 50px; text-align: center}
+    #wrap .gallery h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 46px; margin: 70px auto 50px; text-align: center}
     #wrap .gallery_list{overflow: hidden; margin: 0 4% 80px}
     #wrap .gallery_list .first{width: 100%}
     #wrap .gallery_list .list1_img{width: 50%}
@@ -265,7 +265,7 @@ p,li,dd{ line-height:1.5em}
 /* 최소 사이즈 처리 */
 @media screen and (max-width:480px) {
 	#wrap { min-width:320px; }
-    #wrap .videoBox .gallery_text .text_top{font-family: 'Baskerville'; font-size: 120px; font-weight: 500; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: .4s}
+    #wrap .videoBox .gallery_text .text_top{font-family: 'Libre Baskerville'; font-size: 120px; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: .4s}
     
     #footerArea .client{float: none; width: 50%; margin: 0 5%}
     #footerArea .client img{width: 35%; margin: 0 10px}

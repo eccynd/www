@@ -36,7 +36,7 @@
 	100% { transform:scale(1.2); opacity:0.8; color:#888;}
 }	
 .videoBox .gallery_text{position: absolute; width: 100%; margin:0 auto; bottom: 100px; text-align: center}
-.videoBox .gallery_text .title{font-family: 'Baskerville'; font-size: 220px; font-weight: 500; margin-bottom: 350px; color: #fff; text-shadow: 0 0 10px rgb(0,0,0,.3)}
+.videoBox .gallery_text .title{font-size: 220px; font-weight: 100; margin-bottom: 350px; color: #fff; text-shadow: 0 0 10px rgb(0,0,0,.3)}
 .videoBox .gallery_text .title{animation:text-up .8s; transition-timing-function: ease-in}
 @keyframes text-up {
             0% {
@@ -48,7 +48,7 @@
                 transform: translateY(0px);
             }
         }
-.videoBox .gallery_text .text_bottom{font-family: 'Nanum Myeongjo'; font-size: 22px; color: #fff; margin-top: 200px; text-shadow: 0 0 10px rgb(0,0,0,.3)}
+.videoBox .gallery_text .text_bottom{font-size: 22px; color: #fff; margin-top: 200px; text-shadow: 0 0 10px rgb(0,0,0,.3)}
 
 /*-------------------------------------------------------------------*/
 #content{background: rgb(0,0,0,.8); color: #fff; overflow: hidden}
