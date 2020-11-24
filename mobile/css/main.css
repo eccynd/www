@@ -1,141 +1,527 @@
 /* CSS Document */
 
-.visual{position:relative; overflow:hidden; background-color: #000}
-.gallery{position:relative; left:0; top:0; overflow:hidden; background: #000}
-.gallery img{width: 100%}
-.gallery ul li{display: none}
-.dock{width:100%; position:absolute; bottom: 49%}
-.dock_inner{width: 55px; margin: 0 auto}
-.dock span.mbutton{margin-right:6px; cursor:pointer; 
-    display:block; float:left; width:6px; height:6px;
-   background: #fff; border-radius:5px; transition: all .5s}
-.ps{cursor:pointer; 
-    display:block; width:15px; height:15px;
-    background:url(../images/stop.png)no-repeat center; position: absolute; right: 15px; bottom: 17px}
+.visual {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+.gallery {
+  position: relative;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background: #000;
+}
+.gallery img {
+  width: 100%;
+}
+.gallery ul li {
+  display: none;
+}
+.dock {
+  width: 100%;
+  position: absolute;
+  bottom: 49%;
+}
+.dock_inner {
+  width: 55px;
+  margin: 0 auto;
+}
+.dock span.mbutton {
+  margin-right: 6px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.ps {
+  cursor: pointer;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/stop.png) no-repeat center;
+  position: absolute;
+  right: 15px;
+  bottom: 17px;
+}
 
-.visual .gallery_text ul li{display: none}
-.visual .gallery_text{width: 100%; position: absolute; bottom: 55%; color: #fff; text-align: center; animation:text-up 1s}
-        @keyframes text-up {
-            0% {
-                opacity: 0.1;
-                transform: translateY(30px);
-            } 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-.visual .text_list1{animation:text-up 1s}
-        @keyframes text-up {
-            0% {
-                opacity: 0.1;
-                transform: translateY(30px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-.visual .text_list2{animation:text-up 1s}
-        @keyframes text-up {
-            0% {
-                opacity: 0.1;
-                transform: translateY(30px);
-            } 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-.visual .text_list3{animation:text-up 1s}
-        @keyframes text-up {
-            0% {
-                opacity: 0.1;
-                transform: translateY(30px);
-            } 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-.visual .text_top{font-family: "Nanum"; font-size: 48px; font-weight: 100; margin-bottom: 6px}
-.visual .text_bottom{font-family: "Nanum"; font-size: 18px; font-weight: 400}
+.visual .gallery_text ul li {
+  display: none;
+}
+.visual .gallery_text {
+  width: 100%;
+  position: absolute;
+  bottom: 55%;
+  color: #fff;
+  text-align: center;
+  animation: text-up 1s;
+}
+@keyframes text-up {
+  0% {
+    opacity: 0.1;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visual .text_list1 {
+  animation: text-up 1s;
+}
+@keyframes text-up {
+  0% {
+    opacity: 0.1;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visual .text_list2 {
+  animation: text-up 1s;
+}
+@keyframes text-up {
+  0% {
+    opacity: 0.1;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visual .text_list3 {
+  animation: text-up 1s;
+}
+@keyframes text-up {
+  0% {
+    opacity: 0.1;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visual .text_top {
+  font-family: 'Nanum Gothic';
+  font-size: 48px;
+  font-weight: 100;
+  margin-bottom: 6px;
+}
+.visual .text_bottom {
+  font-family: 'Nanum Gothic';
+  font-size: 18px;
+  font-weight: 400;
+}
 
-.visual .scroll{display: block; width: 50px; height: 50px; border: 1px solid #fff; position: absolute; bottom: 50px; left: 50%; margin-left: -25px}
-.visual i{font-size: 30px; color: #fff; margin: 12px 0 0 25%}
+.visual .scroll {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -25px;
+}
+.visual i {
+  font-size: 30px;
+  color: #fff;
+  margin: 12px 0 0 25%;
+}
 
-.sub_title{display: block; font-family: 'Nanum'; font-size: 15px; color: #999; text-align: center}
-.title{font-family: 'Nanum'; font-size: 27px; color: #333; text-align: center; margin-bottom: 20px}
+.sub_title {
+  display: block;
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+}
+.title {
+  font-family: 'Nanum Gothic';
+  font-size: 27px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-.business{padding: 35px 10px 0; background-size: contain; margin-top: 150px; opacity: 0; transition: all 1s}
-.businessOn{padding: 35px 10px 0; background-size: contain; margin-top: 0; opacity: 1}
-.business img{width: 100%}
-.business .bottom_img{margin-top: 150px; transition: all 1.2s; opacity: 0}
-.business .bottom_imgOn{margin-top: 0; opacity: 1}
-.business h4{font-family: 'Nanum'; font-size: 27px; font-weight: 600; margin: 18px 0 10px 0}
-.business p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; color: #666; line-height: 1.7em}
-.business p span{font-family: 'Nanum'; font-size: 17px; color: #333; font-weight: 600}
-.business .btn{display: block; width: 77px; height: 30px; border: 1px solid #333; margin: 10px 0 40px 0; padding: 12px 0 0 15px; font-family: 'Nanum'; font-size: 15px; font-weight: bold}
-.business .btn i{margin-left: 7px}
+.business {
+  padding: 35px 10px 0;
+  background-size: contain;
+  margin-top: 150px;
+  opacity: 0;
+  transition: all 1s;
+}
+.businessOn {
+  padding: 35px 10px 0;
+  background-size: contain;
+  margin-top: 0;
+  opacity: 1;
+}
+.business img {
+  width: 100%;
+}
+.business .bottom_img {
+  margin-top: 150px;
+  transition: all 1.2s;
+  opacity: 0;
+}
+.business .bottom_imgOn {
+  margin-top: 0;
+  opacity: 1;
+}
+.business h4 {
+  font-family: 'Nanum Gothic';
+  font-size: 27px;
+  font-weight: 600;
+  margin: 18px 0 10px 0;
+}
+.business p {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.7em;
+}
+.business p span {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  color: #333;
+  font-weight: 600;
+}
+.business .btn {
+  display: block;
+  width: 77px;
+  height: 30px;
+  border: 1px solid #333;
+  margin: 10px 0 40px 0;
+  padding: 12px 0 0 15px;
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: bold;
+}
+.business .btn i {
+  margin-left: 7px;
+}
 
-.tech{overflow: hidden; margin-top: 150px; opacity: 0; transition: all 1s}
-.techOn{overflow: hidden; margin-top: 0; opacity: 1}
-.tech ul{margin-left: 10px; width: 1200px}
-.tech a{display: block; width: 200px; height: 300px; padding: 0 5px; box-shadow: 5px 5px 5px rgb(0,0,0,.1); margin: 0 25px 45px 0; position: relative; float: left; overflow: hidden}
-.tech a img{margin: 13px 0 0 6.5px}
-.tech a dt{font-family: 'Nanum'; font-size: 17px; font-weight: 600; margin: 20px 0 0 6.5px}
-.tech a dt::before{content: ''; display: block; width: 25px; height: 1px;
-background: #ccc; position: absolute; bottom: 85px}
-.tech a dd{font-family: 'Nanum'; font-size: 14px; font-weight: 400; color:  #666; margin: 20px 0 0 6.5px}
-    
-.prcenter{width: 92%; margin: 175px auto 0; opacity: 0; transition: all 1s}
-.prcenterOn{width: 92%; margin: 25px auto 0; opacity: 1}
-.prcenter_list1{overflow: hidden; width: 100%; height: 310px; background: url(../images/prcenter_list1.jpg); background-size: cover}
-.prcenter_list1 ul{width: 92%; margin: 0 auto}
-.prcenter_list1 h4{font-family: 'Nanum'; font-size: 22.5px; font-weight: bold; margin: 20px 0 0 10px; color: #fff}
-.prcenter_list1 h5{font-family: 'Nanum'; font-size: 17px; font-weight: bold; margin-top: 15px}
-.prcenter_list1 p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; line-height: 1.5em; margin-top: -10px}
-.prcenter_list1 a{display: block; color: #fff; position: relative}
-.prcenter_list1 img{position: absolute; top: 35px; right: 0}
-.prcenter_list1 .list1_top{border-bottom: 1px solid #ccc; padding-bottom: 15px}
+.tech {
+  overflow: hidden;
+  margin-top: 150px;
+  opacity: 0;
+  transition: all 1s;
+}
+.techOn {
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 1;
+}
+.tech ul {
+  margin-left: 10px;
+  width: 1200px;
+}
+.tech a {
+  display: block;
+  width: 200px;
+  height: 300px;
+  padding: 0 5px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.1);
+  margin: 0 25px 45px 0;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.tech a img {
+  margin: 13px 0 0 6.5px;
+}
+.tech a dt {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: 600;
+  margin: 20px 0 0 6.5px;
+}
+.tech a dt::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  bottom: 85px;
+}
+.tech a dd {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin: 20px 0 0 6.5px;
+}
 
-.prcenter_list2 a{display:block; width: 50%; height:150px; float: left; background-color: #006dfa}
-.prcenter_list2 h4{font-family: 'Nanum'; font-size: 17px; font-weight: bold; margin: 15px 0 0 10px; color: #fff}
-.prcenter_list2 p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; line-height: 1.5em; margin: 5px 0 0 10px; color: #fff}
-.prcenter_list2 img{margin: 35px 0 15px 10px}
+.prcenter {
+  width: 92%;
+  margin: 175px auto 0;
+  opacity: 0;
+  transition: all 1s;
+}
+.prcenterOn {
+  width: 92%;
+  margin: 25px auto 0;
+  opacity: 1;
+}
+.prcenter_list1 {
+  overflow: hidden;
+  width: 100%;
+  height: 310px;
+  background: url(../images/prcenter_list1.jpg);
+  background-size: cover;
+}
+.prcenter_list1 ul {
+  width: 92%;
+  margin: 0 auto;
+}
+.prcenter_list1 h4 {
+  font-family: 'Nanum Gothic';
+  font-size: 22.5px;
+  font-weight: bold;
+  margin: 20px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list1 h5 {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.prcenter_list1 p {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: -10px;
+}
+.prcenter_list1 a {
+  display: block;
+  color: #fff;
+  position: relative;
+}
+.prcenter_list1 img {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+.prcenter_list1 .list1_top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
 
-.prcenter_list3 a{display:block; width: 50%; height:150px; float: right; background-color: #27456b}
-.prcenter_list3 h4{font-family: 'Nanum'; font-size: 17px; font-weight: bold; margin: 15px 0 0 10px; color: #fff}
-.prcenter_list3 p{font-family: 'Nanum'; font-size: 14px; font-weight: 400; line-height: 1.5em; margin: 5px 0 0 10px; color: #fff}
-.prcenter_list3 img{margin: 18px 0 15px 10px}
+.prcenter_list2 a {
+  display: block;
+  width: 50%;
+  height: 150px;
+  float: left;
+  background-color: #006dfa;
+}
+.prcenter_list2 h4 {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list2 p {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 5px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list2 img {
+  margin: 35px 0 15px 10px;
+}
 
+.prcenter_list3 a {
+  display: block;
+  width: 50%;
+  height: 150px;
+  float: right;
+  background-color: #27456b;
+}
+.prcenter_list3 h4 {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list3 p {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 5px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list3 img {
+  margin: 18px 0 15px 10px;
+}
 
+.prcenter_list4 {
+  overflow: hidden;
+  width: 100%;
+  height: 310px;
+  background: url(../images/prcenter_list4.jpg) right;
+  background-size: cover;
+  margin-bottom: 40px;
+  position: relative;
+}
+.prcenter_list4::before {
+  content: '';
+  width: 100%;
+  height: 120px;
+  background: #000;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0;
+}
+.prcenter_list4 a {
+  display: block;
+  position: relative;
+}
+.prcenter_list4 h4 {
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: bold;
+  margin: 210px 0 0 10px;
+  color: #fff;
+  z-index: 100;
+}
+.prcenter_list4 p {
+  font-family: 'Nanum Gothic';
+  width: 80%;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 5px 0 0 10px;
+  color: #fff;
+}
+.prcenter_list4 img {
+  position: absolute;
+  right: 15px;
+  bottom: -35px;
+}
 
-.prcenter_list4{overflow: hidden; width: 100%; height: 310px; background: url(../images/prcenter_list4.jpg)right; background-size: cover; margin-bottom: 40px; position: relative}
-.prcenter_list4::before{content: ''; width: 100%; height: 120px; background: #000; opacity: .8;  position: absolute; bottom: 0}
-.prcenter_list4 a{display: block; position: relative}
-.prcenter_list4 h4{font-family: 'Nanum'; font-size: 17px; font-weight: bold; margin: 210px 0 0 10px; color: #fff; z-index: 100}
-.prcenter_list4 p{font-family: 'Nanum'; width: 80%; float: left; font-size: 14px; font-weight: 400; line-height: 1.5em; margin: 5px 0 0 10px; color: #fff}
-.prcenter_list4 img{position: absolute; right: 15px; bottom: -35px}
+.service {
+  overflow: hidden;
+  margin-top: 150px;
+  opacity: 0;
+  transition: all 1s;
+}
+.serviceOn {
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 1;
+}
+.service .title {
+  margin-bottom: 0;
+}
+.service_top {
+  width: 92%;
+  margin: 0 auto;
+}
+.service_top ul li {
+  position: relative;
+  line-height: 27px;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0 15px 0;
+}
+.service_top ul li span {
+  display: block;
+  width: 93%;
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+.service_top ul li p {
+  font-family: 'Nanum Gothic';
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+.service_top ul i {
+  position: absolute;
+  bottom: 35px;
+  right: 5px;
+  font-size: 20px;
+}
+.service_top ul li a {
+  display: block;
+  color: #999;
+}
+.service_top .more {
+  display: block;
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  padding: 10px 2px;
+  width: 60px;
+  border: 1px solid #333;
+  text-align: center;
+  margin: 15px auto 35px;
+}
 
-.service{overflow: hidden; margin-top: 150px; opacity: 0; transition: all 1s}
-.serviceOn{overflow: hidden; margin-top: 0; opacity: 1}
-.service .title{margin-bottom: 0}
-.service_top{width: 92%; margin: 0 auto}
-.service_top ul li{position: relative; line-height: 27px; border-bottom: 1px solid #ccc; padding: 20px 0 15px 0}
-.service_top ul li span{display: block; width: 93%; font-family: "Nanum"; font-size: 17px; font-weight: 600; color: #333}
-.service_top ul li p{font-family: "Nanum"; font-size: 14px; font-weight: 400; color: #666}
-.service_top ul i{position: absolute; bottom: 35px; right: 5px; font-size: 20px}
-.service_top ul li a{display: block; color: #999}
-.service_top .more{display: block; font-family: 'Nanum'; font-size:15px; padding: 10px 2px; width: 60px; border: 1px solid #333; text-align: center; margin: 15px auto 35px}
-
-.service_bottom{overflow: hidden; text-align: center}
-.service_bottom a{color: #fff}
-.service_bottom .service_list1{overflow:hidden; float: left; width:50%; position: relative}
-.service_bottom .service_list1 img{width: 100%}
-.service_bottom .service_list2{overflow:hidden; float: right; width:50%; position: relative}
-.service_bottom .service_list2 img{width: 100%}
-.service_bottom .list1_text h4,#content .service_bottom .list2_text h4{font-family: "Arial"; font-size: 14px}
-.service_bottom .list1_text p,#content .service_bottom .list2_text p{font-family: "Nanum"; font-weight: 500; font-size: 19px}
-.service_bottom .list1_text{position: absolute; bottom: 30%; width: 100%; text-align: center}
-.service_bottom .list2_text{position: absolute; bottom: 28%; width: 100%; text-align: center}
+.service_bottom {
+  overflow: hidden;
+  text-align: center;
+}
+.service_bottom a {
+  color: #fff;
+}
+.service_bottom .service_list1 {
+  overflow: hidden;
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.service_bottom .service_list1 img {
+  width: 100%;
+}
+.service_bottom .service_list2 {
+  overflow: hidden;
+  float: right;
+  width: 50%;
+  position: relative;
+}
+.service_bottom .service_list2 img {
+  width: 100%;
+}
+.service_bottom .list1_text h4,
+#content .service_bottom .list2_text h4 {
+  font-family: 'Arial';
+  font-size: 14px;
+}
+.service_bottom .list1_text p,
+#content .service_bottom .list2_text p {
+  font-family: 'Nanum Gothic';
+  font-weight: 500;
+  font-size: 19px;
+}
+.service_bottom .list1_text {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
+}
+.service_bottom .list2_text {
+  position: absolute;
+  bottom: 28%;
+  width: 100%;
+  text-align: center;
+}

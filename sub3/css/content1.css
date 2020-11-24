@@ -1,32 +1,133 @@
 /* 연구소 소개 본문 */
 
-#content{}
+#content {
+  overflow: hidden;
+}
 
-.content_top{overflow: hidden; margin-bottom: 55px}
-.content_top img{float: left}
-.content_top .top_text{float: right; width: 620px; margin: 270px 0 0 64px; transition: all 1.2s; opacity:0}
-.content_top .top_textOn{float: right; width: 620px; margin: 120px 0 0 64px; opacity:1}
-.content_top h3{font-family: 'Nanum'; font-size: 42px; font-weight: 100; margin-bottom: 40px}
-.content_top p{font-family: 'Dotum'; font-size: 17px; color: #666; line-height: 1.8em}
-.content_top img{margin-top: 150px; transition: all 1.2s; transition-delay: .2s; opacity: 0}
-.content_top .top_imgOn{margin-top: 0; opacity: 1}
+.content_top {
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+.content_top img {
+  float: left;
+}
+.content_top .top_text {
+  float: right;
+  width: 620px;
+  margin: 270px 0 0 64px;
+  transition: all 1.2s;
+  opacity: 0;
+}
+.content_top .top_textOn {
+  float: right;
+  width: 620px;
+  margin: 120px 0 0 64px;
+  opacity: 1;
+}
+.content_top h3 {
+  font-family: 'Nanum Gothic';
+  font-size: 42px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.content_top p {
+  font-family: 'Dotum';
+  font-size: 17px;
+  color: #666;
+  line-height: 1.8em;
+}
+.content_top img {
+  margin-top: 150px;
+  transition: all 1.2s;
+  transition-delay: 0.2s;
+  opacity: 0;
+}
+.content_top .top_imgOn {
+  margin-top: 0;
+  opacity: 1;
+}
 
-.content_mid{overflow: hidden; margin: 0 45px}
-.content_mid .mid_img{overflow: hidden; width: 350px; height: 335px}
-.content_mid .mid_img2{overflow: hidden; width: 720px; height: 335px}
-.content_mid ul li img{transition: all 1.5s}
-.content_mid ul li:hover img{transform: scale(1.1)}
-.content_mid .mid_top{overflow: hidden}
-.content_mid .mid_top li{width: 350px; height: 585px; float: left; margin: 0 10px; font-family: 'Nanum'; text-align: center; background: #f2f4f4}
-.content_mid h3{font-family: 'Nanum'; font-size: 42px; font-weight: 100; text-align: center; margin: 105px 0 60px 0}
-.content_mid li h4{font-size: 40px; font-weight: 100; margin: 30px 0 10px 0; transition: all .3s}
-.content_mid li:hover h4{color: #0089cf}
-.content_mid li p{font-size: 16px; line-height: 1.8em; color: #666}
+.content_mid {
+  overflow: hidden;
+  margin: 0 45px;
+}
+.content_mid .mid_img {
+  overflow: hidden;
+  width: 350px;
+  height: 335px;
+}
+.content_mid .mid_img2 {
+  overflow: hidden;
+  width: 720px;
+  height: 335px;
+}
+.content_mid ul li img {
+  transition: all 1.5s;
+}
+.content_mid ul li:hover img {
+  transform: scale(1.1);
+}
+.content_mid .mid_top {
+  overflow: hidden;
+}
+.content_mid .mid_top li {
+  width: 350px;
+  height: 585px;
+  float: left;
+  margin: 0 10px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+  background: #f2f4f4;
+}
+.content_mid h3 {
+  font-family: 'Nanum Gothic';
+  font-size: 42px;
+  font-weight: 100;
+  text-align: center;
+  margin: 105px 0 60px 0;
+}
+.content_mid li h4 {
+  font-size: 40px;
+  font-weight: 100;
+  margin: 30px 0 10px 0;
+  transition: all 0.3s;
+}
+.content_mid li:hover h4 {
+  color: #0089cf;
+}
+.content_mid li p {
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #666;
+}
 
-.content_mid .mid_bottom li{overflow: hidden; height: 585px; margin: 0 13.5px; font-family: 'Nanum'; text-align: center; background: #f2f4f4}
-.content_mid .mid_bottom .mid_list4{width: 720px; float: left; margin-bottom: 12px}
-.content_mid .mid_bottom .mid_list6{width: 350px; float: left}
-.content_mid .mid_bottom .mid_list7{width: 720px}
+.content_mid .mid_bottom li {
+  overflow: hidden;
+  height: 585px;
+  margin: 0 13.5px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+  background: #f2f4f4;
+}
+.content_mid .mid_bottom .mid_list4 {
+  width: 720px;
+  float: left;
+  margin-bottom: 12px;
+}
+.content_mid .mid_bottom .mid_list6 {
+  width: 350px;
+  float: left;
+}
+.content_mid .mid_bottom .mid_list7 {
+  width: 720px;
+}
 
-.content_bottom{margin-left: -400px; transition: all 2s; opacity:0}
-.content_bottomOn{margin-left: -400px; opacity:1}
+.content_bottom {
+  margin-left: -400px;
+  transition: all 2s;
+  opacity: 0;
+}
+.content_bottomOn {
+  margin-left: -400px;
+  opacity: 1;
+}

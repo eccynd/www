@@ -1,15 +1,85 @@
-body{font-size:12px; font-family: 'Nanum'}
-h2{margin-bottom: 120px; text-align: center; font-size: 55px; font-family: "Nanum"; font-weight: 400}
-.sub_cont_wrap{width: 1000px; margin: 200px auto 200px}
-.member_tab{padding: 30px 0;border-top: 1px solid #333}
-.member_tab a{font-size: 24px;padding: 10px;margin: 0 10px;color: #aaa;}
-.member_tab a.on{color: #000;border-bottom: 2px solid #000;font-weight: bold}
-.member_tab span{font-size: 24px;padding: 10px;margin: 0 10px;color: #000;font-weight: bold}
+body {
+  font-size: 12px;
+  font-family: 'Nanum Gothic';
+}
+h2 {
+  margin-bottom: 120px;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
+}
+.sub_cont_wrap {
+  width: 1000px;
+  margin: 200px auto 200px;
+}
+.member_tab {
+  padding: 30px 0;
+  border-top: 1px solid #333;
+}
+.member_tab a {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #aaa;
+}
+.member_tab a.on {
+  color: #000;
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+}
+.member_tab span {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  color: #000;
+  font-weight: bold;
+}
 
-.join{text-align: left}
-.join h4{font-size: 18px; margin: 50px 0 20px}
-.join .policy{padding: 10px;overflow-y: scroll;height: 150px;margin: 10px 0;border: 1px solid #ddd; line-height: 2em}
-.join .allcheck{margin-right: 30px; color: #2179c4; font-weight: bold}
-.join .button{text-align: center;margin: 30px 160px 0 0}
-.join .button .ok,.join .button button{display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none;background: #2179c4;color: #fff;font-size: 14px;cursor: pointer}
-.join .button .cancel{display: inline-block;width: 150px;line-height: 24px;padding: 8px 0;border: none;background: #999;color: #fff;font-size: 14px;cursor: pointer}
+.join {
+  text-align: left;
+}
+.join h4 {
+  font-size: 18px;
+  margin: 50px 0 20px;
+}
+.join .policy {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 150px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  line-height: 2em;
+}
+.join .allcheck {
+  margin-right: 30px;
+  color: #2179c4;
+  font-weight: bold;
+}
+.join .button {
+  text-align: center;
+  margin: 30px 160px 0 0;
+}
+.join .button .ok,
+.join .button button {
+  display: inline-block;
+  width: 150px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: none;
+  background: #2179c4;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.join .button .cancel {
+  display: inline-block;
+  width: 150px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: none;
+  background: #999;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}

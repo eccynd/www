@@ -1,113 +1,277 @@
 /* 와이드 pc  */
-#wrap{overflow: hidden; width: 100%}
-	
-.videoBox{width:100%; height: 100%; overflow:hidden; position:absolute}
+#wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
 #videoBG {
-   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100; /*다른요소보다 아래에 위치*/
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100; /*다른요소보다 아래에 위치*/
 }
-.visual_photo{display: none}
-
-#imgBG{
-    position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100;
-   display:none
+.visual_photo {
+  display: none;
 }
 
-.down{display: block; font-size: 30px; position: absolute; 
-	 left:50%; margin-left: -10px; bottom: 5%;
-	animation:ani .5s infinite  alternate;}
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  display: none;
+}
+
+.down {
+  display: block;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 5%;
+  animation: ani 0.5s infinite alternate;
+}
 @keyframes ani {
-	0% { transform:scale(1); opacity:1; color:#fff;}
-	100% { transform:scale(1.2); opacity:0.8; color:#888;}
-}	
-.videoBox .gallery_text{position: absolute; width: 100%; margin:0 auto; bottom: 100px; text-align: center}
-.videoBox .gallery_text .title{font-size: 220px; font-weight: 100; margin-bottom: 350px; color: #fff; text-shadow: 0 0 10px rgb(0,0,0,.3)}
-.videoBox .gallery_text .title{animation:text-up .8s; transition-timing-function: ease-in}
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+.videoBox .gallery_text {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 100px;
+  text-align: center;
+}
+.videoBox .gallery_text .title {
+  font-size: 220px;
+  font-weight: 100;
+  margin-bottom: 350px;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+.videoBox .gallery_text .title {
+  animation: text-up 0.8s;
+  transition-timing-function: ease-in;
+}
 @keyframes text-up {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-.videoBox .gallery_text .text_bottom{font-size: 22px; color: #fff; margin-top: 200px; text-shadow: 0 0 10px rgb(0,0,0,.3)}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.videoBox .gallery_text .text_bottom {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 200px;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
 
 /*-------------------------------------------------------------------*/
-#content{background: rgb(0,0,0,.8); color: #fff; overflow: hidden}
+#content {
+  background: rgb(0, 0, 0, 0.8);
+  color: #fff;
+  overflow: hidden;
+}
 
-.top{width: 86%; margin: 0 auto; overflow: hidden; position: relative}
-.top .top_text{position: absolute; bottom: 20px; float: left; width: 30%}
-.top h3{font-size: 54px; margin-bottom: 60px; font-weight: 100; color: #fdc004}
-.top .top_images{float: right; width: 70%; padding-top: 130px}
-.top .top_images img{width: 40%; float: right; margin: 0 10px 20px}
+.top {
+  width: 86%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.top .top_text {
+  position: absolute;
+  bottom: 20px;
+  float: left;
+  width: 30%;
+}
+.top h3 {
+  font-size: 54px;
+  margin-bottom: 60px;
+  font-weight: 100;
+  color: #fdc004;
+}
+.top .top_images {
+  float: right;
+  width: 70%;
+  padding-top: 130px;
+}
+.top .top_images img {
+  width: 40%;
+  float: right;
+  margin: 0 10px 20px;
+}
 
-.slogan{text-align: center; font-size: 64px; clear: both; margin: 220px 0; color: #fdc004}
+.slogan {
+  text-align: center;
+  font-size: 64px;
+  clear: both;
+  margin: 220px 0;
+  color: #fdc004;
+}
 
-.mid{width: 86%; margin: 0 auto; overflow: hidden}
-.mid .mid_text{width: 50%; float: right}
-.mid .mid_images{width: 50%; float: left; padding-top: 80px}
-.mid .mid_images img{width: 90%}
+.mid {
+  width: 86%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.mid .mid_text {
+  width: 50%;
+  float: right;
+}
+.mid .mid_images {
+  width: 50%;
+  float: left;
+  padding-top: 80px;
+}
+.mid .mid_images img {
+  width: 90%;
+}
 
-.bottom{width: 86%; margin:180px auto; overflow: hidden}
-.bottom img{width: 30%; margin: 0 10px}
+.bottom {
+  width: 86%;
+  margin: 180px auto;
+  overflow: hidden;
+}
+.bottom img {
+  width: 30%;
+  margin: 0 10px;
+}
 
 /* 일반 pc */
-@media screen and (max-width:1280px) {
-	
+@media screen and (max-width: 1280px) {
 }
 
 /* 테블릿 */
-@media screen and (max-width:1024px) {
-    .top .top_images img{width: 40%; float: right; margin: 0 5px 10px}
-    .bottom img{width: 31%; margin: 0 5px}
+@media screen and (max-width: 1024px) {
+  .top .top_images img {
+    width: 40%;
+    float: right;
+    margin: 0 5px 10px;
+  }
+  .bottom img {
+    width: 31%;
+    margin: 0 5px;
+  }
 }
 
 /* 소형 테블릿 */
-@media screen and (max-width:786px) {
-    .top .top_images{float: none; width: 100%; padding-top: 130px}
-    .top .top_images img{width: 48%; float: right; margin: 0 5px 10px}
-    .top h3{font-size: 40px; margin-bottom: 40px; font-weight: 100}
-    .top .top_text{position: absolute; bottom: 10px; float: none; width: 50%; font-size: 15px}
-    
-    .slogan{text-align: center; font-size: 48px; clear: both; margin: 180px 0; color: #fdc004}
-    
-    .mid .mid_images{width: 50%; float: left; padding-top: 0}
-    
-    .bottom img{width: 48%; margin: 0 5px 15px}
+@media screen and (max-width: 786px) {
+  .top .top_images {
+    float: none;
+    width: 100%;
+    padding-top: 130px;
+  }
+  .top .top_images img {
+    width: 48%;
+    float: right;
+    margin: 0 5px 10px;
+  }
+  .top h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 100;
+  }
+  .top .top_text {
+    position: absolute;
+    bottom: 10px;
+    float: none;
+    width: 50%;
+    font-size: 15px;
+  }
+
+  .slogan {
+    text-align: center;
+    font-size: 48px;
+    clear: both;
+    margin: 180px 0;
+    color: #fdc004;
+  }
+
+  .mid .mid_images {
+    width: 50%;
+    float: left;
+    padding-top: 0;
+  }
+
+  .bottom img {
+    width: 48%;
+    margin: 0 5px 15px;
+  }
 }
 
 /* 모바일 */
-@media screen and (max-width:640px) {
-    .mid .mid_text{width: 100%; float: none}
-    .mid .mid_images{width: 100%; float: none; padding-top: 40px}
-    .mid .mid_images img{width: 100%}
-    
-    .bottom img{width: 47%; margin: 0 5px}
+@media screen and (max-width: 640px) {
+  .mid .mid_text {
+    width: 100%;
+    float: none;
+  }
+  .mid .mid_images {
+    width: 100%;
+    float: none;
+    padding-top: 40px;
+  }
+  .mid .mid_images img {
+    width: 100%;
+  }
+
+  .bottom img {
+    width: 47%;
+    margin: 0 5px;
+  }
 }
 
 /* 최소 사이즈 처리 */
-@media screen and (max-width:480px) {
-    .top .top_images{float: none; width: 100%; padding-top: 130px; padding-bottom: 520px}
-    .top .top_images img{width: 47%; float: right; margin: 0 5px 10px}
-    .top .top_text{position: absolute; bottom: 10px; float: none; width: 50%; font-size: 14px}
-    
-    .bottom img{width: 47.5%; margin: 0 3px 10px}
+@media screen and (max-width: 480px) {
+  .top .top_images {
+    float: none;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 520px;
+  }
+  .top .top_images img {
+    width: 47%;
+    float: right;
+    margin: 0 5px 10px;
+  }
+  .top .top_text {
+    position: absolute;
+    bottom: 10px;
+    float: none;
+    width: 50%;
+    font-size: 14px;
+  }
+
+  .bottom img {
+    width: 47.5%;
+    margin: 0 3px 10px;
+  }
 }

@@ -1,50 +1,119 @@
 /* 1depth 공통 */
 
-.visual{width: 2000px; height: 430px; position: relative; left: 50%; margin-left: -1000px; z-index: -1; overflow: hidden}
-.visual img{position: absolute; top: 0; width: 2000px; z-index: -1; animation:visualScale 1s}
-        @keyframes visualScale {
-            0% {
-                transform: scale(1.1);
-            } 
-            100% {
-                transform: scale(1);
-            }
-        }
+.visual {
+  width: 2000px;
+  height: 430px;
+  position: relative;
+  left: 50%;
+  margin-left: -1000px;
+  z-index: -1;
+  overflow: hidden;
+}
+.visual img {
+  position: absolute;
+  top: 0;
+  width: 2000px;
+  z-index: -1;
+  animation: visualScale 1s;
+}
+@keyframes visualScale {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-.visual_text{font-family: "Nanum"; color: #fff; text-align: center; margin: 195px auto}
-.visual_text h3{font-size: 57px; padding-bottom: 4px; margin-bottom: 15px; font-weight: 400; animation:visualTextDown 1s}
-        @keyframes visualTextDown {
-            0% {
-                opacity: 0.1;
-                transform: translateY(20px);
-            } 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-.visual_text p{font-size: 17px; animation:visualTextUp 2s}
-        @keyframes visualTextUp {
-            0% {
-                opacity: 0.1;
-                transform: translateY(20px);
-            } 
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.visual_text {
+  font-family: 'Nanum Gothic';
+  color: #fff;
+  text-align: center;
+  margin: 195px auto;
+}
+.visual_text h3 {
+  font-size: 57px;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  animation: visualTextDown 1s;
+}
+@keyframes visualTextDown {
+  0% {
+    opacity: 0.1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.visual_text p {
+  font-size: 17px;
+  animation: visualTextUp 2s;
+}
+@keyframes visualTextUp {
+  0% {
+    opacity: 0.1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-.subnav_box{width: 1200px; margin: 0 auto; border-bottom: 1px solid #ccc}
-.subnav_box .subNav ul{overflow: hidden; width: 1000px; margin: 0 auto; font-family: "Nanum"; font-size: 18px; font-weight: 600}
-.subnav_box .subNav ul li{width: 24%; float: left; text-align: center; margin-left: 65px}
-.subnav_box .subNav ul li a{display: block; padding:  20px; color: #999; margin-top: 2px}
-.subnav_box .subNav ul li a:hover{color: #0089cf}
-.subnav_box .subNav ul li .current{color: #0089cf; border-bottom: 3px solid #0089cf}
+.subnav_box {
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+.subnav_box .subNav ul {
+  overflow: hidden;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Nanum Gothic';
+  font-size: 18px;
+  font-weight: 600;
+}
+.subnav_box .subNav ul li {
+  width: 24%;
+  float: left;
+  text-align: center;
+  margin-left: 65px;
+}
+.subnav_box .subNav ul li a {
+  display: block;
+  padding: 20px;
+  color: #999;
+  margin-top: 2px;
+}
+.subnav_box .subNav ul li a:hover {
+  color: #0089cf;
+}
+.subnav_box .subNav ul li .current {
+  color: #0089cf;
+  border-bottom: 3px solid #0089cf;
+}
 
-#content .lineMap{margin: 40px 0 0 40px}
-#content .lineMap span{margin-right: 2px}
-#content .lineMap img{width: 16px}
+#content .lineMap {
+  margin: 40px 0 0 40px;
+}
+#content .lineMap span {
+  margin-right: 2px;
+}
+#content .lineMap img {
+  width: 16px;
+}
 
-#content{width: 1200px; margin: 0 auto}
-#content h2{margin: 110px 0 120px 0; text-align: center; font-size: 55px; font-family: "Nanum"; font-weight: 400}
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content h2 {
+  margin: 110px 0 120px 0;
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
+}

@@ -1,202 +1,621 @@
 /* 와이드 pc  */
-#wrap{overflow: hidden; width: 100%}
-	
-.videoBox{width:100%; height: 100%; overflow:hidden; position:absolute}
+#wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
 #videoBG {
-   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100; /*다른요소보다 아래에 위치*/
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100; /*다른요소보다 아래에 위치*/
 }
-.visual_photo{display: none}
-
-#imgBG{
-    position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100;
-   display:none
+.visual_photo {
+  display: none;
 }
 
-.down{display: block; font-size: 30px; position: absolute; 
-	 left:50%; margin-left: -10px; bottom: 5%;
-	animation:ani .5s infinite  alternate;}
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  display: none;
+}
+
+.down {
+  display: block;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 5%;
+  animation: ani 0.5s infinite alternate;
+}
 @keyframes ani {
-	0% { transform:scale(1); opacity:1; color:#fff;}
-	100% { transform:scale(1.2); opacity:0.8; color:#888;}
-}	
-.videoBox .gallery_text{position: absolute; width: 100%; margin:0 auto; bottom: 100px; text-align: center}
-.videoBox .gallery_text .title{font-size: 220px; font-weight: 100; margin-bottom: 350px; color: #fff; text-shadow: 0 0 10px rgb(0,0,0,.3)}
-.videoBox .gallery_text .title{animation:text-up .8s; transition-timing-function: ease-in}
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+.videoBox .gallery_text {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 100px;
+  text-align: center;
+}
+.videoBox .gallery_text .title {
+  font-size: 220px;
+  font-weight: 100;
+  margin-bottom: 350px;
+  color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+.videoBox .gallery_text .title {
+  animation: text-up 0.8s;
+  transition-timing-function: ease-in;
+}
 @keyframes text-up {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-.videoBox .gallery_text .text_bottom{font-size: 22px; color: #fff; margin-top: 200px; text-shadow: 0 0 10px rgb(0,0,0,.3)}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.videoBox .gallery_text .text_bottom {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 200px;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
 
 /*-------------------------------------------------------------------*/
-#content{background: rgb(0,0,0,.8); overflow: hidden}
-#content h3{font-size: 54px; font-weight: 100}
-#content .imgbox1, #content .imgbox2{overflow: hidden}
-#content img{; transition: 1.3s}
-#content img:hover{transform: scale(1.07)}
+#content {
+  background: rgb(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+#content h3 {
+  font-size: 54px;
+  font-weight: 100;
+}
+#content .imgbox1,
+#content .imgbox2 {
+  overflow: hidden;
+}
+#content img {
+  transition: 1.3s;
+}
+#content img:hover {
+  transform: scale(1.07);
+}
 
-.character1{width: 90%; margin: 120px auto 10px; overflow: hidden}
-.character1 .textbox{color: #fff; width: 47%; padding-left: 3%; float: left}
-.character1 .textbox h3{margin-top: 5%}
-.character1 .textbox p{margin: 5% 0 30%}
-.character1 .yellowbox{text-align: center; background: #ffd164; width: 23.8%; margin-left: 1.7%; float: left}
-.character1 .yellowbox p{margin: 46% 0}
-.character1 .imgbox1{width: 24%; float: right}
-.character1 .imgbox1 img{width: 100%}
+.character1 {
+  width: 90%;
+  margin: 120px auto 10px;
+  overflow: hidden;
+}
+.character1 .textbox {
+  color: #fff;
+  width: 47%;
+  padding-left: 3%;
+  float: left;
+}
+.character1 .textbox h3 {
+  margin-top: 5%;
+}
+.character1 .textbox p {
+  margin: 5% 0 30%;
+}
+.character1 .yellowbox {
+  text-align: center;
+  background: #ffd164;
+  width: 23.8%;
+  margin-left: 1.7%;
+  float: left;
+}
+.character1 .yellowbox p {
+  margin: 46% 0;
+}
+.character1 .imgbox1 {
+  width: 24%;
+  float: right;
+}
+.character1 .imgbox1 img {
+  width: 100%;
+}
 
-.character2{width: 90%; margin: 0 auto 40px; overflow: hidden}
-.character2 .textbox{color: #fff; width: 20.8%; padding-left: 3%; float: left}
-.character2 .textbox h3{margin-top: 5%}
-.character2 .textbox p{margin: 15% 0 30%}
-.character2 .imgbox1{width: 24%; margin-left: .5%; float: left}
-.character2 .imgbox1 img{width: 100%}
-.character2 .imgbox2{width: 48.5%; float: left}
-.character2 .imgbox2 img{width: 100%}
+.character2 {
+  width: 90%;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+.character2 .textbox {
+  color: #fff;
+  width: 20.8%;
+  padding-left: 3%;
+  float: left;
+}
+.character2 .textbox h3 {
+  margin-top: 5%;
+}
+.character2 .textbox p {
+  margin: 15% 0 30%;
+}
+.character2 .imgbox1 {
+  width: 24%;
+  margin-left: 0.5%;
+  float: left;
+}
+.character2 .imgbox1 img {
+  width: 100%;
+}
+.character2 .imgbox2 {
+  width: 48.5%;
+  float: left;
+}
+.character2 .imgbox2 img {
+  width: 100%;
+}
 
-.character3{width: 90%; margin: 0 auto 40px; overflow: hidden}
-.character3 .textbox{color: #fff; width: 20%; padding-left: 3%; float: left}
-.character3 .textbox h3{margin-top: 5%}
-.character3 .textbox p{margin: 15% 0 30%}
-.character3 .yellowbox{text-align: center; background: #ffd164; width: 19.8%; padding: 2%; margin-left: 4%; float: left}
-.character3 .yellowbox p{margin: 40.5% 0}
-.character3 .imgbox2{width: 48.5%; float: right}
-.character3 .imgbox2 img{width: 100%}
+.character3 {
+  width: 90%;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+.character3 .textbox {
+  color: #fff;
+  width: 20%;
+  padding-left: 3%;
+  float: left;
+}
+.character3 .textbox h3 {
+  margin-top: 5%;
+}
+.character3 .textbox p {
+  margin: 15% 0 30%;
+}
+.character3 .yellowbox {
+  text-align: center;
+  background: #ffd164;
+  width: 19.8%;
+  padding: 2%;
+  margin-left: 4%;
+  float: left;
+}
+.character3 .yellowbox p {
+  margin: 40.5% 0;
+}
+.character3 .imgbox2 {
+  width: 48.5%;
+  float: right;
+}
+.character3 .imgbox2 img {
+  width: 100%;
+}
 
-.character4{width: 90%; margin: 0 auto 40px; overflow: hidden}
-.character4 .textbox p{margin: 5% 0 30%}
-.character4 .imgbox1{width: 24%; margin: 0 .3%; float: left}
-.character4 .imgbox1 img{width: 100%}
-.character4 .textbox{color: #fff; width: 47%; padding-left: 3%; float: right}
-.character4 .textbox h3{margin-top: 5%}
+.character4 {
+  width: 90%;
+  margin: 0 auto 40px;
+  overflow: hidden;
+}
+.character4 .textbox p {
+  margin: 5% 0 30%;
+}
+.character4 .imgbox1 {
+  width: 24%;
+  margin: 0 0.3%;
+  float: left;
+}
+.character4 .imgbox1 img {
+  width: 100%;
+}
+.character4 .textbox {
+  color: #fff;
+  width: 47%;
+  padding-left: 3%;
+  float: right;
+}
+.character4 .textbox h3 {
+  margin-top: 5%;
+}
 
-.character5{width: 90%; margin: 0 auto 120px; overflow: hidden}
-.character5 .textbox{color: #fff; width: 20.8%; padding-left: 3%; float: left}
-.character5 .textbox h3{margin-top: 5%}
-.character5 .textbox p{margin: 15% 0 30%}
-.character5 .yellowbox{text-align: center; background: #ffd164; width: 20.8%; margin: 0 .1%; padding: 2%; float: left}
-.character5 .yellowbox p{margin: 38.5% 0}
-.character5 .imgbox2{width: 48.5%; margin: 0 .5%; float: left}
-.character5 .imgbox2 img{width: 100%}
-
+.character5 {
+  width: 90%;
+  margin: 0 auto 120px;
+  overflow: hidden;
+}
+.character5 .textbox {
+  color: #fff;
+  width: 20.8%;
+  padding-left: 3%;
+  float: left;
+}
+.character5 .textbox h3 {
+  margin-top: 5%;
+}
+.character5 .textbox p {
+  margin: 15% 0 30%;
+}
+.character5 .yellowbox {
+  text-align: center;
+  background: #ffd164;
+  width: 20.8%;
+  margin: 0 0.1%;
+  padding: 2%;
+  float: left;
+}
+.character5 .yellowbox p {
+  margin: 38.5% 0;
+}
+.character5 .imgbox2 {
+  width: 48.5%;
+  margin: 0 0.5%;
+  float: left;
+}
+.character5 .imgbox2 img {
+  width: 100%;
+}
 
 /* 일반 pc */
-@media screen and (max-width:1280px) {    
-    .character3 .yellowbox p{margin: 33% 0}
-    
-    .character5 .yellowbox p{margin: 30.3% 0}
+@media screen and (max-width: 1280px) {
+  .character3 .yellowbox p {
+    margin: 33% 0;
+  }
+
+  .character5 .yellowbox p {
+    margin: 30.3% 0;
+  }
 }
 
 /* 테블릿 */
-@media screen and (max-width:1024px) {
-    #content h3{font-size: 40px}
+@media screen and (max-width: 1024px) {
+  #content h3 {
+    font-size: 40px;
+  }
 
-    .character1 .yellowbox p{margin: 44% 0}
-    
-    .character2 .textbox{color: #fff; width: 60%; padding-left: 0; float: right; text-align: right}
-    .character2 .textbox h3{margin-top: -10%}
-    .character2 .textbox p{margin: 10% 0 5%}
-    
-    .character3{width: 90%; margin: 0 auto 120px; overflow: hidden}
-    .character3 .yellowbox p{margin: 28% 0}
-    .character3 .textbox{color: #fff; width: 60%; padding-left: 0; float: none}
-    .character3 .yellowbox{text-align: center; background: #ffd164; width: 25%; padding: 2%; margin-left: 22%; float: left}
-    .character3 .textbox h3{margin-top: 0}
-    .character3 .textbox p{margin: 10% 0 5%}
-    .character3 .yellowbox p{margin: 19.5% 0}
-    
-    .character5{width: 90%; margin: 0 auto; overflow: hidden}
-    .character5 .yellowbox p{margin: 23% 0}
-    .character5 .textbox{color: #fff; width: 70%; padding-left: 0; float: right; text-align: right}
-    .character5 .textbox h3{margin-top: 0}
-    .character5 .textbox p{margin: 5% 0 30%}
+  .character1 .yellowbox p {
+    margin: 44% 0;
+  }
+
+  .character2 .textbox {
+    color: #fff;
+    width: 60%;
+    padding-left: 0;
+    float: right;
+    text-align: right;
+  }
+  .character2 .textbox h3 {
+    margin-top: -10%;
+  }
+  .character2 .textbox p {
+    margin: 10% 0 5%;
+  }
+
+  .character3 {
+    width: 90%;
+    margin: 0 auto 120px;
+    overflow: hidden;
+  }
+  .character3 .yellowbox p {
+    margin: 28% 0;
+  }
+  .character3 .textbox {
+    color: #fff;
+    width: 60%;
+    padding-left: 0;
+    float: none;
+  }
+  .character3 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 25%;
+    padding: 2%;
+    margin-left: 22%;
+    float: left;
+  }
+  .character3 .textbox h3 {
+    margin-top: 0;
+  }
+  .character3 .textbox p {
+    margin: 10% 0 5%;
+  }
+  .character3 .yellowbox p {
+    margin: 19.5% 0;
+  }
+
+  .character5 {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .character5 .yellowbox p {
+    margin: 23% 0;
+  }
+  .character5 .textbox {
+    color: #fff;
+    width: 70%;
+    padding-left: 0;
+    float: right;
+    text-align: right;
+  }
+  .character5 .textbox h3 {
+    margin-top: 0;
+  }
+  .character5 .textbox p {
+    margin: 5% 0 30%;
+  }
 }
 
 /* 소형 테블릿 */
-@media screen and (max-width:786px) {
-    .character1{width: 90%; margin: 120px auto 100px; overflow: hidden}
-    .character1 .textbox{color: #fff; width: 47%; padding-left: 0; float: none}
-    .character1 .textbox p{margin: 10% 0 10%}
-    .character1 .yellowbox{text-align: center; background: #ffd164; width: 47%; margin-left: 0; float: left}
-    .character1 .yellowbox p{margin: 40% 0}
-    .character1 .imgbox1{width: 52%; float: right}
-    
-    .character2{width: 90%; margin: 0 auto 40px; overflow: hidden}
-    .character2 .textbox{color: #fff; width: 60%; padding-left: 0; float: right; text-align: right}
-    .character2 .textbox p{margin: 10% 0 10%}
-    .character2 .imgbox1{width: 30%; margin-left: 1%; float: left}
-    .character2 .imgbox2{width: 68.5%; float: left}
-    
-    .character3{width: 90%; margin: 0 auto 100px; overflow: hidden}
-    .character3 .textbox{color: #fff; width: 60%; padding-left: 0; float: none}
-    .character3 .textbox p{margin: 10% 0 5%}
-    .character3 .yellowbox{text-align: center; background: #ffd164; width: 25%; padding: 2%; margin-left: 0; float: left}
-    .character3 .yellowbox p{margin: 30% 0}
-    .character3 .imgbox2{width: 70%; float: right}
-    
-    .character4{width: 90%; margin: 0 auto 40px; overflow: hidden}
-    .character4 .imgbox1{width: 49%; margin: 0 .5%; float: left}
-    .character4 .textbox{color: #fff; width: 47%; padding-left: 3%; float: left}
-    .character4 .textbox h3{margin-top: 10%}
-    .character4 .textbox p{margin: 10% 0 30%}
-    
-    .character5{width: 90%; margin: 0 auto; overflow: hidden}
-    .character5 .textbox{color: #fff; width: 70%; padding-left: 0; float: none}
-    .character5 .textbox h3{margin-top: 55%}
-    .character5 .textbox p{margin: 10% 0 30%}
-    .character5 .yellowbox{text-align: center; background: #ffd164; width: 24%; margin: 0 1%; padding: 2%; float: left}
-    .character5 .yellowbox p{margin: 35% 0}
-    .character5 .imgbox2{width: 70%; margin: 0; float: left}
+@media screen and (max-width: 786px) {
+  .character1 {
+    width: 90%;
+    margin: 120px auto 100px;
+    overflow: hidden;
+  }
+  .character1 .textbox {
+    color: #fff;
+    width: 47%;
+    padding-left: 0;
+    float: none;
+  }
+  .character1 .textbox p {
+    margin: 10% 0 10%;
+  }
+  .character1 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 47%;
+    margin-left: 0;
+    float: left;
+  }
+  .character1 .yellowbox p {
+    margin: 40% 0;
+  }
+  .character1 .imgbox1 {
+    width: 52%;
+    float: right;
+  }
+
+  .character2 {
+    width: 90%;
+    margin: 0 auto 40px;
+    overflow: hidden;
+  }
+  .character2 .textbox {
+    color: #fff;
+    width: 60%;
+    padding-left: 0;
+    float: right;
+    text-align: right;
+  }
+  .character2 .textbox p {
+    margin: 10% 0 10%;
+  }
+  .character2 .imgbox1 {
+    width: 30%;
+    margin-left: 1%;
+    float: left;
+  }
+  .character2 .imgbox2 {
+    width: 68.5%;
+    float: left;
+  }
+
+  .character3 {
+    width: 90%;
+    margin: 0 auto 100px;
+    overflow: hidden;
+  }
+  .character3 .textbox {
+    color: #fff;
+    width: 60%;
+    padding-left: 0;
+    float: none;
+  }
+  .character3 .textbox p {
+    margin: 10% 0 5%;
+  }
+  .character3 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 25%;
+    padding: 2%;
+    margin-left: 0;
+    float: left;
+  }
+  .character3 .yellowbox p {
+    margin: 30% 0;
+  }
+  .character3 .imgbox2 {
+    width: 70%;
+    float: right;
+  }
+
+  .character4 {
+    width: 90%;
+    margin: 0 auto 40px;
+    overflow: hidden;
+  }
+  .character4 .imgbox1 {
+    width: 49%;
+    margin: 0 0.5%;
+    float: left;
+  }
+  .character4 .textbox {
+    color: #fff;
+    width: 47%;
+    padding-left: 3%;
+    float: left;
+  }
+  .character4 .textbox h3 {
+    margin-top: 10%;
+  }
+  .character4 .textbox p {
+    margin: 10% 0 30%;
+  }
+
+  .character5 {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .character5 .textbox {
+    color: #fff;
+    width: 70%;
+    padding-left: 0;
+    float: none;
+  }
+  .character5 .textbox h3 {
+    margin-top: 55%;
+  }
+  .character5 .textbox p {
+    margin: 10% 0 30%;
+  }
+  .character5 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 24%;
+    margin: 0 1%;
+    padding: 2%;
+    float: left;
+  }
+  .character5 .yellowbox p {
+    margin: 35% 0;
+  }
+  .character5 .imgbox2 {
+    width: 70%;
+    margin: 0;
+    float: left;
+  }
 }
 
 /* 모바일 */
-@media screen and (max-width:640px) {
-    .character5 .yellowbox p{margin: 28% 0}
+@media screen and (max-width: 640px) {
+  .character5 .yellowbox p {
+    margin: 28% 0;
+  }
 }
 
 /* 최소 사이즈 처리 */
-@media screen and (max-width:480px) {
-    .character1 .textbox{color: #fff; width: 100%; padding-left: 0; float: none}
-    
-    .character2 .textbox{color: #fff; width: 100%; padding-left: 0; float: right; text-align: right}
-    .character2 .textbox h3{margin-top: 10%}
-    .character2 .imgbox1{width: 30%; margin-left: 0; float: left; display: none}
-    .character2 .imgbox2{width: 100%; float: left}
-    
-    .character3 .textbox{color: #fff; width: 100%; padding-left: 0; float: none}
-    .character3 .yellowbox{text-align: center; background: #ffd164; width: 100%; padding: 2%; margin-left: 0; margin-bottom: 1%; float: none}
-    .character3 .yellowbox p{margin: 10% 0}
-    .character3 .imgbox2{width: 100%; float: none}
-    
-    .character4 .imgbox1{width: 49%; margin: 0 .5%; float: left}
-    .character4 .textbox{color: #fff; width: 100%; padding-left: 0; float: none}
-    .character4 .textbox h3{margin-top: 60%}
-    
-    .character5 .textbox{color: #fff; width: 100%; padding-left: 0; float: none}
-    .character5 .yellowbox{text-align: center; background: #ffd164; width: 100%; margin: 1% 0; padding: 2%; float: none}
-    .character5 .textbox h3{margin-top: 10%}
-    .character5 .textbox p{margin: 10% 0 30%}
-    .character5 .yellowbox p{margin: 5% 0}
-    .character5 .imgbox2{width: 100%; margin: 0; float: none}
+@media screen and (max-width: 480px) {
+  .character1 .textbox {
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+
+  .character2 .textbox {
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+    float: right;
+    text-align: right;
+  }
+  .character2 .textbox h3 {
+    margin-top: 10%;
+  }
+  .character2 .imgbox1 {
+    width: 30%;
+    margin-left: 0;
+    float: left;
+    display: none;
+  }
+  .character2 .imgbox2 {
+    width: 100%;
+    float: left;
+  }
+
+  .character3 .textbox {
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+  .character3 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 100%;
+    padding: 2%;
+    margin-left: 0;
+    margin-bottom: 1%;
+    float: none;
+  }
+  .character3 .yellowbox p {
+    margin: 10% 0;
+  }
+  .character3 .imgbox2 {
+    width: 100%;
+    float: none;
+  }
+
+  .character4 .imgbox1 {
+    width: 49%;
+    margin: 0 0.5%;
+    float: left;
+  }
+  .character4 .textbox {
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+  .character4 .textbox h3 {
+    margin-top: 60%;
+  }
+
+  .character5 .textbox {
+    color: #fff;
+    width: 100%;
+    padding-left: 0;
+    float: none;
+  }
+  .character5 .yellowbox {
+    text-align: center;
+    background: #ffd164;
+    width: 100%;
+    margin: 1% 0;
+    padding: 2%;
+    float: none;
+  }
+  .character5 .textbox h3 {
+    margin-top: 10%;
+  }
+  .character5 .textbox p {
+    margin: 10% 0 30%;
+  }
+  .character5 .yellowbox p {
+    margin: 5% 0;
+  }
+  .character5 .imgbox2 {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
 }

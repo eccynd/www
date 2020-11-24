@@ -17,10 +17,8 @@
 
 	
 	<script>
-	 $(document).ready(function() {
-  
-   
- 
+	$(document).ready(function() {
+
  //id 중복검사
  $("#id").keyup(function() {    // id입력 상자에 id값 입력시
     var id = $('#id').val(); //aaa
@@ -32,11 +30,11 @@
         cache: false, 
         success: function(data)
         {
-             $("#loadtext").html(data);
+            $("#loadtext").html(data);
         }
     });
 });
-		 
+
 //nick 중복검사		 
 $("#nick").keyup(function() {    // id입력 상자에 id값 입력시
     var nick = $('#nick').val();
@@ -48,103 +46,98 @@ $("#nick").keyup(function() {    // id입력 상자에 id값 입력시
         cache: false, 
         success: function(data)
         {
-             $("#loadtext2").html(data);
+            $("#loadtext2").html(data);
         }
     });
 });		 
 
 
 });
-	
-	
-	
-	</script>
-	<script>
-   
+    </script>
+    
+    <script>
+    function check_input()
+    {
+        if (!document.member_form.id.value)
+        {
+            alert("아이디를 입력하세요");    
+            document.member_form.id.focus();
+            return;
+        }
 
-  
-   function check_input()
-   {
-      if (!document.member_form.id.value)
-      {
-          alert("아이디를 입력하세요");    
-          document.member_form.id.focus();
-          return;
-      }
+        if (!document.member_form.pass.value)
+        {
+            alert("비밀번호를 입력하세요");    
+            document.member_form.pass.focus();
+            return;
+        }
 
-      if (!document.member_form.pass.value)
-      {
-          alert("비밀번호를 입력하세요");    
-          document.member_form.pass.focus();
-          return;
-      }
+        if (!document.member_form.pass_confirm.value)
+        {
+            alert("비밀번호확인을 입력하세요");    
+            document.member_form.pass_confirm.focus();
+            return;
+        }
 
-      if (!document.member_form.pass_confirm.value)
-      {
-          alert("비밀번호확인을 입력하세요");    
-          document.member_form.pass_confirm.focus();
-          return;
-      }
+        if (!document.member_form.name.value)
+        {
+            alert("이름을 입력하세요");    
+            document.member_form.name.focus();
+            return;
+        }
 
-      if (!document.member_form.name.value)
-      {
-          alert("이름을 입력하세요");    
-          document.member_form.name.focus();
-          return;
-      }
-
-      if (!document.member_form.nick.value)
-      {
-          alert("닉네임을 입력하세요");    
-          document.member_form.nick.focus();
-          return;
-      }
+        if (!document.member_form.nick.value)
+        {
+            alert("닉네임을 입력하세요");    
+            document.member_form.nick.focus();
+            return;
+        }
 
 
-      if (!document.member_form.hp2.value || !document.member_form.hp3.value )
-      {
-          alert("휴대폰 번호를 입력하세요");    
-          document.member_form.nick.focus();
-          return;
-      }
+        if (!document.member_form.hp2.value || !document.member_form.hp3.value )
+        {
+            alert("휴대폰 번호를 입력하세요");    
+            document.member_form.nick.focus();
+            return;
+        }
 
-      if (document.member_form.pass.value != 
+        if (document.member_form.pass.value != 
             document.member_form.pass_confirm.value)
-      {
-          alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요.");    
-          document.member_form.pass.focus();
-          document.member_form.pass.select();
-          return;
-      }
+        {
+            alert("비밀번호가 일치하지 않습니다.\n다시 입력해주세요.");    
+            document.member_form.pass.focus();
+            document.member_form.pass.select();
+            return;
+        }
 
-      document.member_form.submit(); 
+        document.member_form.submit(); 
 		   // insert.php 로 변수 전송
-   }
+    }
 
-   function reset_form()
-   {
-      document.member_form.id.value = "";
-      document.member_form.pass.value = "";
-      document.member_form.pass_confirm.value = "";
-      document.member_form.name.value = "";
-      document.member_form.nick.value = "";
-      document.member_form.hp1.value = "010";
-      document.member_form.hp2.value = "";
-      document.member_form.hp3.value = "";
-      document.member_form.email1.value = "";
-      document.member_form.email2.value = "";
-	  
-      document.member_form.id.focus();
+    function reset_form()
+    {
+        document.member_form.id.value = "";
+        document.member_form.pass.value = "";
+        document.member_form.pass_confirm.value = "";
+        document.member_form.name.value = "";
+        document.member_form.nick.value = "";
+        document.member_form.hp1.value = "010";
+        document.member_form.hp2.value = "";
+        document.member_form.hp3.value = "";
+        document.member_form.email1.value = "";
+        document.member_form.email2.value = "";
 
-      return;
-   }
+        document.member_form.id.focus();
+
+        return;
+    }
 </script>
 </head>
 <body>
 <? include "../common/sub_head.html" ?>
-	 
+
 	<article id="content">  
-   
+
     <h2>회원가입</h2>  
     <form  name="member_form" method="post" action="insert.php"> 
 		
@@ -202,10 +195,10 @@ $("#nick").keyup(function() {    // id입력 상자에 id값 입력시
             <a class="reset" onclick="reset_form()" href="#">초기화</a>
         </div>
     </form>
-	  
+
 	</article>
-	 <? include "../common/sub_foot.html" ?>
-	 
+	<? include "../common/sub_foot.html" ?>
+
 <script src="../mainjs/slide_down.js"></script>
 <script src="js/email.js"></script>
 

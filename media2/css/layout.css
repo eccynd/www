@@ -1,0 +1,351 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  clear: both;
+}
+.top {
+  padding: 80px 0 60px;
+}
+h3 {
+  margin-bottom: 30px;
+  font-size: 2.4em;
+  color: #fff;
+  background: #f5ab54;
+  width: 220px;
+  padding: 5px 0;
+  margin: 0 auto 20px;
+}
+.top p {
+  line-height: 2em;
+  color: #f5ab54;
+}
+.main {
+  margin-bottom: 80px;
+}
+
+/* nav */
+.navbar-default {
+  height: 80px;
+  background: none;
+  border-bottom: 1px solid rgb(260, 260, 260, 0.2);
+  transition: 0.5s;
+  z-index: 10;
+}
+.navbar-default:hover {
+  background: #fff;
+}
+.navbar-default h1 {
+  float: left;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.navbar-default:hover #logo h1 {
+  color: #333;
+}
+.collapse {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.nav {
+  float: right;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 14px;
+  height: 80px;
+  font-size: 1em;
+  margin-right: 10px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+.nav li a h2 {
+  font-size: 1em;
+}
+.navbar-default:hover .nav li a {
+  color: #777;
+  background: none;
+}
+.navbar-default .nav li a:hover {
+  color: #333;
+}
+
+/* navOn */
+.navbar-defaultOn {
+  height: 80px;
+  background: #fff;
+  border-bottom: 1px solid rgb(260, 260, 260, 0.2);
+  transition: 0.5s;
+  z-index: 10;
+}
+.navbar-default .logoOn {
+  float: left;
+  font-size: 2em;
+  color: #333;
+  font-weight: 400;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.nav .aOn {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 10px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+/* visual */
+#carousel-generic {
+  overflow: hidden;
+}
+.carousel-inner .item {
+  width: 100%;
+  height: 1000px;
+}
+.carousel-inner .item1 {
+  background: url(../images/visual_01.jpg) no-repeat center;
+  background-size: cover;
+}
+.carousel-inner .item2 {
+  background: url(../images/visual_02.jpg) no-repeat center;
+  background-size: cover;
+}
+.carousel-inner .item3 {
+  background: url(../images/visual_03.jpg) no-repeat center;
+  background-size: cover;
+}
+.carousel-control {
+  z-index: 1;
+  transition: 1s;
+}
+.carousel-control span {
+  position: relative;
+  top: 50%;
+}
+.carousel-indicators {
+  bottom: 50px;
+}
+.visual .mainimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0 0 20px rgb(0, 0, 0, 0.1);
+}
+.visual h2 {
+  font-weight: bold;
+  font-size: 6.5em;
+  font-family: 'Noto', serif;
+  color: #fff;
+  margin-top: 150px;
+}
+.visual .profile {
+  margin-top: 180px;
+}
+.visual .profile span {
+  font-size: 4.5em;
+  font-family: 'Noto', serif;
+  font-weight: bold;
+  color: #fff;
+}
+.visual .profile p {
+  font-size: 1.3em;
+  font-weight: 100;
+  line-height: 1.8em;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 0 0 20px rgb(0, 0, 0, 5);
+}
+
+/* content1 */
+.content1 .container p {
+  line-height: 2em;
+}
+
+.mid_back .container {
+  margin-top: 140px;
+}
+.mid_back .container h4 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.mid_back ul {
+  padding-inline-start: 0;
+}
+.mid_back li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.mid_back {
+  height: 600px;
+  background: url(../images/mid_back.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: 900px 900px rgb(0, 0, 0, 0.4) inset;
+  transition: 0.5s;
+}
+.mid_back:hover {
+  box-shadow: 900px 900px rgb(0, 0, 0, 0.7) inset;
+}
+
+/* content2 */
+.content2 .main div {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.content2 .main div img {
+  width: 100%;
+  transition: 0.5s;
+}
+.content2 .main div:hover img {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* content3 */
+.content3 {
+  background: #f3f3f3;
+  padding-bottom: 40px;
+}
+.content3 .main .text2 {
+  margin-top: 80px;
+}
+.content3 .container p {
+  line-height: 2em;
+}
+
+/* footer */
+.footer {
+  height: 100px;
+  background: #333;
+  color: #fff;
+}
+.footer p {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/*--------------반응형----------------*/
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  /* content1 */
+  .mid_back .container h4 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 130px;
+  }
+  .mid_back {
+    height: 600px;
+    background: url(../images/mid_back.jpg) no-repeat -250px center;
+    background-size: cover;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  /* nav */
+  .navbar-default {
+    height: 0;
+  }
+  .navbar-default {
+    background: #fff;
+  }
+  .navbar-default #logo h1 {
+    color: #333;
+    margin: 13px 0 0 20px;
+    font-size: 1.6em;
+  }
+  .collapse {
+    height: 270px;
+  }
+  .nav {
+    float: right;
+    background: #fff;
+    box-shadow: 0 6px rgb(0, 0, 0);
+  }
+  .nav li {
+    margin-top: 0;
+    float: none;
+  }
+  .navbar-collapse {
+    border: none;
+    float: right;
+    -webkit-box-shadow: none;
+    padding-right: 0;
+  }
+  .nav li a {
+    float: none;
+    color: #333;
+    height: 60px;
+    padding-top: 2px;
+  }
+  .navbar-default:hover .nav li a {
+    color: #333;
+    background: none;
+  }
+
+  .navbar-toggle {
+    border: none;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
+  }
+
+  /* visual */
+  .visual .mainimg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+  }
+  .carousel-inner .item1 {
+    background: url(../images/visual_01.jpg) no-repeat left;
+    background-size: cover;
+  }
+  .carousel-inner .item2 {
+    background: url(../images/visual_02.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .carousel-inner .item3 {
+    background: url(../images/visual_03.jpg) no-repeat left;
+    background-size: cover;
+  }
+
+  /* content1 */
+  .mid_back .container h4 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-top: 130px;
+  }
+  .mid_back {
+    height: 600px;
+    background: url(../images/mid_back.jpg) no-repeat -250px center;
+    background-size: cover;
+    color: #fff;
+  }
+}

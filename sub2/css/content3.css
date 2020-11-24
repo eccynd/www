@@ -1,22 +1,74 @@
 /* 건조실적 본문 */
 
-#content .count_box{margin-left: 40px}
-#content .count_box li{float: left; padding: 0 40px 60px; font-family: 'Nanum'; text-align: center}
-#content .count_box li p{font-size: 25px; font-weight: 400}
-#content .count_box .count1{font-size: 70px; color: #bbb}
-#content .count_box .count2{font-size: 70px; color: #bbb}
-#content .count_box .count3{font-size: 70px; color: #bbb}
-#content .count_box .count4{font-size: 70px; color: #0089cf}
+#content .count_box {
+  margin-left: 40px;
+}
+#content .count_box li {
+  float: left;
+  padding: 0 40px 60px;
+  font-family: 'Nanum Gothic';
+  text-align: center;
+}
+#content .count_box li p {
+  font-size: 25px;
+  font-weight: 400;
+}
+#content .count_box .count1 {
+  font-size: 70px;
+  color: #bbb;
+}
+#content .count_box .count2 {
+  font-size: 70px;
+  color: #bbb;
+}
+#content .count_box .count3 {
+  font-size: 70px;
+  color: #bbb;
+}
+#content .count_box .count4 {
+  font-size: 70px;
+  color: #0089cf;
+}
 
-#content .content_mid{clear: both; width: 1200px; height: 1200px}
+#content .content_mid {
+  clear: both;
+  width: 1200px;
+  height: 1200px;
+}
 
-#content .content_mid table{font-family: "Nanum"}
+#content .content_mid table {
+  font-family: 'Nanum Gothic';
+}
 
-#content .content_mid td{border: 1px solid #ddd; padding: 18px 50px 18px 50px}
-#content .content_mid .table_top{text-align: center; font-weight: 600}
-#content .content_mid .table_title{font-weight: 600}
-#content .content_mid .table_left{text-align: left}
+#content .content_mid td {
+  border: 1px solid #ddd;
+  padding: 18px 50px 18px 50px;
+}
+#content .content_mid .table_top {
+  text-align: center;
+  font-weight: 600;
+}
+#content .content_mid .table_title {
+  font-weight: 600;
+}
+#content .content_mid .table_left {
+  text-align: left;
+}
 
-#content .content_mid .mid_left{width: 580px; float: left; font-family: "Nanum"; text-align: right; margin: 0 auto; border-top: 2px solid #000}
+#content .content_mid .mid_left {
+  width: 580px;
+  float: left;
+  font-family: 'Nanum Gothic';
+  text-align: right;
+  margin: 0 auto;
+  border-top: 2px solid #000;
+}
 
-#content .content_mid .mid_right{width: 580px; float: right; font-family: "Nanum"; text-align: right; margin: 0 auto; border-top: 2px solid #000}
+#content .content_mid .mid_right {
+  width: 580px;
+  float: right;
+  font-family: 'Nanum Gothic';
+  text-align: right;
+  margin: 0 auto;
+  border-top: 2px solid #000;
+}

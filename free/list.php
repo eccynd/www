@@ -61,8 +61,7 @@
 <div id="wrap">
     <? include "../common/sub_head.html" ?>
     
-    <? $_GET['num']=1;
-      include "common/sub_nav.html"; ?>
+    <? include "common/sub_nav.html"; ?>
 
   <div id="content">
 	<div class="title_area">

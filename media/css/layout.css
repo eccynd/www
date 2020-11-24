@@ -1,118 +1,415 @@
 /* 와이드 pc  */
-#wrap{overflow: hidden; width: 100%}
-	
-.videoBox{width:100%; height: 100%; overflow:hidden; position:absolute}
+#wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
 #videoBG {
-   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100; /*다른요소보다 아래에 위치*/
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100; /*다른요소보다 아래에 위치*/
 }
-.visual_photo{display: none}
-
-#imgBG{
-    position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
-   left:50%;
-   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
-   width:auto;
-   min-width:100%; /*동영상 너비를 꽉차게*/
-   height:auto;
-   min-height:100%; /*동영상 높이를 꽉차게*/
-  transform:translateX(-50%) translateY(-50%);
-   z-index:-100;
-   display:none
+.visual_photo {
+  display: none;
 }
 
-.down{display: block; font-size: 30px; position: absolute; 
-	 left:50%; margin-left: -10px; bottom: 5%;
-	animation:ani .5s infinite  alternate;}
+#imgBG {
+  position: absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  display: none;
+}
+
+.down {
+  display: block;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 5%;
+  animation: ani 0.5s infinite alternate;
+}
 @keyframes ani {
-	0% { transform:scale(1); opacity:1; color:#fff;}
-	100% { transform:scale(1.2); opacity:0.8; color:#888;}
-}	
-.videoBox .gallery_text{position: absolute; width: 100%; margin:0 auto; bottom: 100px; text-align: center}
-.videoBox .gallery_text .text_top{font-family: 'Libre Baskerville'; font-size: 220px; color: transparent; letter-spacing: -3px; -webkit-text-stroke: 1px #fff; transition: .4s}
-.videoBox .gallery_text .text_top:hover{color: #fff; -webkit-text-stroke: 1px transparent; text-shadow: 0 0 10px rgb(0,0,0,.1)}
-.videoBox .gallery_text .text_top{animation:text-up .8s; transition-timing-function: ease-in}
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+    color: #888;
+  }
+}
+.videoBox .gallery_text {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 100px;
+  text-align: center;
+}
+.videoBox .gallery_text .text_top {
+  font-family: 'Libre Baskerville';
+  font-size: 220px;
+  color: transparent;
+  letter-spacing: -3px;
+  -webkit-text-stroke: 1px #fff;
+  transition: 0.4s;
+}
+.videoBox .gallery_text .text_top:hover {
+  color: #fff;
+  -webkit-text-stroke: 1px transparent;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.videoBox .gallery_text .text_top {
+  animation: text-up 0.8s;
+  transition-timing-function: ease-in;
+}
 @keyframes text-up {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-.videoBox .gallery_text .text_top .first{color: #fff; -webkit-text-stroke: 0; transition: .4s}
-.videoBox .gallery_text .text_top:hover .first{color: #fdc004}
-.videoBox .gallery_text .text_top .last{color: #fff; -webkit-text-stroke: 0; transition: .4s}
-.videoBox .gallery_text .text_top:hover .last{color: #fdc004}
-.videoBox .gallery_text .text_bottom{font-family: 'Libre Baskerville'; font-size: 22px; color: #fff; margin-top: 200px; text-shadow: 0 0 10px rgb(0,0,0,.3)}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.videoBox .gallery_text .text_top .first {
+  color: #fff;
+  -webkit-text-stroke: 0;
+  transition: 0.4s;
+}
+.videoBox .gallery_text .text_top:hover .first {
+  color: #fdc004;
+}
+.videoBox .gallery_text .text_top .last {
+  color: #fff;
+  -webkit-text-stroke: 0;
+  transition: 0.4s;
+}
+.videoBox .gallery_text .text_top:hover .last {
+  color: #fdc004;
+}
+.videoBox .gallery_text .text_bottom {
+  font-family: 'Libre Baskerville';
+  font-size: 22px;
+  color: #fff;
+  margin-top: 200px;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
 
-#content{width: 100%; margin: 0 auto; background: #fff}
+#content {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
 
-.about{overflow: hidden; height: 593px; position: relative; background: url(../images/aobut.jpg)center right no-repeat; background-size: cover}
-.about .about_text{float: left; margin-left:15%}
-.about .about_text h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 60px; font-style: italic; margin: 130px 0 60px}
-.about .about_text .text1{margin-bottom: 30px}
-.about .about_text .text2{margin-bottom: 60px}
+.about {
+  overflow: hidden;
+  height: 593px;
+  position: relative;
+  background: url(../images/aobut.jpg) center right no-repeat;
+  background-size: cover;
+}
+.about .about_text {
+  float: left;
+  margin-left: 15%;
+}
+.about .about_text h3 {
+  font-family: 'Libre Baskerville';
+  font-weight: 100;
+  font-size: 60px;
+  font-style: italic;
+  margin: 130px 0 60px;
+}
+.about .about_text .text1 {
+  margin-bottom: 30px;
+}
+.about .about_text .text2 {
+  margin-bottom: 60px;
+}
 
-.introduce{height: 730px; background: url(../images/introduce_background.jpg)center center no-repeat; background-size: cover; background-attachment: fixed; position: relative}
-.introduce .photo{width: 34%; float: left; position: absolute; left: 50%; top: 50%; margin: -21.5% 0 0 -40%}
-.introduce .photo img{width: 100%; box-shadow:  0 0 10px rgb(0,0,0,.3)}
-.introduce .photo .first{position: relative; bottom: 30px}
-.introduce_text{float: right; width: 30%; margin: 6% 15% 0 0}
-.introduce h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 70px; color: #fdc004}
-.introduce p{color: #fff; margin-top: 70px; text-align: justify}
+.introduce {
+  height: 730px;
+  background: url(../images/introduce_background.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.introduce .photo {
+  width: 34%;
+  float: left;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -21.5% 0 0 -40%;
+}
+.introduce .photo img {
+  width: 100%;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+.introduce .photo .first {
+  position: relative;
+  bottom: 30px;
+}
+.introduce_text {
+  float: right;
+  width: 30%;
+  margin: 6% 15% 0 0;
+}
+.introduce h3 {
+  font-family: 'Libre Baskerville';
+  font-weight: 100;
+  font-size: 70px;
+  color: #fdc004;
+}
+.introduce p {
+  color: #fff;
+  margin-top: 70px;
+  text-align: justify;
+}
 
-.mid_logo img{width: 40%; margin: 15% 30%}
+.mid_logo img {
+  width: 40%;
+  margin: 15% 30%;
+}
 
-.character{background: url(../images/character_background.jpg)no-repeat; background-size: cover; position: relative}
-.character h3{width: 65%; margin: 215px 15% 250px; position: absolute; font-family: 'Helvetica'; font-size: 134px; color: #fdc004; z-index: 1}
-.character img{width: 77%; margin: 260px 11% 330px}
-.character_text{width: 70%; position: absolute; bottom: 50%; margin: 0 15% -24%}
-.character .numb{display: block; font-family: 'Helvetica'; font-size: 134px; color: #fdc004; margin-top: 600px; text-shadow: 0 0 10px rgb(0,0,0,.2)}
-.character h4{font-size: 40px; color: #fff; margin-top: 70px}
-.character p{float: right; color: #fff; margin-top: -20px}
-.character .btn{position: absolute; bottom: 50%; right: 50%; margin: 0 -33% 0 0; text-shadow: 0 0 10px rgb(0,0,0,.1)}
-.character .btn_left{display:block; float:left; color: #fff; font-size: 60px; margin-right: 20px; transition: .3s}
-.character .btn_left:hover{color: #fdc004}
-.character .btn_right{display:block; float:right; color: #fff; font-size: 60px; transition: .3s}
-.character .btn_right:hover{color: #fdc004}
+.character {
+  background: url(../images/character_background.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.character h3 {
+  width: 65%;
+  margin: 215px 15% 250px;
+  position: absolute;
+  font-family: 'Helvetica';
+  font-size: 134px;
+  color: #fdc004;
+  z-index: 1;
+}
+.character img {
+  width: 77%;
+  margin: 260px 11% 330px;
+}
+.character_text {
+  width: 70%;
+  position: absolute;
+  bottom: 50%;
+  margin: 0 15% -24%;
+}
+.character .numb {
+  display: block;
+  font-family: 'Helvetica';
+  font-size: 134px;
+  color: #fdc004;
+  margin-top: 600px;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.character h4 {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 70px;
+}
+.character p {
+  float: right;
+  color: #fff;
+  margin-top: -20px;
+}
+.character .btn {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  margin: 0 -33% 0 0;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.character .btn_left {
+  display: block;
+  float: left;
+  color: #fff;
+  font-size: 60px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.character .btn_left:hover {
+  color: #fdc004;
+}
+.character .btn_right {
+  display: block;
+  float: right;
+  color: #fff;
+  font-size: 60px;
+  transition: 0.3s;
+}
+.character .btn_right:hover {
+  color: #fdc004;
+}
 
-.trailer{overflow: hidden; background: #000; background-size: cover; background-attachment: fixed} 
-.trailer h3{font-family: 'Libre Baskerville'; font-weight: 100; color: #fdc004; font-size: 58px; margin: 40px auto 100px; text-align: center}
-.trailer ul{width: 94%; margin: 0 6% 60%}
-.trailer li{float: left; width: 29%; margin: 0 1% 60px; position: relative}
-.trailer li .movie{width: 100%; filter: grayscale(100); transition: .3s}
-.trailer li:hover .movie{width: 100%; filter: grayscale(0)}
-#wrap .trailer li .youtube_btn{width: 20%; position: absolute; top: 29%; left: 40%; transition: .3s}
-#wrap .trailer li:hover .youtube_btn{transform: scale(1.1)}
-.trailer a{display: block}
-.trailer p{width: 116px; color: #fff; padding-bottom: 4px; border-bottom: 3px solid #fdc004; text-align: center; margin: 30px auto 0}
+.trailer {
+  overflow: hidden;
+  background: #000;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.trailer h3 {
+  font-family: 'Libre Baskerville';
+  font-weight: 100;
+  color: #fdc004;
+  font-size: 58px;
+  margin: 40px auto 100px;
+  text-align: center;
+}
+.trailer ul {
+  width: 94%;
+  margin: 0 6% 60%;
+}
+.trailer li {
+  float: left;
+  width: 29%;
+  margin: 0 1% 60px;
+  position: relative;
+}
+.trailer li .movie {
+  width: 100%;
+  filter: grayscale(100);
+  transition: 0.3s;
+}
+.trailer li:hover .movie {
+  width: 100%;
+  filter: grayscale(0);
+}
+#wrap .trailer li .youtube_btn {
+  width: 20%;
+  position: absolute;
+  top: 29%;
+  left: 40%;
+  transition: 0.3s;
+}
+#wrap .trailer li:hover .youtube_btn {
+  transform: scale(1.1);
+}
+.trailer a {
+  display: block;
+}
+.trailer p {
+  width: 116px;
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #fdc004;
+  text-align: center;
+  margin: 30px auto 0;
+}
 
-.gallery{overflow: hidden}
-.gallery img:hover{transform: scale(1.05); filter: blur(1.5px); opacity: .4}
-.gallery h3{font-family: 'Libre Baskerville'; font-weight: 100; font-size: 54px; margin: 145px auto 80px; text-align: center}
-.gallery_list{overflow: hidden; margin: 0 11% 200px}
+.gallery {
+  overflow: hidden;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: blur(1.5px);
+  opacity: 0.4;
+}
+.gallery h3 {
+  font-family: 'Libre Baskerville';
+  font-weight: 100;
+  font-size: 54px;
+  margin: 145px auto 80px;
+  text-align: center;
+}
+.gallery_list {
+  overflow: hidden;
+  margin: 0 11% 200px;
+}
 
-.gallery_list .first{float: left; overflow: hidden; width: 50%; position: relative}
-.gallery_list .first img{width: 100%; transition: .3s}
-.gallery_list .first p{position: absolute; bottom: 50%; left: 50%; margin-left: -150px; color: #fff; font-size: 70px; opacity: 0; pointer-events: none;  transition: .7s}
-.gallery_list .first a:hover p{opacity: 1}
+.gallery_list .first {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+}
+.gallery_list .first img {
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery_list .first p {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -150px;
+  color: #fff;
+  font-size: 70px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s;
+}
+.gallery_list .first a:hover p {
+  opacity: 1;
+}
 
-.gallery_list .list1_img{float: right; overflow: hidden; width: 25%; position: relative}
-.gallery_list .list1 img{width: 100%; transition: .3s}
-.gallery_list .list1 p{position: absolute; bottom: 40%; left: 50%; margin-left: -90px; color: #fff; font-size: 40px; opacity: 0; pointer-events: none; transition: .7s}
-.gallery_list .list1 a:hover p{opacity: 1}
+.gallery_list .list1_img {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+  position: relative;
+}
+.gallery_list .list1 img {
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery_list .list1 p {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -90px;
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s;
+}
+.gallery_list .list1 a:hover p {
+  opacity: 1;
+}
 
-.gallery_list .list2_img{float: right; overflow: hidden; width: 25%; position: relative}
-.gallery_list .list2 img{width: 100%; transition: .3s}
-.gallery_list .list2 p{position: absolute; bottom: 40%; left: 50%; margin-left: -90px; color: #fff; font-size: 40px; opacity: 0; pointer-events: none;  transition: .7s}
-.gallery_list .list2 a:hover p{opacity: 1}
+.gallery_list .list2_img {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+  position: relative;
+}
+.gallery_list .list2 img {
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery_list .list2 p {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -90px;
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.7s;
+}
+.gallery_list .list2 a:hover p {
+  opacity: 1;
+}

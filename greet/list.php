@@ -67,8 +67,7 @@
 <div id="wrap">
     <? include "../common/sub_head.html" ?>
     
-    <? $_GET['num']=1;
-      include "common/sub_nav.html"; ?>
+    <? include "common/sub_nav.html"; ?>
 
     <div id="content">
     <div class="title_area">
@@ -134,11 +133,10 @@
 	  $item_name    = $row[name];
   	  $item_nick    = $row[nick];
 	  $item_hit     = $row[hit];
-      $item_content     = $row[content];
 
       $item_date    = $row[regist_day];
-	  $item_date = substr($item_date, 0, 7); 
-       
+	  $item_date = substr($item_date, 0, 7);  
+
 	  $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
 
 ?>

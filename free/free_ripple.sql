@@ -8,4 +8,3 @@ create table free_ripple (
    regist_day char(20),
    primary key(num)
 );
-

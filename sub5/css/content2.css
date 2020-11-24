@@ -1,24 +1,122 @@
 /* 채용안내 본문 */
 
-#content .content_top{margin-bottom: 220px; overflow: hidden}
-#content .content_top li{float: left; text-align: center; border: 1px solid #ccc; width: 220px; height: 340px; margin-left: 1.5%}
-#content .content_top span{display: block; font-family: 'Nanum'; font-size: 35px; font-weight: 100; color: #ccc; margin: 20px 0 0 -150px}
-#content .content_top i{font-size: 60px; color: #0089cf; margin-top: 20px}
-#content .content_top h3{font-family: 'Nanum'; font-size: 18px; font-weight: 600; margin-top: 50px}
-#content .content_top p{font-family: 'Dotum'; font-size: 16px; font-weight: 100; color: #666; margin-top: 15px; line-height: 1.5em}
+#content .content_top {
+  margin-bottom: 220px;
+  overflow: hidden;
+}
+#content .content_top li {
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 220px;
+  height: 340px;
+  margin-left: 1.5%;
+}
+#content .content_top span {
+  display: block;
+  font-family: 'Nanum Gothic';
+  font-size: 35px;
+  font-weight: 100;
+  color: #ccc;
+  margin: 20px 0 0 -150px;
+}
+#content .content_top i {
+  font-size: 60px;
+  color: #0089cf;
+  margin-top: 20px;
+}
+#content .content_top h3 {
+  font-family: 'Nanum Gothic';
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+#content .content_top p {
+  font-family: 'Dotum';
+  font-size: 16px;
+  font-weight: 100;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.5em;
+}
 
-#content .content_mid{width: 1200px; margin-bottom: 200px}
-#content .content_mid .mid_top{margin: 0 0 70px 50px; font-family: 'Nanum'; font-size: 17px}
-#content .content_mid .mid_top span{color: #0089cf}
-#content .content_mid ul .time{position: absolute; left: 35px; top: 50px}
-#content .content_mid ul .time b{display: block; font-size: 50px; font-family:'Nanum'; color: #ccc; font-weight: 400; margin: 0 0 6px 4px}
-#content .content_mid ul li:hover .time b{color: #0089cf}
-#content .content_mid ul .time span{font-size: 20px; font-family:'Nanum'; color: #ccc; font-weight: 400}
-#content .content_mid ul li:hover .time span{color: #0089cf}
-#content .content_mid ul li{position: relative; font-family: "Dotum"; font-size: 17px; line-height: 27px; border-bottom: 1px solid #ccc; padding: 40px 0 35px 140px}
-#content .content_mid ul li span{font-family: "Nanum"; font-size: 19px; font-weight: 600; color: #333}
-#content .content_mid ul li p{margin-top: 10px}
-#content .content_mid ul i{position: absolute; bottom: 55px; right: 80px; font-size: 30px}
-#content .content_mid ul li a{display: block; color: #999; transition: all .5s}
-#content .content_mid ul li:hover a{color: #0089cf; margin-left: 20px}
-#content .content_mid .number{display: block; font-family: 'Nanum'; font-size:16px; padding: 7px 0; width: 35px; color: #0089cf; border: 1px solid #0089cf; text-align: center; margin: 60px auto}
+#content .content_mid {
+  width: 1200px;
+  margin-bottom: 200px;
+}
+#content .content_mid .mid_top {
+  margin: 0 0 70px 50px;
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
+}
+#content .content_mid .mid_top span {
+  color: #0089cf;
+}
+#content .content_mid ul .time {
+  position: absolute;
+  left: 35px;
+  top: 50px;
+}
+#content .content_mid ul .time b {
+  display: block;
+  font-size: 50px;
+  font-family: 'Nanum Gothic';
+  color: #ccc;
+  font-weight: 400;
+  margin: 0 0 6px 4px;
+}
+#content .content_mid ul li:hover .time b {
+  color: #0089cf;
+}
+#content .content_mid ul .time span {
+  font-size: 20px;
+  font-family: 'Nanum Gothic';
+  color: #ccc;
+  font-weight: 400;
+}
+#content .content_mid ul li:hover .time span {
+  color: #0089cf;
+}
+#content .content_mid ul li {
+  position: relative;
+  font-family: 'Dotum';
+  font-size: 17px;
+  line-height: 27px;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0 35px 140px;
+}
+#content .content_mid ul li span {
+  font-family: 'Nanum Gothic';
+  font-size: 19px;
+  font-weight: 600;
+  color: #333;
+}
+#content .content_mid ul li p {
+  margin-top: 10px;
+}
+#content .content_mid ul i {
+  position: absolute;
+  bottom: 55px;
+  right: 80px;
+  font-size: 30px;
+}
+#content .content_mid ul li a {
+  display: block;
+  color: #999;
+  transition: all 0.5s;
+}
+#content .content_mid ul li:hover a {
+  color: #0089cf;
+  margin-left: 20px;
+}
+#content .content_mid .number {
+  display: block;
+  font-family: 'Nanum Gothic';
+  font-size: 16px;
+  padding: 7px 0;
+  width: 35px;
+  color: #0089cf;
+  border: 1px solid #0089cf;
+  text-align: center;
+  margin: 60px auto;
+}

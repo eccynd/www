@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xml:lang="ko" lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dieter Rams</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png" />
+    <link rel="apple-touch-startup-image" href="startup.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animatescroll.min.js"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbar-example' });
+    </script>
+    <script>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          'load',
+          function () {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      // ]]>
+    </script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <div class="container-fluid">
+      <div id="home"></div>
+      <div class="row container">
+        <nav
+          id="navbar-example"
+          class="navbar navbar-default navbar-fixed-top"
+          role="navigation"
+        >
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                class="navbar-toggle"
+                type="button"
+                data-toggle="collapse"
+                data-target=".bs-example-js-navbar-scrollspy"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a id="logo" href="index.html"><h1>DIETER RAMS</h1></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse bs-example-js-navbar-scrollspy navbar-1-collapse"
+            >
+              <ul class="nav navbar-nav navbar-collapse col-lg-6 col-md-7">
+                <li>
+                  <a href="#home" onclick="$('#home').animatescroll();"
+                    ><h2>HOME</h2></a
+                  >
+                </li>
+                <li>
+                  <a href="#about" onclick="$('#about').animatescroll();"
+                    ><h2>ABOUT</h2></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    onclick="$('#portfolio').animatescroll();"
+                    ><h2>PORTFOLIO</h2></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#exhibition"
+                    onclick="$('#exhibition').animatescroll();"
+                    ><h2>EXHIBITION</h2></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.navbar-collapse -->
+        </nav>
+      </div>
+
+      <div id="carousel-generic" class="row carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-generic"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="item item1 active"></div>
+          <div class="item item2"></div>
+          <div class="item item3"></div>
+        </div>
+        <!-- Controls -->
+        <a
+          class="left carousel-control"
+          href="#carousel-generic"
+          data-slide="prev"
+        >
+          <span>left</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#carousel-generic"
+          data-slide="next"
+        >
+          <span>right</span>
+        </a>
+        <!-- Carousel text -->
+        <div class="visual text-center">
+          <div class="mainimg col-lg-12 col-md-6 col-sm-12 col-xs-12">
+            <div
+              class="profile col-lg-12 col-lg-offsest-7 col-md-12 col-sm-12 col-xs-10"
+            >
+              <h2>Dieter Rams</h2>
+              <span>디터람스</span>
+              <p>
+                디자이너의 책임은 실질적인 삶에 가랑비처럼 조금씩 스며들어<br />사회를
+                변화시키는 것이다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about start-->
+      <div id="about"></div>
+      <div class="row content1">
+        <div class="top text-center col-lg-12 col-xs-12">
+          <h3>ABOUT</h3>
+          <p class="container">
+            ‘나의 디자인은 좋은 디자인인가?’에 대한 고찰. <br />전설이 돼버린
+            이름, 브라운. 40여 년 동안 이곳에 몸담으며 기업의 디자인 언어를
+            구축한 디터 람스.
+          </p>
+        </div>
+        <!-- end .container -->
+        <div class="main">
+          <div class="container">
+            <div class="col-md-3">
+              <p>
+                독일 출신의 세계적인 산업 디자이너. 가전회사 브라운의 디자인
+                부문 수장을 맡으며 쌓아온 명성은 현대의 디자인 업계에 지대한
+                영향을 미쳤다. 시대를 앞서간 디자인으로 유명한데 그가
+                1960~70년대에 디자인한 제품들도 2000년대 제품이라고 해도 믿을
+                정도로 세련된 디자인을 자랑한다. 애플의 최고 디자인 책임자인
+                조너선 아이브가 가장 존경하는 디자이너라고 하며, 때문에 애플의
+                디자인에서도 브라운스러운 미니멀리즘을 엿볼 수 있다.
+              </p>
+            </div>
+            <div>
+              <img
+                src="images/content1_01.jpg"
+                alt=""
+                class="img-responsive col-lg-2 col-md-2 col-md-offset-1 col-xs-4 img-rounded"
+              />
+              <img
+                src="images/content1_02.jpg"
+                alt=""
+                class="img-responsive col-lg-5 col-md-4 col-xs-7 col-xs-offset-1 img-rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about end-->
+
+      <div class="row">
+        <div class="col conta mid_back">
+          <div class="container text-center col-lg-6 col-md-6">
+            <h4>Dieter Rams’ 10 Principles<br />of Good Design</h4>
+            <ul>
+              <li>1. Good design is innovative.</li>
+              <li>2. Good design makes a product useful.</li>
+              <li>3. Good design is aesthetic.</li>
+              <li>4. Good design makes a product understandable.</li>
+              <li>5. Good design is unobtrusive.</li>
+              <li>6. Good design is honest</li>
+              <li>7. Good design is long-lasting.</li>
+              <li>8. Good design is thorough down to the last detail.</li>
+              <li>9. Good design is environmentally friendly.</li>
+              <li>10. Good design is as little design as possible.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio"></div>
+      <div class="row content2">
+        <div class="top text-center col-lg-12 col-xs-12">
+          <h3>PORTFOLIO</h3>
+          <p class="container">
+            큰 차이점은 없었습니다. 저는 오히려 건축과 디자인을 통합적으로
+            보고자 했습니다. <br />서로 다른 재료를 쓰고 규모도 다르지만
+            원칙적으로는 둘 다 기술적인 디자인이라고 할 수 있으니까요.
+          </p>
+        </div>
+        <div class="main">
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo1.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo2.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo3.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo4.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo5.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo6.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo7.jpg" alt="" />
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-6">
+            <img src="images/photo8.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="exhibition"></div>
+      <div class="row content3">
+        <div class="top text-center col-lg-12 col-xs-12">
+          <h3>EXHIBITION</h3>
+          <p class="container">
+            취향대로 하나둘씩 모았던 빈티지 제품들을 사무실 한 켠에 쌓아놓기
+            시작했고,<br />혼자 보기 아까워 뭇사람들에게 두어달 공유하다 어느덧
+            2년이라는 세월이 흘러 지금의 4560디자인하우스가 탄생하게 된 것.
+          </p>
+        </div>
+        <div class="main">
+          <div class="container text1">
+            <img
+              src="images/content3_01.jpg"
+              alt=""
+              class="col-lg-7 col-md-7 col-xs-12 img-rounded"
+            />
+            <p class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1">
+              4560디자인하우스의 입구에 들어서면 먼저 드넓은 카페가 반겨준다.
+              카페를 가득 메운 커피 내음을 뒤로 하고 로비에 들어서면 루이스
+              폴센(Louis Poulsen) 조명과 임스 체어(Eames Chair)로 50년대 유럽의
+              거실을 재현한 공간이 눈에 띈다. 그리고 긴 통로를 따라 지나가다
+              보면 어마어마한 양의 브라운 컬렉션이 펼쳐진다. 그 중 가장 눈에
+              띄는 곳은 ‘디터 람스의 방’. ‘TP 1’, ‘SK 4’, ‘L 450’ 등 상징적인
+              제품들로 채워진 이 공간은 마치 영화 디터 람스에서 흘깃 보았던 그의
+              서재를 그대로 옮겨 놓은 듯 하다.
+            </p>
+          </div>
+          <div class="container text2">
+            <p class="col-lg-4 col-md-4">
+              4560디자인하우스의 입구에 들어서면 먼저 드넓은 카페가 반겨준다.
+              카페를 가득 메운 커피 내음을 뒤로 하고 로비에 들어서면 루이스
+              폴센(Louis Poulsen) 조명과 임스 체어(Eames Chair)로 50년대 유럽의
+              거실을 재현한 공간이 눈에 띈다. 그리고 긴 통로를 따라 지나가다
+              보면 어마어마한 양의 브라운 컬렉션이 펼쳐진다. 그 중 가장 눈에
+              띄는 곳은 ‘디터 람스의 방’. ‘TP 1’, ‘SK 4’, ‘L 450’ 등 상징적인
+              제품들로 채워진 이 공간은 마치 영화 디터 람스에서 흘깃 보았던 그의
+              서재를 그대로 옮겨 놓은 듯 하다.
+            </p>
+            <img
+              src="images/content3_02.jpg.jpg"
+              alt=""
+              class="col-lg-7 col-lg-offset-1 col-md-7 col-md-offset-1 col-xs-12 img-rounded"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row footer">
+        <div class="col-lg-12 text-center">
+          <p>
+            Copyright(c) &copy; 2020 Dieter Rams Co.,Ltd. All Right Reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/slide_down.js"></script>
+  </body>
+</html>

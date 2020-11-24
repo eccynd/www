@@ -1,493 +1,503 @@
-#content{margin: 200px auto; width: 1200px; font-family: 'Nanum'}
+#content {
+  margin: 200px auto;
+  width: 1200px;
+  font-family: 'Nanum Gothic';
+}
 
-#content #col2{
-    overflow: hidden;
-    margin-bottom: 100px
+#content #col2 {
+  overflow: hidden;
+  margin-bottom: 100px;
 }
 #content #col2 #title {
-    margin-top: 30px;
-    height: 30px;
-    border-bottom: solid 1px #cccccc;
+  margin-top: 30px;
+  height: 30px;
+  border-bottom: solid 1px #cccccc;
 }
 
-#content form{
-    overflow: hidden
+#content form {
+  overflow: hidden;
 }
 
 /* list css */
 
 #list_top {
-    float: left;
-    margin: 0 0 50px 10px;
-    font-family: 'Nanum';
-    font-size: 17px
+  float: left;
+  margin: 0 0 50px 10px;
+  font-family: 'Nanum Gothic';
+  font-size: 17px;
 }
 
 #list_search {
-    height: 30px;
-    padding-top: 10px;
+  height: 30px;
+  padding-top: 10px;
 }
-#list_search select{
-    padding: 10px;
-    border: 1px solid #ccc;
-    float: left
-}
-
-#list_top span{
-    color: #0089cf
+#list_search select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
 }
 
-#list_search{
-    clear: both;
-    margin: 0 0 30px 10px
+#list_top span {
+  color: #0089cf;
+}
+
+#list_search {
+  clear: both;
+  margin: 0 0 30px 10px;
 }
 
 #list_search #list_search1 {
-    float: left;
-    margin-left: 790px;
+  float: left;
+  margin-left: 790px;
 }
 
 #list_search #list_search1 select {
-    border: solid 1px #cccccc
+  border: solid 1px #cccccc;
 }
 
 #list_search #list_search2 {
-    float: left;
-    margin-left: 3px;
+  float: left;
+  margin-left: 3px;
 }
 
 #list_search #list_search2 input {
-    border: solid 1px #cccccc;
-    padding: 11px
+  border: solid 1px #cccccc;
+  padding: 11px;
 }
 
 #list_search #list_search3 {
-    float: left;
-    margin-left: 5px;
+  float: left;
+  margin-left: 5px;
 }
-#list_search #list_search3 input{
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    transition: .2s
+#list_search #list_search3 input {
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
 }
-#list_search #list_search3 input:hover{
-    background: #0089cf;
-    border: 1px solid #0089cf
+#list_search #list_search3 input:hover {
+  background: #0089cf;
+  border: 1px solid #0089cf;
 }
 
 #list_top_title {
-    height: 40px;
-    padding: 7px;
-    border-top: solid 2px #000;
-    border-bottom: solid 1px #eee;
-    margin-bottom: 3px;
-    font-weight: bold
+  height: 40px;
+  padding: 7px;
+  border-top: solid 2px #000;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 3px;
+  font-weight: bold;
 }
 
-#list_top_title ul{
-    padding-top: 10px
+#list_top_title ul {
+  padding-top: 10px;
 }
 
 #list_top_title li {
-    display: inline;
+  display: inline;
 }
 
 #list_top_title #list_title1 {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 #list_top_title #list_title2 {
-    margin-left: 404px;
+  margin-left: 404px;
 }
 
 #list_top_title #list_title3 {
-    margin-left: 410px;
+  margin-left: 410px;
 }
 
 #list_top_title #list_title4 {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 #list_top_title #list_title5 {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 #list_item {
-    position: relative;
-    font-size: 17px;
-    line-height: 27px;
-    border-bottom: 1px solid #ccc;
-    padding: 40px 0 35px 30px;
-    color: #ccc
+  position: relative;
+  font-size: 17px;
+  line-height: 27px;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0 35px 30px;
+  color: #ccc;
 }
 
 #list_item #list_item1 {
-    font-size: 50px;
-    font-family: 'Nanum';
-    font-weight: 400;
-    margin: 0 0 5px 6px;
-    transition: .5s
+  font-size: 50px;
+  font-family: 'Nanum Gothic';
+  font-weight: 400;
+  margin: 0 0 5px 6px;
+  transition: 0.5s;
 }
 
 #list_item #list_item2 {
-    font-size: 17px;
-    font-family: 'Nanum';
-    font-weight: bold;
-    transition: .5s
+  font-size: 17px;
+  font-family: 'Nanum Gothic';
+  font-weight: bold;
+  transition: 0.5s;
 }
 
 #list_item #list_item3 {
-    float: left;
+  float: left;
 }
 
-#list_item #list_item3 a{
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-    position: relative;
-    bottom: 44px;
-    left: 160px;
-    width: 1000px;
-    transition: .5s
+#list_item #list_item3 a {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  bottom: 44px;
+  left: 160px;
+  width: 1000px;
+  transition: 0.5s;
 }
 
-#list_item:hover #list_item3 a{
-    margin-left: 20px
+#list_item:hover #list_item3 a {
+  margin-left: 20px;
 }
-#list_item3 a:hover{
-    color: #0089cf
-}
-
-#list_item i{
-    position: absolute;
-    bottom: 55px;
-    right: 80px;
-    font-size: 30px;
-    color: #ccc;
-    transition: .5s
+#list_item3 a:hover {
+  color: #0089cf;
 }
 
-#list_item:hover .time, #list_item:hover i{
-    color: #0089cf
+#list_item i {
+  position: absolute;
+  bottom: 55px;
+  right: 80px;
+  font-size: 30px;
+  color: #ccc;
+  transition: 0.5s;
+}
+
+#list_item:hover .time,
+#list_item:hover i {
+  color: #0089cf;
 }
 
 #page_button {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 #page_num {
-    float: left;
-    width: 80%;
-    margin: 10px 0 50px 100px;
-    text-align: center;
+  float: left;
+  width: 80%;
+  margin: 10px 0 50px 100px;
+  text-align: center;
 }
 
-#page_num a{
-    margin: 0 5px
+#page_num a {
+  margin: 0 5px;
 }
 
-#page_num b{
-    font-size:16px; padding: 3px 6px 3px 10px; width: 35px; color: #0089cf; border: 1px solid #0089cf; margin: 60px auto; font-weight: 100
+#page_num b {
+  font-size: 16px;
+  padding: 3px 6px 3px 10px;
+  width: 35px;
+  color: #0089cf;
+  border: 1px solid #0089cf;
+  margin: 60px auto;
+  font-weight: 100;
 }
 
 #button {
-    float: right;
-    text-align: center;
-    margin-top: 10px;
+  float: right;
+  text-align: center;
+  margin-top: 10px;
 }
-#button a{
-    display: block;
-    background: #333;
-    color: #fff
+#button a {
+  display: block;
+  background: #333;
+  color: #fff;
 }
-#button a:nth-child(1){
-    float: left;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    transition: .2s
+#button a:nth-child(1) {
+  float: left;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
 }
-#button a:nth-child(2){
-    float: right;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    transition: .2s
+#button a:nth-child(2) {
+  float: right;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
 }
-#button a:nth-child(1):hover,#button a:nth-child(2):hover{
-    background: #0089cf;
-    border: 1px solid #0089cf
+#button a:nth-child(1):hover,
+#button a:nth-child(2):hover {
+  background: #0089cf;
+  border: 1px solid #0089cf;
 }
 
 /* write_form css */
 
 #write_form_title {
-    margin-top: 20px;
-    width: 99%;
-    height: 25px;
-    text-align: center;
-    padding-top: 15px;
-    border-top: solid 2px #000;
-    font-weight: bold
+  margin-top: 20px;
+  width: 99%;
+  height: 25px;
+  text-align: center;
+  padding-top: 15px;
+  border-top: solid 2px #000;
+  font-weight: bold;
 }
 
 #write_form {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #write_form #write_row1 {
-    width: 99%;
-    height: 30px;
-    margin: 2px 0 2px 0;
+  width: 99%;
+  height: 30px;
+  margin: 2px 0 2px 0;
 }
 
 #write_form #write_row2 {
-    width: 99%;
-    height: 40px;
-    margin: 2px 0 2px 0;
+  width: 99%;
+  height: 40px;
+  margin: 2px 0 2px 0;
 }
 
 #write_form #write_row3 {
-    width: 99%;
-    height: 251px;
-    margin: 2px 0 2px 0;
+  width: 99%;
+  height: 251px;
+  margin: 2px 0 2px 0;
 }
 
 .write_line {
-    width: 99%;
-    border-bottom: solid 1px #eee;
+  width: 99%;
+  border-bottom: solid 1px #eee;
 }
 
 #write_form .col1 {
-    float: left;
-    width: 120px;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold
+  float: left;
+  width: 120px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
 }
 
-#write_form #write_row2 .col1{
-    margin-top: 4px
+#write_form #write_row2 .col1 {
+  margin-top: 4px;
 }
 
 #write_form #write_row3 .col1 {
-    height: 126px;
-    padding-top: 120px;
+  height: 126px;
+  padding-top: 120px;
 }
 
 #write_form .col2 {
-    float: left;
-    margin-left: 8px;
-    margin-top: 2px;
+  float: left;
+  margin-left: 8px;
+  margin-top: 2px;
 }
 
 #write_form #write_row1 .col2 {
-    float: left;
-    margin-top: 5px;
+  float: left;
+  margin-top: 5px;
 }
 
 #write_form #write_row1 .col3 {
-    float: left;
-    margin-top: 5px;
-    margin-left: 100px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 100px;
 }
 
-
 #write_row2 .col2 input {
-    width: 1000px;
-    height: 25px;
-    border: solid 1px #ddd;
-    margin-top: 4px
+  width: 1000px;
+  height: 25px;
+  border: solid 1px #ddd;
+  margin-top: 4px;
 }
 
 #write_row3 .col2 textarea {
-    width: 1000px;
-    margin-top: 1px;
-    border: solid 1px #ddd;
+  width: 1000px;
+  margin-top: 1px;
+  border: solid 1px #ddd;
 }
 
-#write_button{
-    float: right;
-    margin: 10px 20px 0 0
+#write_button {
+  float: right;
+  margin: 10px 20px 0 0;
 }
-#write_button input{
-    display: block;
-    float: left;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    font-size: 15px;
-    transition: .2s
+#write_button input {
+  display: block;
+  float: left;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
 }
-#write_button a{
-    float: right;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    transition: .2s
+#write_button a {
+  float: right;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
 }
-#write_button input:hover,#write_button a:hover{
-    background: #0089cf;
-    border: 1px solid #0089cf
+#write_button input:hover,
+#write_button a:hover {
+  background: #0089cf;
+  border: 1px solid #0089cf;
 }
-
 
 /* view.php css */
 
 #view_comment {
-    margin: 10px 0 0 10px;
+  margin: 10px 0 0 10px;
 }
 
 #view_title {
-    height: 18px;
-    padding: 15px 8px 15px 8px;
-    margin-bottom: 5px;
-    font-weight: bold
+  height: 18px;
+  padding: 15px 8px 15px 8px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #view_title1 {
-    font-size: 26px;
-    text-align: center;
-    color: #0089cf
+  font-size: 26px;
+  text-align: center;
+  color: #0089cf;
 }
 
 #view_title2 {
-    clear: both;
-    text-align: center;
-    margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid 1px #eee    
+  clear: both;
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #eee;
 }
 
 #view_content {
-    width: 96%;
-    min-height: 200px;
-    padding: 70px 0;
-    overflow: hidden;
-    line-height: 150%;
-    border-bottom: solid 1px #eee;
-    margin-top: 100px;
-    text-align: center;
-    line-height: 2em;
+  width: 96%;
+  min-height: 200px;
+  padding: 70px 0;
+  overflow: hidden;
+  line-height: 150%;
+  border-bottom: solid 1px #eee;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 2em;
 }
 
 #view_button {
-    width: 98%;
-    text-align: right;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 98%;
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#view_button a{
-    float: right;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: .2s;
+#view_button a {
+  float: right;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.2s;
 }
 
-#view_button a:hover{
-    background: #0089cf;
-    border: 1px solid #0089cf
+#view_button a:hover {
+  background: #0089cf;
+  border: 1px solid #0089cf;
 }
 
 /* ripple css */
 
 #ripple {
-	width:98%;
-
+  width: 98%;
 }
 
 #ripple_writer_title {
-	height:26px;
-	padding-top:10px; 
+  height: 26px;
+  padding-top: 10px;
 }
 
 #ripple_writer_title ul {
-	margin-left:5px;
+  margin-left: 5px;
 }
 
 #ripple_writer_title li {
-	display:inline;
+  display: inline;
 }
 
 #writer_title1 {
-	margin-left:10px;
-	font-weight:bold;
+  margin-left: 10px;
+  font-weight: bold;
 }
 
 #writer_title2 {
-	margin-left:20px;
+  margin-left: 20px;
 }
 
-#writer_title3 a{
-	float: right;
-    margin-right: 20px;
-    color: #333;
-    transition: .3s
+#writer_title3 a {
+  float: right;
+  margin-right: 20px;
+  color: #333;
+  transition: 0.3s;
 }
-#writer_title3:hover a{
-	color: #0089cf
+#writer_title3:hover a {
+  color: #0089cf;
 }
 
 #ripple_content {
-	padding:10px;
-	margin-left:5px;
-	line-height:150%;
+  padding: 10px;
+  margin-left: 5px;
+  line-height: 150%;
 }
 
 .hor_line_ripple {
-	width:100%;
-	height:1px;
-	margin-bottom:10px;
-	border-bottom:solid 1px #efefef;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #efefef;
 }
 
 #ripple_box {
-	width:99%;
-	height:100px;
-	padding:8px;
-	margin-left:3px;
-	margin-bottom:15px;
+  width: 99%;
+  height: 100px;
+  padding: 8px;
+  margin-left: 3px;
+  margin-bottom: 15px;
 }
 
 #ripple_box1 {
-	float:left;
+  float: left;
 }
 
 #ripple_box1 textarea {
-    width: 1060px;
-    padding: 10px 10px;
-	border:solid 1px #ccc;
-    font-size: 14px;
+  width: 1060px;
+  padding: 10px 10px;
+  border: solid 1px #ccc;
+  font-size: 14px;
 }
 
-#ripple_box2 input{
-	float: right;
-    border: 1px solid #333;
-    padding: 9.5px;
-    color: #fff;
-    background: #333;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: .2s;
+#ripple_box2 input {
+  float: right;
+  border: 1px solid #333;
+  padding: 9.5px;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.2s;
 }
 
-#ripple_box2 input:hover{
-    background: #0089cf;
-    border: 1px solid #0089cf
+#ripple_box2 input:hover {
+  background: #0089cf;
+  border: 1px solid #0089cf;
 }

@@ -1,11 +1,62 @@
 /* 상선 특수선 본문 */
 
-#content .content_top{margin: 0 0 120px -400px; position: relative}
-#content .content_top p{position: absolute; top: 280px; left: 630px; font-family: "Nanum"; font-size: 25px; font-weight: 100; color: #fff; text-align: center; line-height: 1.5em; border: 1px solid #fff; padding: 0 180px; transition: all 1.2s; opacity: 0}
-#content .content_top .content_pOn{position: absolute; top: 180px; left: 630px; font-family: "Nanum"; font-size: 25px; font-weight: 100; color: #fff; text-align: center; line-height: 1.5em; border: 1px solid #fff; padding: 20px 180px; opacity: 1; box-shadow: 0 0 0 1000px rgb(6,26,37,.4)inset}
+#content .content_top {
+  margin: 0 0 120px -400px;
+  position: relative;
+}
+#content .content_top p {
+  position: absolute;
+  top: 280px;
+  left: 630px;
+  font-family: 'Nanum Gothic';
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  border: 1px solid #fff;
+  padding: 0 180px;
+  transition: all 1.2s;
+  opacity: 0;
+}
+#content .content_top .content_pOn {
+  position: absolute;
+  top: 180px;
+  left: 630px;
+  font-family: 'Nanum Gothic';
+  font-size: 25px;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  border: 1px solid #fff;
+  padding: 20px 180px;
+  opacity: 1;
+  box-shadow: 0 0 0 1000px rgb(6, 26, 37, 0.4) inset;
+}
 
-#content .content_mid{margin-bottom: 240px}
-#content .content_mid li{width: 1090px; overflow: hidden; padding: 85px 0; border-bottom: 1px solid #ccc}
-#content .content_mid ul img{float: left}
-#content .content_mid ul li h3{font-size: 28px; margin: 35px 0 15px 420px; color: #333}
-#content .content_mid ul li p{font-family: "Nanum"; font-size: 15px; font-weight: 100; line-height: 2em; color: #666; margin-left: 420px}
+#content .content_mid {
+  margin-bottom: 240px;
+}
+#content .content_mid li {
+  width: 1090px;
+  overflow: hidden;
+  padding: 85px 0;
+  border-bottom: 1px solid #ccc;
+}
+#content .content_mid ul img {
+  float: left;
+}
+#content .content_mid ul li h3 {
+  font-size: 28px;
+  margin: 35px 0 15px 420px;
+  color: #333;
+}
+#content .content_mid ul li p {
+  font-family: 'Nanum Gothic';
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 2em;
+  color: #666;
+  margin-left: 420px;
+}
