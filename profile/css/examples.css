@@ -1,0 +1,420 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(240, 0, 0, 0.8);
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body {
+  font-family: arial, helvetica;
+  color: #333;
+}
+h1 {
+  font-size: 6em;
+  color: #333;
+}
+p {
+  font-size: 2em;
+  color: #fff;
+}
+
+/* section */
+#section0 h1 {
+  font-size: 4em;
+  font-family: 'Nanum Myeongjo';
+}
+#section0 h1 span {
+  display: inline-block;
+  animation: name 0.6s infinite alternate;
+}
+@keyframes name {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+#section0 img {
+  width: 270px;
+  margin: 12px auto 0;
+  position: relative;
+  z-index: 1;
+  padding: 0 120px;
+  background: #fff;
+}
+#section0 hr {
+  width: 84%;
+  position: relative;
+  bottom: 200px;
+  z-index: 0;
+  opacity: 0.4;
+}
+.section {
+  text-align: center;
+}
+#section1 .profileWrap {
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 700px;
+  position: relative;
+  box-shadow: 8px 8px 12px -2px rgba(0, 0, 0, 0.6);
+  background: #333;
+}
+#section1 .profileWrap .profileText {
+  float: left;
+  text-align: left;
+  margin-top: 4%;
+  margin-left: 5%;
+  width: 55%;
+  display: block;
+  color: #fff;
+  text-align: left;
+  padding: 8px 0;
+}
+#section1 .profileText h2 {
+  display: inline-block;
+  color: #ffaf07;
+  font-size: 56px;
+  text-indent: -15px;
+  margin-bottom: 8%;
+}
+#section1 .profileText span.eName {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+#section1 .profileText dl {
+  font-size: 18px;
+}
+#section1 .profileText .skills dd {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px 12px 0;
+}
+#section1 .profileText .skills span {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  margin-top: -5px;
+  background: rgb(0, 0, 0, 0.8);
+  border-radius: 2px;
+  padding: 1px 2px;
+}
+#section1 .profileText .skills p {
+  font-size: 17px;
+  text-align: left;
+  margin: 15px 0;
+  line-height: 1.7em;
+}
+#section1 dt {
+  color: #ffaf07;
+}
+#section1 .profileText dl:nth-of-type(1) dt {
+  float: left;
+  margin-bottom: 1%;
+}
+#section1 .profileText dl:nth-of-type(1) dd {
+  margin-left: 75px;
+  margin-bottom: 1%;
+}
+#section1 .profileText dl:nth-of-type(2) dt {
+  margin: 5% 0 3.5%;
+}
+#section1 .profileText dl:nth-of-type(3) dt {
+  margin-bottom: 2%;
+}
+#section1 .profileWrap .downPort {
+  width: 25%;
+  height: 30px;
+  background: #ffaf07;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  bottom: 27%;
+  color: #fff;
+  padding-top: 12px;
+}
+#section1 .profileWrap .downPort a {
+  display: block;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 15px;
+  text-align: center;
+}
+#section1 .profileWrap .downPort1 {
+  width: 25%;
+  height: 30px;
+  background: #ffaf07;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
+  color: #fff;
+  padding-top: 12px;
+}
+#section1 .profileWrap .downPort1 a {
+  display: block;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 15px;
+  text-align: center;
+}
+#section1 .profileWrap .downPort2 {
+  width: 25%;
+  height: 30px;
+  background: #ffaf07;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  bottom: 9%;
+  color: #fff;
+  padding-top: 12px;
+}
+#section1 .profileWrap .downPort2 a {
+  display: block;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 15px;
+  text-align: center;
+}
+.section .left {
+  position: absolute;
+  bottom: 50%;
+  overflow: hidden;
+  float: left;
+  width: 47%;
+  margin: 0 0 -17% 3%;
+}
+.section .left img {
+  width: 90%;
+}
+.section .right {
+  width: 34%;
+  float: right;
+  text-align: right;
+  margin-right: 8%;
+}
+.section .right h1 {
+  font-size: 3em;
+  margin: 30px 0;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+.section .right_top p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+.section .site {
+  display: block;
+  background: #000;
+  width: 120px;
+  padding: 0 0 8px 13px;
+  float: right;
+  margin: 15px 0 50px;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.section .site::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: red;
+  position: relative;
+  top: 13px;
+  left: 8px;
+}
+.section .site:hover {
+  width: 140px;
+}
+.section .right span {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.section .right ul {
+  position: relative;
+  text-align: left;
+  margin-top: 100px;
+  background: rgb(0, 0, 0, 0.2);
+  padding: 30px 30px 1px;
+  border-radius: 7px 7px;
+}
+.section .right ul p {
+  font-size: 1em;
+  line-height: 1.7em;
+}
+.section .right li {
+  overflow: hidden;
+  margin: 30px auto;
+}
+.section .right .qrcode {
+  width: 110px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+#section4 .left img {
+  width: 70%;
+}
+#section5 .left img {
+  margin-bottom: 20px;
+}
+/* menu */
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+}
+#menu li.active {
+  background: #666;
+  background: rgba(240, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 3px;
+}
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+#menu li.active a:hover {
+  color: #fff;
+}
+#menu li:hover {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+#menu li a,
+#menu li.active a {
+  padding: 9px 16px 8px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  right: 50%;
+  margin-right: -420px;
+  height: 40px;
+  z-index: 70;
+  padding: 0;
+}
+
+.portfolio_down_btn {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(240, 0, 0, 0.8);
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: #000 10px 10px;
+  transition: all 0.1s;
+}
+.portfolio_down_btn:hover {
+  background-color: rgba(148, 0, 0, 0.8);
+}
+
+.portfolio_down_btn a {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  font-size: 16px;
+  color: #fff;
+}
